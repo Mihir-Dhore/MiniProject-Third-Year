@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Kanheri Caves</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					
+						
+							
+						<img
+							src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/fe/99/e8.jpg"
+							alt="Pagoda"
+							class="place--img"
+							data-index="0"
+				
+					
+
+					 />
+						
+							
+						<img
+							src="https://kevinstandagephotography.files.wordpress.com/2018/05/untitled-6.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"
+							alt="Pagoda"
+							class="place--img"
+							data-index="1"
+						/>
+					
+						<img
+							src="https://mumbaitourism.travel/images/places-to-visit/headers/kanheri-caves-mumbai-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg"
+							alt="Pagoda"
+							class="place--img"
+							data-index="2"
+						/>
+					
+				</div>
+				<figcaption class="place--name">
+					<h1>Kanheri Caves</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					The site is on a hillside, and is accessible via rock-cut steps. 
+                    The cave complex comprises one hundred and nine caves. The oldest 
+                    are relatively plain and unadorned, in contrast to later caves on 
+                    the site, and the highly embellished Elephanta Caves of Mumbai. 
+                    Each cave has a stone plinth that functioned as a bed. A 
+                    congregation hall with huge stone pillars contains a stupa 
+                    (a Buddhist shrine). Rock-cut channels above the caves fed rainwater 
+                    into cisterns, which provided the complex with water.[3] Once the 
+                    caves were converted to permanent monasteries, their walls were 
+                    carved with intricate reliefs of Buddha and the Bodhisattvas. 
+                    Kanheri caves were built in the 1st century and had become an 
+                    important Buddhist settlement on the Konkan coast by the 3rd 
+                    century CE.
+                   
+
+				</p>
+				<br />
+				<p>
+                    Most of the caves were Buddhist viharas, meant for living, studying, 
+                    and meditating. The larger caves, which functioned as chaityas, or 
+                    halls for congregational worship, are lined with intricately carved 
+                    Buddhist sculptures, reliefs, pillars and rock-cut stupas. 
+                    Avalokiteshwara is the most distinctive figure. 
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="19.2058509"
+			data-lng="72.9046617"
+		>
+			<h2>MAP</h2>
+			<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Kanheri_caves_map.jpg/400px-Kanheri_caves_map.jpg" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Timeline</h3>
+				<p>
+					The Kanheri Caves (Kānherī-guhā [kaːnʱeɾiː ɡuɦaː]) are a 
+                    group of caves and rock-cut monuments cut into a massive 
+                    basalt outcrop in the forests of the Sanjay Gandhi National 
+                    Park, on the former island of Salsette in the western 
+                    outskirts of Mumbai, India. They contain Buddhist sculptures 
+                    and relief carvings, paintings and inscriptions, dating from 
+                    the 1st century CE[1] to the 10th century CE. Kanheri comes 
+                    from the Sanskrit Krishnagiri, which means black mountain
+				</p>
+
+				<br />
+				<h3>Tourism</h3>
+				<p>
+					The Island of Salsette, or Shatshashthi, at the head of Bombay harbour, 
+                    is peculiarly rich in rock-Temples, there being works of this kind at 
+                    Kanheri, Marol, Mahakali Caves, Magathane, Mandapeshwar Caves, and 
+                    Jogeshwari Caves. The most extensive series is the group of Buddhist 
+                    caves at Kanheri, a few miles from Thane, in which are about 109 
+                    separate caves, mostly small, however, and architecturally unimportant.
+
+                    From their position, within easy access from Bombay and Bassein, they 
+                    early attracted attention, and were described by Portuguese visitors 
+                    in the 16th century, and by European voyagers and travellers like 
+                    Linschoten, Fryer, Gemelli Careri, Anquetil Du Perron, Salt and others.
+				</p>
+
+				<br />
+				
+				
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

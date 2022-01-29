@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Kopeshwar Temple</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/KP/Kp final1 x600.jpg"
+						/>
+						<img
+							src="../images/KP/Kp final1 x1280.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/KP/Kp final 2 x600.jpg"
+						/>
+						<img
+							src="../images/KP/Kp final 2 x1280.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/KP/Kp final 3 x600.jpg"
+						/>
+						<img
+							src="../images/KP/kp final 3x1280.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Kopeshwar Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					The present temple was built by Shilahara kings who were native to
+					Karnataka. Apart from the legend, the name might have originated from
+					the ancient name of the town, which was "Koppam". The town witnessed
+					two major battles. The first one took place in 1058 CE between
+					Chalukya king Ahavamalla and Chola king Rajendra. The Chola king
+					Rajadhiraja was killed during the battle, and the coronation of the
+					second king, Rajendra Chola took place right on the battlefield.
+				</p>
+				<br />
+				<p>
+					There are about a dozen inscriptions on the inside and outside of this
+					temple, out of which only a couple of inscriptions are in good
+					condition now. These inscriptions reveal the names of few kings and
+					their officers. All these inscriptions except one are in Kannada
+					language and script. The only Devanagari inscription in Sanskrit
+					language is by Singhan-II and is located on the outer wall near South
+					entrance of the temple.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.6149001" data-lng="74.68199">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/ejrBXQsqUeTb36BX6" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>LEGEND</h2>
+				<br />
+				<p>
+					It is believed that Daksha, who did not like his youngest daughter
+					Sati marrying Lord Shiva, conducted a Yagna to which he did not invite
+					the couple. Sati visited her father's house on Shiva's Nandi to
+					confront her father. Dakhsa insulted her in front of the guests
+					present at the Yagna. Unable to bear any further insults, Sati jumped
+					in the fire of Yagna and immolated herself. When Lord Shiva came to
+					know about it he was infuriated. He punished Daksha by severing his
+					head.
+				</p>
+
+				<br />
+				<p>
+					Lord Vishnu pacified Shiva whereupon he restored Daksha's head but
+					with a goat's head. The furious Shiva was brought to this place by
+					Lord Vishnu to calm him down. Hence the temple got its unusual name as
+					Kopeshwar (wrathful god). This explains why Lord Vishnu is in the
+					temple in the form of a ling along with Shivling and Nandi is not seen
+					in this temple as Sati rode on the Nandi while visiting her parents'
+					home.
+				</p>
+				<br />
+
+				<h2>FEATURES</h2>
+				<br />
+				<h3>Karul Ghat & Bhuibawada Ghat</h3>
+				<p>
+					The Kopeshwara, an ancient & artistic temple situated on the bank of
+					Krishna is a fine example of ancient sculpture.The ceiling is
+					semi-circular with matchless engravings. Inside there is a statue of
+					Vishnu( Dhopeshwar) and Shivling " Kopeshwar " facing north. This is
+					the only Shiva temple in India with an idol of Vishnu.
+				</p>
+
+				<br />
+
+				<p>
+					it is open to the sky with a circular opening. Looking at the sky one
+					gets mesmerised and gets a feeling of looking at the heavens,
+					justifies the name Svarga Mandap. At the periphery of the Svarga
+					Mandap we can see beautifully carved idols of Lord Ganesh, Karthikeya
+					swami, Lord Kubera, Lord Yamraj, Lord Indra, etc. along with their
+					carrier animals like peacock, mouse, elephant etc. So at one glance we
+					can see the Tridev ' Brahma Mahesh Vishnu '. A stone pedestal mounted
+					east of the temple's southern door has a carved inscription in
+					Sanskrit, written in Devnagari script . It mentions that the temple
+					was renovated in 1136 by Raj Singhadev of yadav dynasty.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

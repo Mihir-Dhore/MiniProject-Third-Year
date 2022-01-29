@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Sachkhand Gurudwara</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="child.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="navbar.js" defer></script>
+		<script src="img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/sachchild.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/sachchild.jpg"
+						/>
+						<img
+							src="sachchild.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/sachchild2.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/sachchild2.jpg"
+						/>
+						<img
+							src="sachchild2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Sachkhand Gurudwara</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					Hazur Sahib marks the site where Guru Gobind Singh ji had his camp in 1708. The Guru held his court and congregation here and was convalescing after being attacked by two would-be assassins. One of the attackers stabbed the Guru, and was killed by him with a single stroke of his talwar (curved sword). The other was killed by his followers as he tried to escape. The Guru's wound was deep, but initially healed after being stitched by an English surgeon sent by Bahadur Shah I, who served as his doctor, and Dara Shikoh before him.[3] However the wound re-opened a few days later when the Guru was stringing a bow for one of his Sikhs and the Guru merged into the Primal (Joti Jot) after declaring the Guru Granth Sahib as his successor.[4]
+
+The Sikhs built a room over the platform where Guru Gobind Singh Ji would sit while holding his court and installed Guru Granth Sahib Ji on it. They called it Takhat Sahib. Guru Gobind Singh Ji, while conferring Guruship to Guru Granth Sahib Ji, had himself named Nanded as "Abchalnagar" (literally "Steadfast city") after the first word of a hymn read at random on the occasion.
+
+In October 2008, the 300th-anniversary celebration of the Guruship of Guru Granth Sahib ji took place here. This site is now one of five Takhats which are places of primary importance to the Sikhs. 
+				</p>
+				<br />
+				<p>
+					Nanded is the holy city where Baba Banda Singh Bahadur had his ashram and Baba Banda Singh started his journey of Khalsa victory; hence it has a very high regard in the history of India.[citation needed]
+
+This shrine differs from other historical places of Sikh worship, here all ancient customs which were practised at the time of the Guru are still practiced, for example, sandal-wood tilak is still applied on the foreheads of priests and local devotees.
+
+The most important aspect of this holy shrine is that there are two sanctum sanctorum here. While all the functions are carried out by the priests in the outer room, the inner room is a vault that houses priceless objects, weapons and other personal belongings of the Guru. No one except the head priest can enter this holy vault
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="19.153316716242735"
+			data-lng="77.32214356602596"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/dJxc4Nknpv4siQMJ8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>300th Aniversary Celebrations</h3>
+				<p>
+					In 2008, the 300th Gurudomship ceremony of Guru Granth Sahib and 300th Joti Jot anniversary of Guru Gobind Singh were celebrated on a grand scale at Hazoor Sahib, Nanded. The then Prime Minister of India, Manmohan Singh also addressed to the Sath-Sangat on the main event function. To publicize the event the "Jagriti Yatra" was arranged which travelled through different cities across the country and also some places in abroad.
+				</p>
+
+				<br />
+				<h3>Laser Fountain Show</h3>
+				<p>
+					Recently, a laser-ray show has been started at Gobind Bagh near the main gurdwara. In this show, the lives of the ten Gurus are briefly described. The show became very popular in a short period not only among Sikhs (local or visitors) but also people of other religions. It is the second largest laser show in Asia.
+				</p>
+
+				<br />
+				<h3></h3>
+				<p>
+				
+				</p>
+
+				<br />
+				<h3></h3>
+				<p>
+					
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Ram Teerth</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt1x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt1x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt2x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt2x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt3x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt3x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Ram Teerth</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>geography</h2>
+				<p>
+					At a distance of 35 km from Amboli, 59 km from Belgaum, and 87 km from
+					Kolhapur, Ramtirth Waterfall is a beautiful waterfall situated at
+					Ajara near Kolhapur. It is one of the stunning waterfalls in
+					Maharashtra, and among the must include places in Kolhapur tour.
+				</p>
+				<br />
+				<p>
+					Formed over River Hiranyakeshi, Ramtirth Waterfall is a natural
+					waterfall popular for its unmatched serenity and beautiful locales.
+					The spot is mostly used for day picnics and to unmind from the
+					hustle-bustle of the city.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.1393454" data-lng="74.2065992">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/gC3RXyVbphqZH34P9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>LEGENDS</h2>
+				<br />
+				<p>
+					According to legend, the place is so named because Lord Rama had
+					stayed here during his exile in the forest. It is one of the
+					spectacular Kolhapur places to visit
+				</p>
+
+				<br />
+				<h2>FEATURES</h2>
+				<br />
+				<p>
+					The main feature of the waterfall is it never dried. However, the
+					beauty of the waterfall enhances during the monsoons when it is in
+					full swing. Also, It is well known for its breathtaking natural
+					beauty. The area also has several temples which are thronged by
+					pilgrims at all times.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

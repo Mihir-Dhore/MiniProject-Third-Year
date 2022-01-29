@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Maharashtra | Sandhan Valley</title>
+
+	<!-- !====== CSS ========== -->
+	<link rel="stylesheet" href="../styles/css/children-pages.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+	<!-- !========= Scripts =============== -->
+	<script src="../scripts/navbar.js" defer></script>
+	<script src="../scripts/img-scroll.js" defer></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+	<script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<h1>Maharashtra</h1>
+			<ul>
+				<li>
+					<a href="#">home</a>
+				</li>
+				<li>
+					<a href="#">places</a>
+				</li>
+				<li>
+					<a href="#">placeholder</a>
+				</li>
+			</ul>
+		</nav>
+		<figure class="place--fig">
+			<div class="place--imgs" style="width: 100%; display: flex">
+				<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+				<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/SandhanValley/Sandhan1.jpg" />
+					<source media="(max-width: 2000px)" srcset="../images/SandhanValley/Sandhan1.jpg" />
+					<img src="../images/SandhanValley/Sandhan1.jpg" alt="fort" class="place--img" data-index="0" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/SandhanValley/Sandhan2.jpg" />
+					<source media="(max-width: 2000px)" srcset="../images/SandhanValley/Sandhan2.jpg" />
+					<img srcset="../images/SandhanValley/Sandhan2.jpg" alt="fort" class="place--img" data-index="1" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/SandhanValley/Sandhan3.jpg" />
+					<source media="(max-width: 2000px)" srcset="../images/SandhanValley/Sandhan3.jpg" />
+					<img src="../images/SandhanValley/Sandhan3.jpg" alt="fort" class="place--img" data-index="2" />
+				</picture>
+			</div>
+			<figcaption class="place--name">
+				<h1>Sandhan Valley</h1>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- !===== Place Description ======= -->
+	<section class="place--description">
+		<article class="place--history">
+			<!-- <h2>history</h2> -->
+			<p>
+				Sandhan Valley is also known as  <strong>Valley of Shadows (as the sun’s rays don’t reach the ravines).</strong>
+				Camp amidst the serene nature, gazing at the stars, indulge in an adventurous walk through the narrow steak encircled by rock walls of 200 feet tall along with flying fox and rappelling.
+				 Also enjoy some fun games such as archery, coracle ride, dart, rifle shooting, etc during the camping.
+			</p>
+			<br />
+			<p>
+				Enjoy the magnificent sunrise or sunset from the top of Konkankada and experience the precious views the Sahyadris give you. Wind up the tour the next day with utmost satisfaction and undying memories.
+			</p>
+		</article>
+		<br />
+	</section>
+
+	<!-- !============ Map Element ============== -->
+	<article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+		<h2>MAP</h2>
+		<a href="https://goo.gl/maps/bbEMarLQrwXjRSrr6" class="btn">Goto GMaps</a>
+		<section id="map"></section>
+	</article>
+
+	<!-- !============ Major Features ============== -->
+	<section class="place--description">
+		<article class="place--features">
+			<h2>Best Time For Sandhan Valley Trek</h2>
+			<br />
+
+			<p>
+			There is no limitation to when you plan on this trek. You can do this at any time of the year. It is, however, preferable that you do not do it in the summers. As the temperatures soar, you will not be able to enjoy the trek very well. Most of your energy will be swapped by enduring the heat.
+			</p>
+
+			<br />
+			<h2>Best Places To Visit On The Trek</h2>
+
+			<p> <strong>•AMK Forts</strong>
+
+			</p> <br>
+			<p>Make sure that you are trekking uphill to the ancient forts of Alang, Madan, and Kulang. But if you are too tired after the main trek then make sure you are getting some rest before you head out for the second trek to these forts the next day.</p>
+
+			<br>
+			 <strong> <p>•Ratangad Fort</p></strong>
+			<br>
+			<p>This is another fort that you cannot miss. Going to this fort is a steep ascent but it is not much of a demanding experience so you can do it on the same day as the AMK forts.</p>
+			<br />
+		 <strong> <p>•Nanhe Ghat Waterfalls</p></strong>	 <br>
+			<p>
+				This waterfall is just a few kilometers away from base camp so make sure that you go to Ratanawadi to visit this. It’ll be a refreshing experience to have a picnic near this beautifully cascading waterfall and/or take a dip in the pool that collects at the base of it.
+			</p>
+
+			<br />
+			<!-- <h3>Ambarkhana</h3>
+			<p>
+				The Amberkhana, situated in the center of the fort, were three
+				granaries built in the Bijapuri style of architecture. They enabled
+				Shivaji to withstand a 5-month siege by Siddhi Johar. It consists of
+				three buildings called the Ganga, Yamuna and Saraswati Kothis.
+			</p> -->
+
+			<h2>How to reach Sandhan Valley</h2>
+			<p><strong>Nearest Airport: </strong> Aurangabad Airport (IXU) </p> <br>
+
+			<p> <strong>•By road: </strong>Book a self-drive car and drive down to Samrad village. The distance from Mumbai to Sandhan Valley is around 200 kilometres that can be covered in 4 to 5 hours. Or else, from Mumbai or Pune, you can take a state transport bus to Igatpuri-Ghoti from where buses are available to Bhandardara and take a shared jeep from there to Samrad village.</p> <br>
+
+			<p><strong>•By train: </strong>Take a train from Mumbai to Kasara. Take a Kasara Fast train from CST. Get down at Kasara and book a shared jeep to Samrad. Plenty of shared jeep rides are available. You can also board a long distance train which stops at Igatpuri.</p> <br>
+
+			<p><strong>•By Flight: </strong>There are no flights to Sandhan or nearby villages. </p>
+			<br>  <br>
+
+		<h2>Trekking Route</h2> <br>
+		<p>Start your trek at Samrad and within the first few hours, you will be trudging through shallow water bodies 2 to 4 feet high. Upon the descend you will come across Tarzan Swing Point, you will rappel and use a rope ladder after which there will be some cave crawling.</p> <br>
+		<p>Then you will slope down and hike among rock patches. There will be deep water pools to wade in,  followed by wide rocks and then you will reach the camping spot. Your views will include <strong>Bann pinnacle</strong>  and <strong> Ajoba Hill</strong>.</p> <br> <br>
+
+				<h2>Expenses</h2> <br>
+				<h3>Travel</h3>
+				<p> A self-drive car from Mumbai to Bhandardara (return trip) would cost you from Rs 5000 to Rs. 8000. Train tickets will cost anywhere between Rs. 1000 to Rs. 1200.</p> <br><br>
+
+				<h3>Accommodation</h3>
+				<p>Camp overnight in your own tent in the gorge campsite. Homestay  in Samrad village can cost from Rs. 500 to Rs. 800 per night. Bhandardara budget stays start from Rs. 1000 onwards.</p> <br>
+
+				<h3>Food</h3>
+				<p>Food will cost anywhere from Rs. 200 to Rs 600 during the journey.</p> <br> <br>
+
+				<h3>Sandhan Valley Trek Package</h3>
+				<p>Trek operators may charge from Rs. 1600 to Rs. 2000.</p>   <br> <br>
+
+					<h2>Where to stay</h2>
+					<p>There are no <strong> hotels or lodges nearby</strong>, but homestays through locals are available around Samrad. These are moderately comfortable.</p> <br><br>
+
+
+				<h2>Safety & Travel Tips</h2>
+				<p> <strong>1.</strong> First-time trekkers should not attempt this trek without a guide or a trekking operator.</p> <br>
+				<p><strong>2.</strong> Carry energy bars, mosquito repellents and a windbreaker.</p> <br>
+				<p><strong>3.</strong> If possible carry DSLR for capturing best visuals.</p> <br>
+				<p><strong>4.</strong> Carry enough water, Water from the trail streams may not be pure to drink.</p> <br>
+				<p><strong>5.</strong> Avoid if you have a medical condition or a weak heart, or blood pressure.</p> <br> <br>
+
+			<h2>FAQ's</h2> <br>
+			<strong>
+				<p>•Are there any toilets available on the route of the trek?</p>
+			</strong>
+			<p> There are no toilets en route.</p>
+			</p> <br>
+			<strong>
+				<p>•What is the duration of the trek?</p>
+			</strong>
+		<p>This is a  <strong> two </strong> day and <strong>two</strong> nights trek.</p> <br>
+
+			<strong>
+				<p>•Minimum age for trek?</p>
+			</strong>
+			<p>Age above  <strong>15 years</strong>.</p> <br>
+
+			<strong>
+				<p>•Difficulty of trek?</p>
+			</strong>
+			<p> Moderate to difficult. </p> <br>
+
+
+		</article>
+	</section>
+
+	<!-- !========== Footer ============== -->
+
+	<footer>
+		<h1>
+			<span class="highlight">&#169; 2021</span> All the content on this page
+			is copyrighted to <span class="highlight">placeholder</span>
+		</h1>
+	</footer>
+</body>
+
+</html>

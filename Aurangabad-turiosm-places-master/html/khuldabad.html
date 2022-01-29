@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Khuldabad Fort</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/khuldabad fort/khuldabad1.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/khuldabad fort/khuldabad1.jfif"
+						/>
+						<img
+							src="../images/khuldabad fort/khuldabad1.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\khuldabad fort/khuldabad2.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\khuldabad fort/khuldabad2.jpg"
+						/>
+						<img
+							src="..\images\khuldabad fort/khuldabad2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\khuldabad fort/khuldabad3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\khuldabad fort/khuldabad3.jfif"
+						/>
+						<img
+							src="..\images\khuldabad fort/khuldabad3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1> Khuldabad Fort </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Khuldabad is a small town located around 13 km from Aurangabad and 3 
+                    km from the world heritage site of Ajanta and Ellora Caves. Formerly 
+                    known as 'Rauzaa', which means the garden of paradise, Khuldabad is 
+                    popular as the "Valley of Saints", because the city was resided by s
+                    everal Sufi saints in the 14th century. This holy city is home to se
+                    veral important historic monuments like Aurangzeb's Tomb, Dargah of Z
+                    ar Zari Zar Baksh, Shaikh Burhan ud-din Gharib Chisti and Shaikh Zain-
+                    ud-din Shirazi. Khuldabad also houses the famous Bhadra Maruti Temple 
+                    dedicated to Lord Hanuman. </p>  <br>
+                   <p>
+                   Near Khuldabad is a place called "the Valley of Saints" which is believed
+                    to have the graves of 1500 Sufi saints. In the early 17th century, the c
+                    ity was captured by Aurangzeb who built a strong wall as a protection ar
+                    ound the town with seven entrances inside the city Nagarkhana, Pangra, La
+                    ngda, Mangalpeth, Kunbi Ali, Hamdadi and a wicket gate called Azam Shahi.
+                     The ruins of the monument from the Mughal era can still be seen here. 
+                     Khuldabad is an important city owing to its religious and historic 
+                     significance. 
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/XqtjeHKKzf98yoRD6" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Significance of Khuldabad  :</h3>   <br>
+				<p>
+                    Khuldabad, also known as the abode of saints, has a well-defended fort wall
+                    . Just before entering the city is the Nagarkhana Gate which was built by Su
+                    ltan Muzzam Shah, the son of Aurangzeb during 1698-1710 AD. Due to the locat
+                    ion of tombs of several Sufi saints, Khuldabad has huge religious importance
+                    . It is believed that the Mughal emperor, Aurangzeb spent his last days here
+                    . Besides Aurangzeb, Azam Shah, Aurangzeb’s son, Asaf Jah, the founder of the
+                     Hyderabad dynasty, his second son Nasir Jang, Nizar Shah, king of Ahemadnagar
+                      and Tana Shah, last of the Golkonda kings are also buried here. 
+                </p>
+				<br>
+				<h3>How To Reach Khuldabad :</h3>
+				<p>
+					Khuldabad is situated 27 km away from Aurangabad, there are direct public buse
+					s available from Aurangabad to Khuldabad. You can also hire your own taxi for
+					 a round trip.
+				</p>
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

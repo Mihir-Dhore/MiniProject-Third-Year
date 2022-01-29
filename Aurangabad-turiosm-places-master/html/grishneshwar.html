@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Grishneshwar Temple </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Grishneshwar temple/grineshwar_temple.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Grishneshwar temple/grineshwar_temple.jpg"
+						/>
+						<img
+							src="../images/Grishneshwar temple/grineshwar_temple.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Grishneshwar temple\grishneshwar1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Grishneshwar temple\grishneshwar1.jpg"
+						/>
+						<img
+							src="..\images\Grishneshwar temple\grishneshwar1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Grishneshwar temple\grishneshwar2.png"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Grishneshwar temple\grishneshwar2.png"
+						/>
+						<img
+							src="..\images\Grishneshwar temple\grishneshwar2.png"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Grishneshwar Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					The actual date of establishment of the Grishneshwar Temple is unknown
+					 but it is believed to be built before the 13th Century. When the Mughal
+					  Empire acquired the region that included Velur (now known as Ellora) 
+					  where the temple is located, the region witnessed some devastating 
+					  Hindu-Muslim conflicts and the temple was destroyed sometime between 
+					  the 13th and the 14th Century.Maloji Bhosale, the Grandfather of Chhatrapati 
+					  Shivaji Maharaj, as the chief of Verul, played an important role in 
+					  rebuilding the temple in the 16th Century. It is said that Maloji Bhosale 
+					  found a hidden treasure which he spent in reconstructing the temple and also 
+					  built an artificial lake at Shanishingnapur.
+				</p>
+				<br />
+				<p>
+					Grishneshwar Temple suffered several
+					   more attacks by the Mughals even after the 16th Century. It required rebuilding a 
+					   few more times during the Mughal-Maratha wars that happened between 1680 and 1707. 
+					   In the 18th Century, it was rebuilt for the last time when the Mughal Empire was 
+					   defeated by the Marathas. The Queen of Indore, Rani Ahalyabai sponsored the reconstruction 
+					   of the temple that can be seen even today.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/1m3qT2DHwqaL5VEt8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Grishneshwar Temple Timings :</h3>   <br>
+				<p>
+					Grishneshwar temple opens at 05:30 am in the morning and closes at 09:30 pm in the evening. During the month of Shravan, the temple remains open between 03:00 am to 11:00 pm. The time required for Darshan: 1 to 2 hours depending on the crowd.
+
+                   The temple also performs various rituals during this time. The devotees can be a part of these rituals such as the afternoon and evening aarti. <br>
+                    <br>
+                  <h3> The timings of Grishneshwar Temple are as follows: </h3>
+				  <table>
+					  <tr>
+						  <th> Rituals	Timings Darshan </th>
+						  <th>5:30 AM – 9:30 PM</th>
+					  </tr>
+					  <tr>
+						  <th>Darshan during Shravan Maas</th>
+						  <th>3:00 AM – 11:00 PM</th>
+					  </tr>
+					  <tr>
+						  <th>Afternoon Pooja</th>
+						  <th>1:00 PM – 1:30 PM </th>
+					  </tr>
+					  <tr>
+						  <th>Evening Pooja</th>
+						  <th>4:30 PM – 5:30 PM</th>
+					  </tr>
+				  </table>
+				</p>
+				<br>
+				<h3>significance of Grishneshwar Temple :</h3>    <br>
+				<p>
+					The Grishneshwar Jyotirlinga decorated with flowers and the holy beads of Rudraksha.
+                    The significance of the temple is that the pilgrims believe that by paying a visit to the Grishneshwar temple, one can reap the benefits of worshiping all the 12 Jyotirlingas. It is also said that the Grishneshwar temple is a classic example of the pre-historic style of architecture and has beautiful carvings.
+                     Devotees can see the marriage scene of the Lord and his consort in the temple murals and carving. The Grishneshwar temple also houses a well that springs holy water.
+				</p>
+				<br>
+				<h3>Architecture of Grishneshwar Temple :</h3>   <br>
+				<p>
+					Grishneshwar Temple has a traditional South-Indian Temple architecture.
+                    The temple complex consists of inner chambers and a sanctum sanctorum.
+                    The structure is made up of red coloured stones and occupies an area of 44,400 square feet. With these dimensions also, the Grishneshwar Temple is the smallest Jyotirlinga temple.
+                    The temple has a 5-layered tall shikhara and several pillars which bear intricate mythological carvings.
+                    The red-stone walls mostly depict the legends of Lord Shiva and the ten incarnations of Lord Vishnu.
+                    The garbhagriha or the sanctum sanctorum has the Shivalinga facing east. It measures about 289 square feet and has a statue of Nandi in the passageway.
+				</p>
+
+				<br />
+				<h3>festivals celebrated at Grishneshwar Temple :</h3>   <br>
+				<p>
+					<ul>
+						<li><b> Mahashivaratri : </b></li>
+						<p>Like all important Shiva temples, the Maha Shivaratri festival is a 
+							grand event at Grishneshwar temple. It is the main festival here. 
+							Crores of devotees make a trip to this town to catch a glimpse of 
+							the Lord on this auspicious day that falls in February/March every 
+							year.</p> <br>
+							<li><b> Ganesh Chaturthi : </b></li>
+							<p>Dedicated to Lord Ganesh, this festival is celebrated in August / September</p> <br>
+							<li><b> Navratri or Durga Puja : </b></li>
+							<p>It is a famous festival, celebrated as a symbol of victory of good 
+								over evil. As per legend, Goddess Durga defeated the demon king 
+								Mahishasura to save the world and restore Dharma. Navratri is 
+								celebrated across India for nine days. Celebrations in the temple 
+								include stage decorations, recital of the legend, enacting of the 
+								story, and chanting of the scriptures of Hinduism.</p>
+					</ul>
+					
+				</p>
+
+				<br />
+				<h3>How to reach Grishneshwar Temple? </h3>
+				<p>
+					<ul>
+					<li><b>Air :</b> <p> The nearest airport is in Aurangabad, and there are 
+						regular flights from Delhi, Mumbai, Jaipur, and Udaipur. </p></li>
+						<li><b>Train :</b><p> Aurangabad is the nearest railway station. Manmad is also 
+							closer and better connected.</p></li>
+							<li><b>Road :</b><p> From Pune: 256 km/4.5 hours. From Nasik: 187 km/3 
+								hours. From Shirdi: 122 km/2.5 hours.</p></li>
+					</ul>
+				</p>
+
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

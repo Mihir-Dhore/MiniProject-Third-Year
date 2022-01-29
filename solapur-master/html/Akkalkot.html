@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Akkalkot</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <!--<ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>-->
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Panhala-fort/640px-Panhala_fort-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Panhala-fort/2180px-Panhala_fort-1.jpg"
+            />
+            <img
+              src="../images/Panhala-fort/1280px-Panhala_fort-1.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Panhala-fort/600px-panhala-fort-2.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Panhala-fort/2500px-panhala-fort-2.jpg"
+            />
+            <img
+              src="../images/Panhala-fort/1200px-panhala-fort-2.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Panhala-fort/600px-Fort_Panhala-3.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Panhala-fort/2500px-Fort_Panhala-3.jpg"
+            />
+            <img
+              src="../images/Panhala-fort/1200px-Fort_Panhala-3.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>Akkalkot</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2>history</h2>
+        <p>
+          Swami Samarth, also known as Swami of Akkalkot, was an Indian
+          spiritual master of the Dattatreya Tradition. He is a widely known
+          spiritual figure in various Indian states including
+          Maharashtra,India.[6] He lived during the nineteenth century. Swami
+          Samarth traveled all across the Indian subcontinent and eventually set
+          his abode at Akkalkot, a village in present-day Maharashtra. He is
+          thought to have initially arrived at Akkalkot on a Wednesday, during
+          either September or October in 1856. He resided at Akkalkot for close
+          to 22 years. His parentage and origins remain obscure. Some other
+          Indian saints and spiritual figures including Sai Baba of Shirdi and
+          Gajanan Maharaj of Shegaon also have similarly unknown origins.
+        </p>
+        <br />
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="17.52010" data-lng="76.19881">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/place/Akkalkot,+Maharashtra+413216/@17.5200165,76.1831048,14z/data=!3m1!4b1!4m5!3m4!1s0x3bc6099850597ad9:0xb6bd8736c8c38347!8m2!3d17.5242162!4d76.2054416"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features">
+        <h2>Major Features</h2>
+        <br />
+        <h3>History</h3>
+        <p>
+          AKKALKOT a Maratha state is situated in Maharashtra state of India. In
+          early 17th century it was a part of Nizamshahi territory. Later it was
+          part of Mughal Empire, it was later given as grant to Shahu Maharaj,
+          The Maratha King who then transferred it to founder of the Akkalkot
+          dynasty. Shahu Chatrapati was the grandson of Chatrapati Shivaji
+          Maharaj, founder of Maratha Empire who died in 1680 leaving two sons
+          namely Chatrapti Sambhaji and Rajaram Maharaj. The elder son Chatrapti
+          Sambhaji was slain by Aurangzeb and his son Chatrapati Shahu was made
+          a prisoner. After the death of Aurangzeb in 1707, Chatrapati Shahu was
+          liberated and he returned to claim his Maratha Kingdom but was opposed
+          by Tarabai, the widow of Rajaram Maharaj, who was ruling the Maratha
+          Empire in his absence..
+        </p>
+
+        <br />
+        <h3>Life</h3>
+        <p>
+          According to Swami Samarth himself, he had originally appeared in the
+          Kardali forests near Srisailam, a Hindu holy town in present-day
+          Andhra Pradesh. He might have moved through China, Tibet and Nepal
+          during his travels across the Himalayas and its adjacent regions. He
+          is also believed to have visited various Indian regions such as Puri,
+          Varanasi (also Kashi), Haridwar, Girnar, Kathiawar and Rameswaram. He
+          might have also briefly lived at Mangalvedha, a town near Pandharpur
+          in present-day Solapur district, Maharashtra. He finally settled at
+          Akkalkot.
+        </p>
+      </article>
+    </section>
+
+    <!-- !========== Footer ============== 
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>-->
+  </body>
+</html>

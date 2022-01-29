@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Panhala Fort</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Maharashtra</h1>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">places</a>
+                </li>
+                <li>
+                    <a href="#">placeholder</a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="place--fig">
+            <div class="place--imgs" style="width: 100%; display: flex">
+                <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+                <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar wada - 2.jpg" />
+                    <img src="../images/Lal Mahal/lal mahal.jpg" alt="fort" class="place--img" data-index="0" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shanivar-Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shanivar-Wada - 2.jpg" />
+                    <img src="../images/Lal Mahal/lal mahal1.jpg" alt="fort" class="place--img" data-index="1" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 2.jpg" />
+                    <img src="../images/Lal Mahal/Lal Mahal3.jpg" alt="fort" class="place--img" data-index="2" />
+                </picture>
+            </div>
+            <figcaption class="place--name">
+                <h1>LAL MAHAL</h1>
+            </figcaption>
+        </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+        <article class="place--history">
+            <!-- <h2>history</h2> -->
+            <br><br>
+            <p>
+                Lal Mahal is one of the famous tourist places in Pune which has another name as Red Palace. It is a beautiful monument established in 1630 AD by Shivaji Maharaj’s father Shahaji Bhosale for his wife and son. Shivaji Maharaj lived here for a long time
+                until the time he captured his first fort. The original one had undergone several destructions and the current one is a reconstructed structure, located at the heart of the city. Shivaji’s wedding with Maharani Saibai took place in this
+                palace. The original monument was constructed with the aim of rejuvenating the city of Pune when Dadoji Kondev entered the city with Shivaji Maharaj. The history recorded at various places proves the fact that Lal Mahal was used for organising
+                feasts for the Brahmins during the thread ceremony of Sadoba, the son of Chimajiappa. <br><br> The original location where the monument was first established is still unknown, perhaps it was known to be located very close
+                to the location of Shaniwarwada. The newly constructed Lal Mahal does not have many features the old one possessed and it is not built in the same fashion as well. Pune Municipal Corporation was the one who rebuilt the current Lal Mahal
+                and the construction was begun in 1984 and ended in 1988. <br><br> The Lal Mahal became an important part of the history after an encounter between Shivaji and Shaista Khan when the former cut off the latter’s fingers and he tried to escape
+                from the window of the Lal Mahal. The current palace displays a collection of large sized oil paintings based on the important events happened in the life of Shivaji. There is the Jijamata Garden now recognised as a recreational park for
+                kids. <br><br><b>Entry timings:</b> It is open on all days from <b> 09:00 am to 01:00 pm</b> and then from <b>04:00 pm to 08:00 pm. <br><br> </b> <b>Entry fee:</b> The entry fee to enter the palace is INR 3 per person. <b> <br><br> Location:</b>Lal
+                Mahal, Ganesh Rd, Durvankur Society, Kasba Peth, Pune, Maharashtra 411002.
+            </p>
+            <br /> <br>
+            <h2>History Of Lal Mahal</h2> <br>
+            <p>Shivaji’s father, Shahaji Maharaj, was the one who laid the foundation of this Lal Mahal. The main reason to construct this colossal structure was the quick revival of the miserable condition of Pune. <br><br> During those days, he served
+                in the position of Bijapur Sultanate.<br><br> After conquering a few territories, he was enthroned to rule over some Pune territories. This was the time when he felt necessary to construct a palace for his accommodation.<br><br> Eventually,
+                in the year 1630 AD, Lal Mahal stood high with pride. From then, until he acquired Torna Fort in 1645, this was his residential palace. <br><br> This fort has also witnessed the upbringing of Maharashtra’s brave son – Shivaji Maharaj.<br><br>                Yet another story is associated with this fort. It was in April of 1663 when Shivaji Maharaj, along with his battalion of 400+ soldiers, seized the palace and killed Shaista Khan's son. In the same battle, Shivaji Maharaj chopped off Shaista
+                Khan’s fingers with his sword. <br><br> The present-day structure of the Lal Mahal was built right on the part of the land where a portion of the original one was destroyed. If you closely compare both the present day and the original
+                Lal Mahal, there’s quite a difference.<br><br> This current monument is actually a re-construction work accomplished by the Pune Municipal Corporation in 1998.
+
+            </p>
+            <br><br>
+
+
+            <h2 style="color: orange;">Places to visit in Lal Mahal:</h2> <br>
+            <p>
+                <b>Ayappa Temple –</b> Ayappa Temple in Rasta Peth, Pune, is known for its high spirituality and various annual events. The temple is located amidst a busy market set up and is usually crowded on weekends and holidays or festivals. <br><br>
+
+                <b>Darshan Museum –</b> Darshan Museum is a part of the Sadhu Vaswani Mission Premises. It depicts the life journey of Sadhu Vaswani, who was a poet, a visionary, and a famous educator. The museum portrays a brilliant amalgamation of history
+                & technology. You can observe the life journey of Sadhu Vaswani and his teachings with the help of audio-visual mediums. <br><br>
+
+                <b>Trishund Ganpati Temple – </b> This Ganapati temple is present along the banks of Nagazari and is an elegant piece of art and creativity. The Ganesh sculpture here is unparalleled, and this is what ranks the temple amongst the rare
+                temples list. <br><br>
+
+                <b>Raja Dinkar Kelkar Museum –</b> Raja Dinkar Kelkar Museum of Pune is dedicated to the valuable contributions of Dr. Dinkar Kelkar’s son. The museum is a 3-storeyed building homing to various sculptures, which are as old as the 14th
+                century. Here, you have a comprehensive relics collection capturing the cultural diversity of the local people. <br><br>
+
+                <b>Saras Bagh – </b> Located on the foothills of the mighty Parvati Hills, Saras Bagh is one of the greatest attractions in Pune. The garden spanning across a stretch of 25 meters, there is also a holy shrine dedicated entirely to Lord
+                Ganesha within it. The lush greenery that defines the authenticity of this piece of natural creativity is continuously trimmed and well-maintained.
+
+            </p> <br><br>
+            <h2>How to Reach</h2>
+            <br>
+            <p>
+                <b>By Rail – </b> To reach Lal Mahal, you need to board a train that will drop you at Pune Railway Station. From there, you can opt for any local transport to take you to the Lal Mahal. The distance between Pune Railway Station & the Lal
+                Mahal is only 2 km. <br><br>
+
+                <b>By Road -</b> Lal Mahal is well-connected through roadways. Hence, you can easily find a local rickshaw or hire a taxi to reach here. Also, you can opt for public transport, the frequency of which is quite good. You do not need to book
+                your public transport trip in advance.<br><br>
+
+                <b>By Bus -</b> Various local buses run between the Lal Mahal and other regions in Pune.
+            </p>
+
+
+        </article>
+        <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+        <h2>MAP</h2> <br>
+        <a href="https://goo.gl/maps/GaRQWCNL4mumLeNP9" class="btn">Goto GMaps</a>
+        <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+        <!-- <article class="place--features">
+            <h2>Major Features</h2>
+            <br />
+            <h3>Things to See in the Shaniwar Wada!</h3> <br>
+            <p>
+
+                <h3> The ruined complex of Shaniwar Wada has many attractions to keep visitors enthralled, including the following:</h3> <br>
+                <p> 1.Dilli Darwaza or Dilli Gate, the main gate of the fortified palace Mastani Darwaja aka Mastani Gate or Aliibahadur Darwaja, the gateway used by Mastani, the second wife of Baji Rao I, when traveling out of the palace complex. <br><br>2.
+                    Khidki Darwaja or Window Gate, named after the armored window contained there. <br> <br>3.Ganesh Darwaja or Ganesh Gate, near which existed the Ganesh Rang Maha <br> <br>4. Jambhul Darwaja or Narayan Darwaja aka Narayan’s Gate, used
+                    by concubines to access and leave the fortified premises Nine bastion towers. <br><br>5.Garden complex <br><br> 6.Hazari Karanje, the sixteen-petal lotus-shaped fountain A few surviving cannons <br> <br>7.The majestic statue of Baji
+                    Rao I that stands at the entrance of the palace
+                </p>
+
+
+            </p>
+        </article> -->
+    </section>
+
+    <!-- !========== Footer ============== -->
+
+    <footer>
+        <h1>
+            <span class="highlight">&#169; 2021</span> All the content on this page is copyrighted to <span class="highlight">placeholder</span>
+        </h1>
+    </footer>
+</body>
+
+</html>

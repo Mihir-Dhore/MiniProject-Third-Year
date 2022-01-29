@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Chaprala Wildlife Sanctuary</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ1x600.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+						/>
+						<img
+							src="data:image/jpeg;base64,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"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ3x600.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050540-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Chaprala Wildlife Sanctuary</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>Sanctuary</h2>
+				<p>
+					The sanctuary has conspicuous riparian ecosystem in which population
+					 of fish, prawns and turtles thrive. They also support rich aquatic 
+					 life and avi-fauna and sites of natural beauty and tranquility.The
+					sanctuary has rich floral diversity where various species of shrubs,
+					climbers, grass and thick forest of teak tress are found.
+					The sanctuary abounds with wildlife. Tigers, leopards, jungle cats, 
+					bears, Wild dogs, Deer, Sambars and many other animals inhabit the 
+					sanctuary.The Sanctuary is comes under the control of Chief 
+					Conservator of Forest and Field
+				</p>
+				<br />
+				<p>
+					Situating at 1200 metres above the sea level, it is an exciting and
+					beautiful holiday getaway. An excursion in the vicinity to the
+					Gagangiri Maharaj's Math makes a pleasant outing for the tourists.
+					This scenic resort near the backwaters of the Radhanagari Dam is
+					highly recommended for wildlife lovers and nature enthusiasts.
+				</p>
+				
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="19.1973566" data-lng="76.144759">
+			<h2>MAP</h2>
+			<a href="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/2018/09/2018092533.jpg" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Flora</h3>
+				<p>
+					Chaprala Wildlife Sanctuary has the rich vegetation diversity. There
+					 are about 245 species. Out of which 69 tree, 15 shrub, 73 herb, 47
+					  grass and 41 climber species have been identified in Chaprala Wildlife
+					   Sanctuary.
+
+				</p>
+
+				<br />
+				<h3>fauna</h3>
+				<p>
+					The area of Chaprala Wildlife Sanctuary was the place of hunting in royal 
+					times. Now the Royal Bengal Tiger and the leopard are rarely seen along the
+					 fringe of the sanctuary. The abundance of herbivores like Sambhar, Chital, 
+					 blackbuck, Blue bull continues to provide broad prey base. Some of the 
+					 carnivores like wild dogs, wild boars languor's and mongoose are also 
+					 common in the area. This sanctuary is rich in avian fauna especially of 
+					 aquatic and migratory types.
+
+
+				</p>
+
+				<br />
+
+				<p>
+					Birds seen here include: vultures, eagles, jungle fowl, quails,
+					plovers, sandpipers, owlets, doves, owls, nightjars, kingfishers,
+					bee-eater, hornbills, woodpeckers, bulbul, flycatchers, warblers,
+					wagtails, sunbirds are commonly seen. This sanctuary is designated as
+					an Important Bird Area by BirdLife International and is home to the
+					rare and globally threatened Nilgiri wood-pigeon (Columba
+					elphinstonii). Other species found here include the Ceylon frogmouth,
+					yellow-browed bulbul, dusky eagle-owl and great pied hornbill and one
+					of India's most admired songbirds, the Malabar whistlingthrush. Two
+					species endemic to the Western Ghats: the small sunbird and the
+					Malabar grey hornbill have been sighted here. This sanctuary is a
+					favorite nesting place for the speckled piculet, Malabar crested lark,
+					and some species of Himalayan birds such as the Indian blue robin
+					during the winter months.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

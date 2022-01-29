@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Jayakwadi Dam </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/ jayakwadi dam/jayakwadi1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/jayakwadi dam/jayakwadi1.jpg"
+						/>
+						<img
+							src="../images/jayakwadi dam/jayakwadi1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\jayakwadi dam/jayakwadi2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\jayakwadi dam/jayakwadi2.jfif"
+						/>
+						<img
+							src="..\images\jayakwadi dam/jayakwadi2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\jayakwadi dam/jayakwadi3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\jayakwadi dam/jayakwadi3.jfif"
+						/>
+						<img
+							src="..\images\jayakwadi dam/jayakwadi3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Jayakwadi Dam</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					One of the largest irrigation projects in Maharashtra,
+                     Jayakwadi Dam is a multipurpose project which aims to
+                      irrigate drought-prone Marathwada Region and also to
+                       provide water for drinking and industrial usage. Bui
+                       lt across Godavari River, its height is approximately
+                        41.30 m and length of 9,998 metres with a total stor
+                        age capacity 2,909 MCM. Jayakwadi Bird Sanctuary and
+                         Dnyaneshwar Dam in the surrounding area make the dam
+                          a perfect site to escape the chaos of city life and
+                           reminisce the serenity. <br>
+
+                     Dnyaneshwar Udyan is one of the largest gardens in Maharashtra
+                      resembling the Brindavan Gardens of Mysore. Close to it is the 
+                      bird sanctuary which is the abode of many resident and migratory 
+                      birds. For bird lovers and nature buffs, Jayakwadi Dam is surely 
+                      heaven.
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/4qax8vetpLCBYmcH9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Significance of Jayakwadi Dam :</h3>   <br>
+				<p>
+                    The initial plan was to build a dam across Godavari River in Beed district
+                     near the village of Jaikwadi. However, later it was decided to build the
+                      dam 100 km upstream at Paithan. The project, which has a storage capacity
+                       of 2909 million cubic metres, was named Jayakwadi after the village and 
+                       the proposal was completed by 1964. The foundation was laid by the then 
+                       Prime minister of India Lal Bahadur Shastri on 18 October 1965 and was 
+                       inaugurated on 24 February 1976 by the then Prime minister Indira Gandhi.
+                        The chief engineer of this project was Mr A.A.A. Siddiqui.
+                </p>
+				<br>
+				<h3>Jayakwadi Bird Sanctuary  :</h3>    <br>
+				<p>
+					Jayakwadi Bird Sanctuary is spread over an area of 1.25 sq km and houses over
+                     200 species of birds which include more than 70 species of migratory birds. 
+                     Since the sanctuary is close to Nath Sagar Lake, it provides favourable conditions
+                      for aquatic flora and fauna. Notable amongst migratory birds are Cranes, Flamingos,
+                       Brahmany Duck, Pochards Teals, Pintails, Wigeon, Shoveller, God Wit, Glossy Ibis, etc.  <br>
+
+                    The aquatic vegetation includes mainly the species of Chara, Spyrogyra, Hydrilla,
+                     Potamogeton, Vallisneria etc. An ideal place to escape city life, the sanctuary 
+                     attracts bird watchers, nature enthusiasts and photographers in huge numbers every 
+                     year. 
+				</p>
+				<br>
+				<h3>Dnyaneshwar Udyan  :</h3>   <br>
+				<p>
+					Jnaneshwar Udyan or Dnyaneshwar Udyan is a garden located in the town of Paithan,
+                     40 km south of Aurangabad in Maharashtra and is similar to the Brindavan Garden in
+                      Mysore. Built in the 1970s by the state government adjacent to Nath Sagar Lake, the
+                       garden was named after the saint Jnaneshwar, whose native village was near Paithan
+                        and it covers an area of 125 hectares. <br>
+
+                       The highlights of the place include colourful flowerbeds, musical fountains and 
+                       vast lawns. In addition to this, it has children’s play area, swimming pool, boat
+                        rides and a nursey selling spices and saplings. More than a hundred thousand trees 
+                        and forty thousand fruit trees add to the beauty of the garden.  
+				</p>
+
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

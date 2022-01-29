@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Maharashtra | HARISHCHANDRAGAD</title>
+
+	<!-- !====== CSS ========== -->
+	<link rel="stylesheet" href="../styles/css/children-pages.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+	<!-- !========= Scripts =============== -->
+	<script src="../scripts/navbar.js" defer></script>
+	<script src="../scripts/img-scroll.js" defer></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+	<script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<h1>Maharashtra</h1>
+			<ul>
+				<li>
+					<a href="#">home</a>
+				</li>
+				<li>
+					<a href="#">places</a>
+				</li>
+				<li>
+					<a href="#">placeholder</a>
+				</li>
+			</ul>
+		</nav>
+		<figure class="place--fig">
+			<div class="place--imgs" style="width: 100%; display: flex">
+				<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+				<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/HarishchandraGad/harishchandragad1.jpg" />
+					<img src="../images/HarishchandraGad/harishchandragad1.jpg" alt="fort" class="place--img" data-index="0" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/HarishchandraGad/harishchandragad1.jpg" />
+					<img src="../images/HarishchandraGad/harishchandragad2.jpg" alt="fort" class="place--img" data-index="1" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/HarishchandraGad/harishchandragad3.jpg" />
+					<img src="../images/HarishchandraGad/harishchandragad3.jpg" alt="fort" class="place--img" data-index="2" />
+				</picture>
+			</div>
+			<figcaption class="place--name">
+				<h1>HARISHCHANDRAGAD</h1>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- !===== Place Description ======= -->
+	<section class="place--description">
+		<article class="place--history">
+			<h2>history</h2><br>
+			<p>
+				The fort is quite ancient. Remnants of Microlithic man have been discovered here.
+				The various Puranas (ancient scriptures) like Matsyapurana, Agnipurana and Skandapurana include many references about Harishchandragad.
+				Its origin is said to have been in the 6th century, during the rule of Kalachuri dynasty.
+				The citadel was built during this era. The various caves probably have been carved out in the 11th century.
+				In these caves are idols of Lord Vishnu. Though the cliffs are named Taramati and Rohidas, they are not related to Ayodhya. Great sage Changdev (one who created the epic Tatvasaar), used to meditate here in the 14th century. The caves are
+				from the same period
+			</p>
+			<br />
+			<!-- <p>
+					There are about a dozen inscriptions on the inside and outside of this
+					temple, out of which only a couple of inscriptions are in good
+					condition now. These inscriptions reveal the names of few kings and
+					their officers. All these inscriptions except one are in Kannada
+					language and script. The only Devanagari inscription in Sanskrit
+					language is by Singhan-II and is located on the outer wall near South
+					entrance of the temple.
+				</p> -->
+		</article>
+		<br />
+	</section>
+
+	<!-- !============ Map Element ============== -->
+	<article id="map--parent" data-lat="16.6149001" data-lng="74.68199">
+		<h2>MAP</h2>
+		<a href="https://goo.gl/maps/oVjSFXYWqLsW478HA" class="btn">Goto GMaps</a>
+		<section id="map"></section>
+	</article>
+
+	<!-- !============ Major Features ============== -->
+	<section class="place--description">
+		<article class="place--features">
+			<h2>How To Reach</h2>
+			<br>
+			<p>Harishchandragad lies where the boundaries of Then, Pune and Ahmednagar districts converge.</p>
+			<br>
+			<p>
+				<strong> 1. From Thane district: </strong> One has to board the bus for Nagar from Kalyan & alight at ‘Khubi Phata’.
+				From there we reach the village of Khireshwar by bus or private vehicle.
+				This village is 7 km from the foothills of the fort.
+			</p>
+			<br>
+			<p><strong> 2. From Pune District: </strong> There is a daily bus from Shivajinagar ST stand (Pune) to Khireswar village.</p>
+
+			<br />
+			<p> <strong> 3. From Ahmednagar Disctict: </strong>
+				One has to board the bus for Nashik or Mumbai & alight at Ghoti village. From Ghoti, we have to board another bus to Sangamner via Malegaon & alight at Rajur village. From here, 2 ways diverge to the fort.
+				<strong> i) </strong> From Rajur, one has to board the bus or a private vehicle to the village of Pachanai. From here, the way is straight to the topmost point. <br>
+				<strong> ii) </strong> Recently, the way from Rajur to kothale (Tolar Khind) has been made available. From Tolar Khind (Tolar valley), the temple is about 2–3 hours by walking. <br>
+				<strong> iii)</strong> From kotul to kothale bus facilities available way to tolar
+				khind every hour bus going towards kothale, private vehicles also available on this route.
+			</p>
+			<br />
+
+			<h2>Notable Places To Visit </h2> <br>
+
+			<h3>1.	Kedareshwar Cave: </h3> <br>
+			<p>
+				Towards the right of Harishchandreshwar temple, there is the huge cave of Kedareshwar , in which there is a big Shiva Linga, which is completely surrounded by water.
+				Its height from the base is five feet, and the water is waist-deep. It is quite difficult to reach the Shiva Linga because the water is ice-cold.
+				There are sculptures carved out in the cave. In the monsoon it is not possible to reach this cave, as a huge stream flows across the way.
+				Actually this is the origin of River Mangalganga. There is a huge rock above the Shiva Linga. There were four pillars built around the Shiva Linga to support the cave.
+
+			</p>
+
+			<br />
+
+		<h3>Konkan Kada </h3> <br>
+		<p>This cliff faces west and looks down upon the Konkan. It provides views of the surrounding region. The cliff has an overhang, but has been climbed many times.
+			 One phenomenon that can be observed at this place is the vertical cloud burst,
+			  in which the clouds nearing the cliff get sucked into the pit fall area below and are thrown vertically into the sky reaching more than 50 feet,
+				 creating the impression of a wall that is rising straight from the edge of the cliff without entering the landmass area.
+				  If you happen to visit this place in April-May, then throw your panama cap from the cliff and enjoy it rising high and falling back on the plateau.</p> <br>
+
+					<h3>Taramati Peak </h3> <br>
+					<p>Also known as Taramanchi. This is the top most point on the fort (1429 meters). Leopards are seen in the forests beyond this peak.
+						 From here we can have a glimpse of the whole range of Naneghat and the forts near Murbad. From this Taramati point, we can have a glimpse of forts till Siddhagad near Bhimashankar in the south and Napta twin peaks,
+						  Ghodishep (865 meters), Ajoba (1375 meters), Kulang fort (1471 meters) in the north near the Kasara region.
+
+							<br> <br>
+							<h3>Important Cares </h3> <br>
+							<p>In monsoon, proper care should be taken while trekking in the rockface after Tolar khind. It is advisable not to walk on the rock face in monsoon particularly during night where one can experience heavy rainfall with thunder strikes.</p>
+</p> <br>
+
+<h2>FAQ's</h2> <br>
+
+<strong>
+	<p>•Is Harishchandragad difficult to climb?</p>
+</strong>
+<p> Harishchandragad trek is one of the most challenging treks in the western ghats of Maharashtra.</p> <br>
+
+<strong>
+	<p>•Who built Harishchandragad?</p>
+</strong>
+<p> Locals say that the fort was built by the Kalachuri dynasty in the 6th century and the caves of Harishchandragad Fort are believed to be carved out in the 11th century.</p> <br>
+
+
+<strong>
+	<p>•Where is Kedareshwar cave temple?</p>
+</strong>
+<p> Kedareshwar Cave Temple is located at Harishchandragad, a hill fort in Ahmednagar district.</p> <br>
+
+
+<strong>
+	<p>•Where to wear?</p>
+</strong>
+<p> if you are planning for this trek please wear full sleeve and full covered clothes, there are too much flies,  its even more harmful than the mosquitos. So avoid doing the trek in shorts and half sleeve t-shirts</p> <br>
+
+
+		</article>
+	</section>
+
+	<!-- !========== Footer ============== -->
+
+	<footer>
+		<h1>
+			<span class="highlight">&#169; 2021</span> All the content on this page
+			is copyrighted to <span class="highlight">placeholder</span>
+		</h1>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajastan | Amber Fort</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/amberfort/amberfort1x600.jpeg"
+						/>
+						<img
+							src="../images/amberfort/amberfort1x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/amberfort/amberfort2x600.jpeg"
+						/>
+						<img
+							src="../images/amberfort/amberfort2x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/amberfort/amberfort3x600.jpeg"
+						/>
+						<img
+							src="../images/amberfort/amberfort3x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Amber Fort</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					Jaipur is home to one of India's most-visited forts: Amber Fort. Built in the year 1592, 
+					the sandstone and marble monolith stands atop a small hill roughly 20 minute's driving distance northeast of the center of Jaipur. 
+					It's best known for being a pristine example of Rajasthani architecture.
+				</p>
+				<br />
+				<p>
+					Getting to Amber Fort typically involves a short uphill hike that's well worth the effort.
+		           	It's decked out with intricate patterns of inlaid marble in nearly every color of the rainbow. 
+			        The fort is laid out into four separate sections, each of which has a spectacular garden courtyard outside.
+					 While you'd never know it from above, you can actually explore the fort's underground tunnels, some of which have been restored.
+				</p>
+				<br />
+				<p>
+					This UNESCO World Heritage Site has a fascinating history of legends, betrayals,
+					 and romance—but the best way for tourists to hear these stories is to hire a private guide at the Amber Fort.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.54579" data-lng="73.83113">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/FnnkNLGzZAsgM5Bd8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>GEOGRAPHY</h2>
+				<br />
+				<p>
+					Amber Palace is situated on a forested hill promontory that juts into Maota Lake near the town of Amber, about 11 kilometres (6.8 mi) from Jaipur city, 
+					the capital of Rajasthan. 
+					The palace is near National Highway 11C to Delhi.[20] A narrow 4WD road leads up to the entrance gate, known as the Suraj Pol (Sun Gate) of the fort.
+					 It is now considered much more ethical for tourists to take jeep rides up to the fort, instead of riding the elephants..
+				</p>
+
+				<h2>Early History</h2>
+				<br />
+				<h3></h3>
+				<p>
+					The town of Amber and the Amber Fort was built by Raja Alan Singh Chanda belonging to a sub clan of Meenas in 967 AD, 
+					later ruled by Kachwahas.[21] The Amber Fort, as it stands now, was erected over the remnants of this earlier structure during the reign of Raja Man Singh, 
+					the Kachwaha King of Amber.[20][22] The structure was fully expanded by his descendant, Jai Singh I. Even later, 
+					Amber Fort underwent improvements and additions by successive rulers over the next 150 years, 
+					until the Kachwahas shifted their capital to Jaipur during the time of Sawai Jai Singh II, in 1727.
+				</p>
+
+				<br />
+
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

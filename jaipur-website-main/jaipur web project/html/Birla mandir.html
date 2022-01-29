@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajastan | Birla Mandir </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/birlamandir/birlamandir1x600.jpeg"
+						/>
+						<img
+							src="../images/birlamandir/birlamandir1x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/birlamandir/birlamandir2x600.jpeg"
+						/>
+						<img
+							src="../images/birlamandir/birlamandir2x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/birlamandir/birlamandir3x600.jpeg"
+						/>
+						<img
+							src="../images/birlamandir/birlamandir3x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Birla Mandir </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					In a city that seems to be dipped from top to bottom in pink, the stark white marble Birla Mandir stands out—big time.
+					 The Hindu temple pays tribute to Lakshmi, 
+					the goddess of wealth and purity, and Vishnu, one of the religion's main deities.
+				<br />
+				<p>
+					The marvelous structure exudes a quiet, peaceful vibe, offering just the right atmosphere to appreciate fine marble carvings, 
+					shrines to gods, and gorgeous sunset views. While you don't need more than 30 minutes to get a sense of the space, 
+					the experience will prove to be a restorative break from a day of sightseeing.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.6149001" data-lng="74.68199">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/Cnr4LaLyYkkwuTDe7" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Architecture</h2>
+				<br />
+				<p>
+					The temple manifests a blend of Dravidian, Rajasthani and Utkala architectures. It is constructed of 2000 tons of pure white marble.
+					 The granite idol of presiding deity Lord Venkateswara is about 11 ft (3.4 m) tall and a carved lotus forms an umbrella on the top.
+					  There is a brass flagstaff in the temple premises which rises to a height of 42 ft (13 m). The temple does not have traditional bells,
+					as Swami Ranganathananda wished that the temple atmosphere should be conducive for meditation.
+					
+				</p>
+
+				<br />
+				
+
+				<h2>About the temple</h2>
+				<br />
+				
+				<p>
+					Apart from the main shrine, the consorts of Lord Venkateswara, Padmavati and Andal are housed in separate shrines.
+					 The temple also has separate shrines for various Deva and Devi including Shiva, Shakti, Ganesh, Hanuman, Brahma, Saraswati and Lakshmi.
+					  Selected because teachings of men and Gurbani are engraved on temple walls.
+					 Birla temples are open to all, as identified by Mahatma Gandhi and other Hindu leaders.
+				</p>
+
+				<br />
+
+				
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

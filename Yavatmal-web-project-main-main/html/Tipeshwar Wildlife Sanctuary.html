@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Tipeshwar Wildlife Sanctuary</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<img
+							src="../images/Tipeshwar Wildlife Sanctuary.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<img
+							src="../images/Tipeshwar Wildlife Sanctuary.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Tipeshwar Wildlife Sanctuary.jfif"
+						/>
+						<img
+							src="../images/Tipeshwar Wildlife Sanctuary.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Tipeshwar Wildlife Sanctuary</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>About</h2>
+				<p>
+					Tipeshwar wildlife sanctuary Location- The sanctuary is situated at Pandharkawada Tehsil, in the district of Yavatmal, Maharashtra.
+					Tipeshwar Sanctuary – The sanctuary covers an area of around 148.63sq.kms and abounds in vegetation cover. There are various villages located around the sanctuary and thus people depend on the forest for firewood, timber etc. The place is quite hilly and undulated and thus has different types of vegetation cover that varies with the altitude. Fauna- The place shelters a wide array of animals that include Hyena, Chital, Black buck, Sambar, Jackal, Wild boar, Peacock, Monkey, Blue bull, Wild cat, Bear and many more.    
+
+				</p>
+				<br />
+				
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="19.913669"
+			data-lng="78.440950"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/gt5qgqG3a3hNfp178" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

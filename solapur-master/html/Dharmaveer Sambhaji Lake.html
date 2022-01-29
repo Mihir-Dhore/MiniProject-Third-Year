@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Dharmaveer Sambhaji Lake</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <!-- <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>-->
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dharm/640px-Panhala_fort-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dharm/2180px-Panhala_fort-1.jpg"
+            />
+            <img
+              src="../images/dharm/2180px-Panhala_fort-11.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dharm/640px-DAM-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dharm/2180px-DAM-2.jpg"
+            />
+            <img
+              src="../images/dharm/2180px-DAM-11.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dharm/600px-dam-3.webp"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dharm/2500px-dam-3.webp"
+            />
+            <img
+              src="../images/dharm/1200px-dam-3.webp"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>Dharmaveer Sambhaji Lake</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2></h2>
+        <p>
+          It is one of the largest lakes in solapur after Chatrapati Sambhaji
+          Maharaj, also known as Kambar Talav. which was recently sheltered by
+          the government for a beautification and conversion mission. In the
+          evening take a long walk along the lake and spend some time to spend
+          people. This can be a good pit for you and your family to steal a few
+          moments of self-aggression before turning in for the night.
+        </p>
+        <br />
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="17.64920" data-lng=" 75.90267">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/place/Dharmaveer+Sambhaji+Lake/@17.6492548,75.9005318,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc5da0bd1b6f32f:0x332f8621c0cd6b78!8m2!3d17.6492548!4d75.9027205"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features"></article>
+    </section>
+
+    <!--========== Footer ==============-->
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>
+  </body>
+</html>

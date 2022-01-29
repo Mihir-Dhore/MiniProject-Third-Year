@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Panhala Fort</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Maharashtra</h1>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">places</a>
+                </li>
+                <li>
+                    <a href="#">placeholder</a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="place--fig">
+            <div class="place--imgs" style="width: 100%; display: flex">
+                <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+                <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar wada - 2.jpg" />
+                    <img src="../images/Aga Khan Palace/Aga Khan Palace.jpg" alt="fort" class="place--img" data-index="0" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shanivar-Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shanivar-Wada - 2.jpg" />
+                    <img src="../images/Aga Khan Palace/Aga Khan Palace2.jpg" alt="fort" class="place--img" data-index="1" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 2.jpg" />
+                    <img src="../images/Aga Khan Palace/Aga Khan Palace3.jpg" alt="fort" class="place--img" data-index="2" />
+                </picture>
+            </div>
+            <figcaption class="place--name">
+                <h1>AGA KHAN PALACE</h1>
+            </figcaption>
+        </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+        <article class="place--history">
+            <!-- <h2>history</h2> -->
+            <br><br>
+            <p>
+                Built in 1982 by Sultan Muhammed Shah Aga Khan III, the Aga Khan Palace is a magnificent piece of history situated in 19 acres of land in the Yerwada area in Pune. <br> <br> Referred to as one of the most important landmarks of Indian
+                history, along with the Indian freedom struggle, the palace has its roots deeply etched into bygone eras. <br> <br> The palace was built to help the poor in the areas surrounding Pune, which was drastically hit by famine in the early 1980s.
+                <br> <br> One of the most stunning pieces of architecture in all of Pune, the Aga Khan Palace is also a famous tourist attraction, which was designed by a world-famous architect called Charles Correa.<br> <br> Additionally, the palace
+                houses the samadhis (memorials) of Mahatma Gandhi’s wife, Kasturba Gandhi. Sources suggest that both Kasturba Gandhi and Mahatma Gandhi’s secretary Mahadev Desai breathed their last in the palace premises. And it is because of this that
+                their memorials have been safeguarded in the palace grounds.<br> <br> The Aga Khan Palace is located in a huge ground, and has five, luxurious and spacious halls, along with several lawns. The structure resonates of Italian architecture,
+                elegant yet intricate and magnificent.<br> <br> Of all the rooms and features of the palace, its arches are the most beautiful, almost mesmerising to the eyes. Aga Khan Palace has two huge floors, in addition to a corridor which spreads
+                across the entire structure. <br> <br> The palace is known for organising several exhibitions and programmes throughout the year. Most of these reflect Gandhi’s lifestyle, thereby offering visitors a deep insight into the Mahatma’s life.
+                <br> <br> Moreover, it is because of this and Gandhi’s links to it that the palace is now also known as the Gandhi National Memorial Society. One of the most prominent attractions of the palace is the room where Gandhi stayed during his
+                imprisonment, along with his personal belongings and pictures of the other freedom fighters. <br> <br>
+            </p>
+            <br /> <br>
+            <h2>Points Of Interest for Aga Khan Palace:</h2><br><br>
+
+            <h3>1.Celebrations at Aga Khan Palace
+            </h3> <br>
+            <p>
+                Many public functions and important days and dates are celebrated at the Aga Khan Palace. All of these celebrations are organised by the Gandhi Memorial Society. Some of the celebrations at the Aga Khan Palace include Martyr’s Day, which is celebrated
+                on January 30. Additionally, the palace also celebrates Maha Shivrati, which is death anniversary of Kasturba Gandhi and is celebrated lavishly as Mother’s Day. <br><br> Along with this, the palace celebrates 15th August,
+                Independence Day, 26th January, as Republic Day, as well as Mahatma Gandhi’s birth anniversary on 2nd October every year. The palace gets lit up in all its glory on all of these days, shining like a bright star above Pune’s Nagar Road.
+                Other than these annual events, sessions for morning prayer are being held at the samadhi every day for decades. Huge crowds turn up for these prayer sessions, which increases tenfold during the annual events. <br><br>
+            </p>
+            <br /> <br>
+
+            <h3>2.Gandhi Museum
+
+            </h3> <br>
+            <p>
+                The Aga Khan Palace houses the Gandhi Museum which displays many artefacts and things of the times gone by. <br><br> It is amongst the most frequently visited place in the palace premises by tourists. In addition to paintings, sculptures,
+                murals and photographs of the India Freedom Struggle, the museum also houses the personal belongings of Mahatma Gandhi and the Gandhi family. <br><br> This includes Gandhi’s letters, clothes, towels, as well as slippers, among other things.
+                <br><br> Additionally, the rooms, which were used by Mahatma Gandhi, his wife Kasturba Gandhi, his secretary Mahadev Desai and Sarojini Naidu have also been well-preserved and are open for public display as part of the museum. The room
+                which was used by Sarojini Naidu has a poem displayed in it.<br><br> The poem is written by Padma Sethi. Along with the poem, the room also has pictures of Indira Gandhi and many other leaders who were a part of Quit India Movement and
+                the freedom struggle. <br><br> The museum also has the room which was occupied by Gandhi. A spacious room, it also has a huge hall, which presents his writing desk, his charkha, as well as his sandals and other personal belongings.<br><br>                One of the main attractions of the room is a painting of the Mahatma and Kasturba Gandhi, wherein the latter is resting her head on Gandhi’s lap. The dining area, which was used by them, is also a part of the museum and is available for
+                public viewing. <br><br> The museum is also home to the final resting place of Kasturba Gandhi as well as Mahadev Desai, who breathed their last whilst in imprisonment here at the palace. <br><br>
+            </p>
+            <br /> <br>
+
+            <h2>How To Reach Aga Khan Palace
+
+            </h2> <br>
+            <p>
+                Aga Khan Palace is located around 3.7 kilometres from the Pune Airport. You can avail a taxi or book online or even take your own car to reach to the Aga Khan Palace comfortably and faster. <br><br> The route from the airport is quite
+                a convenient and straight one, with no major left or right turns on the street intersections. <br><br> Most auto rickshaws and state or private buses departing from the airport can easily take you to Nagar Road, where Aga Khan Palace is
+                situated. Usually, a drive from the Pune Airport in a cab can take between 12 to 20 minutes, depending on the traffic.
+            </p>
+            <br /> <br>
+
+            <h2>Essential Information About Aga Khan Palace
+
+
+            </h2> <br>
+            <p>
+                <b>- Location:</b> Nagar Road, Samrat Ashok Rd, Pune, Maharashtra 411006 <br><br>
+
+                <b>- Price:</b> The entry fee to Aga Khan Palace is INR 5 for Indian Nationals. For foreigners, the fee is INR 100. Also, for children, the entry fee is INR 2. <br><br>
+
+                <b>- Timing:</b> One can visit the palace every day between 09:00 a.m. to 05:30 p.m.
+
+
+            </p>
+            <br /> <br>
+
+
+            <br /> <br>
+        </article>
+        <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+        <h2>MAP</h2> <br>
+        <a href="https://goo.gl/maps/GaRQWCNL4mumLeNP9" class="btn">Goto GMaps</a>
+        <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+        <!-- <article class="place--features">
+            <h2>Major Features</h2>
+            <br />
+            <h3>Things to See in the Shaniwar Wada!</h3> <br>
+            <p>
+
+                <h3> The ruined complex of Shaniwar Wada has many attractions to keep visitors enthralled, including the following:</h3> <br>
+                <p> 1.Dilli Darwaza or Dilli Gate, the main gate of the fortified palace Mastani Darwaja aka Mastani Gate or Aliibahadur Darwaja, the gateway used by Mastani, the second wife of Baji Rao I, when traveling out of the palace complex. <br><br>2.
+                    Khidki Darwaja or Window Gate, named after the armored window contained there. <br> <br>3.Ganesh Darwaja or Ganesh Gate, near which existed the Ganesh Rang Maha <br> <br>4. Jambhul Darwaja or Narayan Darwaja aka Narayan’s Gate, used
+                    by concubines to access and leave the fortified premises Nine bastion towers. <br><br>5.Garden complex <br><br> 6.Hazari Karanje, the sixteen-petal lotus-shaped fountain A few surviving cannons <br> <br>7.The majestic statue of Baji
+                    Rao I that stands at the entrance of the palace
+                </p>
+
+
+            </p>
+        </article> -->
+    </section>
+
+    <!-- !========== Footer ============== -->
+
+    <footer>
+        <h1>
+            <span class="highlight">&#169; 2021</span> All the content on this page is copyrighted to <span class="highlight">placeholder</span>
+        </h1>
+    </footer>
+</body>
+
+</html>

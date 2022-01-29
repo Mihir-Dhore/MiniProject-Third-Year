@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Ratangad</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+<!-- 2nd image -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Ratangad/Ratangad1.jpg"
+
+						/>
+						<img
+							src="../images/Ratangad/Ratangad1.jpg"
+							alt="Ratangad image"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+<!-- 3rd image  -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Ratangad/Ratangad.jpg"
+						/>
+						<img
+							src="../images/Ratangad/Ratangad3.jpg"
+							alt="Ratangad img"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+<!-- actually first image  -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Ratangad/Ratangad4.jpg"
+						/>
+						<img
+							src="../images/Ratangad/Ratangad4.jpg"
+							alt="Ratangadimg "
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Ratangad</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>Ratangad Information</h2> <br>
+				<p>
+			Situated amid the thick wildernesses of Western Ghat, Ratangad Fort Trek is one of the most extraordinary kinds of structures to observe in the area. You will be astonished as the titanic cliffs unfurl before your eyes, one behind the other as you traverse on the fringe of the Ratangad Trek. Ratan gad is situated in Ratanwadi, Maharashtra, raised around 4255 feet above ocean level. Ratangarh fort Maharashtra vests in the lovely scene with thick woodlands on one side and the vast spread Bhandardara Lake, on the opposite side. It falls in the Ghanachakkar hill ranges is the starting point of Pravara River.
+
+				</p>
+				<br />
+				<p>
+
+				</p>
+				<br>
+				<h2>History</h2> <br>
+				<p>		The fort is 400 years old.[5] Ratangad was captured by Chhatrapati Shivaji Raje Bhosle.
+						The fort is named after Ratnabai Tandal, who has a small temple inside the cave on the fort.	She was one of the three sisters : Ratnabai , Kalsubai and Katrabai. </p>
+				<br>
+				<p>  </p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.7194051" data-lng="74.2313568">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/iG4QURL7a5jYtcXj6" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Places to see near Ratangad</h2>
+				<br />
+				<p>
+					<strong>•Sandhan Valley</strong> : Sandhan valley is a beautiful carved valley in magnificent Sayhadri mountain range, which is part of Western Ghats in Maharashtra.
+						 Surrounded with mighty and jaw-dropping mountains of Ratangad and Kalsubai, the valley stands at the height of 4255 ft high above sea level, which is the perfect spot for trekking and other adventure activities.
+						  The trek goes through 200 ft deep and 2 km long gorge carved by water between the narrow walls.<br><br>
+					<strong>•Bhandardara Lake</strong> : In the lap of the western ghats - Arthur Lake offers perfect solace to the hurried soul. Also known as Lake Arthur Hill,
+						 it is formed from the water of Pravara River, thus acting as a reservoir for the Wilson Dam. <br><br>
+					<strong>•Umbrella Falls</strong> : Amidst the luscious and greener Sahyadri Hills - Umbrella Falls is a sparkling cascade getting down from a height of 500 feet, best observed from a footbridge that connects the falls and dam, especially during monsoon.The reason why it is called Umbrella is because of its location, under the Wilson Dam, and the force by which the water falls on the naturally placed rocks that give an impression of an umbrella.
+				<!-- Aurangabad is a tourist hub and is dotted with places. -->
+				</p>
+
+				<br />
+				<!-- <p>
+					<h3><strong>Char Bagh Gardens: </strong></h3> <br>
+					<p>These are four gardens designed in the typical Char Bagh style, complete with pathways and 61 fountains.</p> <br>
+					<h3><strong>Water Channels: </strong></h3> <br>
+					<p>While these water channels were constructed to nurture the gardens, they also enhance the beauty of the edifice.</p> <br>
+
+					<h3> <strong> Main Mausoleum: </strong></h3> <br>
+					<p>This is the main building of the Maqbara where you can find the queen’s tomb.</p>
+			<p> 	You should include Ajanta and Ellora Caves, Daulatabad Fort, Tomb of Aurangzeb as some of the must-visits in your itinerary while planning a trip to the city. Some of the must-see places of interest near Bibi Ka Maqbara are Aurangabad Caves (1.3 km), Panchakki (2.1 km) and Jama Masjid (2.4 km). </p>
+				</p> -->
+
+				<br />
+<!--
+				<h2>Bibi Ka Maqbara Timing</h2>
+				<br>
+				<p>Bibi Ka Maqbara timings are 8 am to 8 pm.</p>
+				<br>
+				<h2>Bibi Ka Maqbara Opening Days</h2>
+				<br>
+				<p> Bibi Ka Maqbara is open all days of the week between <strong>8</strong> in the morning till <strong>8</strong> in the evening which are the visiting
+				hours for the tomb.</p> <br> -->
+
+				<h3>How to reach Ratangad</h3>
+				<br>
+				<p></p>
+				<br>
+				<p> <strong>By Railway: </strong></p>
+				<br>
+				<p>The base village Ratanwadi can be accessed easily by Mumbai and Pune. One can get down at Kasara, which is the nearest railway station, and then take a Jeep to Ratanwadi. Several state buses also ply from Kasara station to Shendi village. From here you can hire a local Jeep till Ratanwadi village. Kasara to Bhandardara well connected by local jeeps, private cabs, and State transport buses.</p>
+				<br>
+				<br>
+				<p> <strong>By Road: </strong></p> <br>
+				<p> <strong> •From Pune: </strong></p> <br>
+				<p>Pune - Narayangoan - Purshwardi - Shendi – Ratanwadi.</p> <br>
+				<p> <strong> •From Mumbai: </strong></p> <br>
+				<p>Mumbai - Thane - Igapuri - Ghoti - Bari – Ratanwadi.</p> <br>
+				<p> <strong> •From Igatpuri: </strong></p> <br>
+				<p> Ghoti-Shendi route, small boats are available from Shendi village to reach Ratanwadi in 30 minutes.</p> <br><br>
+
+				<h2>Best months to visit: </h2> <br>
+				<p> •It is beautiful throughout the year. However, the best season is from <strong> October to February</strong> when the temperature is cold, and the vegetation has not dried up. Ratangad enveloped with beautiful flowering plants in November.</p>
+				<br>
+
+			<h2>Time to explore: </h2> <br>
+			<p> <strong> •3</strong> hours to ascend and <strong>2</strong> hours to descend.</p> <br><br>
+				<h2>FAQ's</h2> <br>
+
+				<strong>
+					<p>Why should you visit Ratangad Fort Trek?</p>
+				</strong>
+				<p>Locals say Ratangad Fort was the vacation fort. It is located inside the deep forest of Harischandragad Kalsubai Wildlife Sanctuary near Bhandardara Lake. It has pleasant weather and beautiful views in 360 degrees.  </p>
+			 <br>
+
+								<strong>
+									<p>Recommend hotels or resorts near Ratangad Fort?</p>
+								</strong>
+								<p> •MTDC Bhandardara resorts </p> <br>
+								<p> •Anandvan Resort Bhandardara </p> <br>
+								<p> •The Yash Resort Bhandardara </p> <br>
+								<p> •Manas Resort Igatpuri </p> <br> <br>
+
+
+								<strong>
+									<p>Ratangad Fort Difficulty Level? </p>
+								</strong>
+								<p>Ratangad Fort Trek is the medium level difficulty that requires high endurance level. .  </p>
+							 <br>
+
+
+
+
+
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

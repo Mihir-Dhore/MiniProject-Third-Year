@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Ajanta Caves</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Ajanta cave/ajanta1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Ajanta cave/ajanta1.jpg"
+						/>
+						<img
+							src="../images/Ajanta cave/ajanta1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Ajanta cave/ajanta2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Ajanta cave/ajanta2.jfifg"
+						/>
+						<img
+							src="..\images\Ajanta cave/ajanta2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Ajanta cave/ajanta3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Ajanta cave/ajanta3.jfif"
+						/>
+						<img
+							src="..\images\Ajanta cave/ajanta3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Ajanta Caves </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Ajanta caves are essentially Buddhist monasteries of the bygone era. It is a place where 
+                    Buddhist monks lived, studied and prayed. The Ajanta caves were first found by a few 
+                    British soldiers in the 19th century when they were out hunting and one of them happened 
+                    to lay his eyes on a cave covered with bushes, leaves and stones. The soldiers made their 
+                    way into the cave and found many caves with such history in them. They informed the Government 
+                    and ever since Ajanta caves are being excavated and studied to this day. It was declared a World 
+                    Heritage Site in 1983. The caves have been built in two phases: Satvahana followed by Vakataka 
+                    period named so after the ruling dynasty. The first phase lasted from 100B CE to 100 CE, when 
+                    the sanctuaries were built in the canyons of the Waghora river and called Chaitya-griha. 
+                    Caves 9, 10, 12, 15A are from this period. During the second phase, around 20 cave temples 
+                    were built which resemble modern day monasteries with a sanctum in the rear end of the cave.
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP :</h2>
+			<a href="https://goo.gl/maps/1m3qT2DHwqaL5VEt8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Architecture of Ajanta caves  :</h3>   <br>
+				<p>
+                    The walls and ceilings of the famous Ajanta caves are chiselled, carved and 
+                    painted with the life and teachings of Lord Buddha. There is a total of 30 
+                    caves that bring to your notice the talent of the people and their dedicati
+                    on to preserving the past in the form of a never fading art. The Ajanta cav
+                    es consist of caves dedicated to both Hinayana and Mahayana sect. The Ajant
+                    a caves consist of 24 Buddhist Viharas and 5 Hindu temples. Cave 1, 2, 4, 1
+                    6, 17 are considered the most beautiful and the famous statue of the reclin
+                    ing Buddha is located in cave 26. The Viharas (hall of the prayer of the mo
+                    nks) are of different sizes that consist of a pillared verandah in front, f
+                    rom which doors and windows lead into the main hall. The side walls of the 
+                    hall have doors for the monks to enter their cells. In the center of the ma
+                    in wall is a door that leads us to a room with a huge rock cut sculpture of
+                     Lord Buddha. The paintings on the walls of the Ajanta caves mainly adopt t
+                     he theme of Jataka tales, the stories with morals that we read as kids. Ev
+                     ery single painting has a story attached to it and the paints used are both
+                      rare and made from very expensive and imported materials. The artists and
+                       craftsmen of those times did not leave any detail to imagination making 
+                       them all look very life like.
+
+                </p>
+				<br>
+				<h3>Best Time To Visit Ajanta Caves :</h3>    <br>
+				<p>
+					The months of June to March are considered good time to visit the Ajanta caves.
+                     While the winter season (November to February) is the best time to visit the 
+                     caves, the monsoon season (from June to September) is also a good time as the
+                      temperature cools down due to rains. Avoid the summers (April to June) as the
+                       temperature touches 40 degrees frequently and it could be too hot to explore
+                        the caves.
+				</p>
+				<br>
+				<h3>How To Reach Ajanta Caves :</h3>   <br>
+				<p>
+					Ajanta Caves is situated around 113 km north of Aurangabad and 50 kms from Jalgaon.
+                     The nearest airport is in Jalgaon (50 km) and is linked to Mumbai and Ahmedabad. 
+                     The best-connected airport is in Aurangabad (100 km) and is linked to Delhi, Udaipur
+                     , Jaipur and Mumbai.
+                     The best way to reach the caves from the airport is in a private car or taxi. It 
+                     would take around 2 and half hours by car and around 3 hours by bus to reach the 
+                     Ajanta Caves from Aurangabad. However, if you want to use public transport, you 
+                     can commute using local buses.
+                     The bus to Ajanta Caves can be taken from the Aurangabad Central Bus Station located
+                      on Aurangabad Road. This bus ride will be roughly 3 hours long, so be prepared and 
+                      pack some snacks as well. The bus will drop you at Ajanta Caves Road Entrance where
+                       some shops and restaurants are present for tourists. From there, you can take another
+                        bus to the entrance of the main caves which would hardly take 10 minutes. Beware that
+                         these are local buses and can be slightly rough for a lot of tourists.
+                      Aurangabad is directly linked to Mumbai and Pune by the Tapovan Express and Devgiri Express.
+                       Ajanta is also well-connected by road to Mumbai, Pune and other cities of Maharashtra.
+				</p>
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

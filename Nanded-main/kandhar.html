@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Kandhar Fort</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="child.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="navbar.js" defer></script>
+		<script src="img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kandharchild1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/kandharchild1.jpg"
+						/>
+						<img
+							src="kandharchild1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kandharchild2.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/kandharchild2.jpg"
+						/>
+						<img
+							src="kandharchild2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kandharchild3.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/kandharchild3.jpg"
+						/>
+						<img
+							src="kandharchild3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Kandhar Fort</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					
+Kandhar Town is famous for its fort. Kandhar fort is situated in the heart of Town. Encircling the fort, is a ditch filled with water. It's construction is attributed to the Rashtrakuta King Krishna III of Malkhed who styled himself as Kandharpuradhi Swar. Outside the Kandhar fort at some distance is a hillock on which is situated an old Idgah held in reverence by the muslims. It is of Nizamshahi period with two domes in characteristic Ahmednagar style.
+
+ 
+				</p>
+				<br />
+				<p>
+					Kandhar Fort is located at Kandhar city in Nanded district of Maharashtra state, India. Kandhar Town is famous for its fort. Fort is situated in the heart of Kandhar Town. Very few forts in Maharashtra are as well maintained as Kandhar. The fort is encircled with a ditch full of water.
+
+                    Kandhar Fort construction is attributed to the Rashtrakuta King Krishna III of Malkhed who styled himself as Kandharpuradhi Swar. Outside the fort at some distance is a hillock on which is situated an old Idgah held in reverence by the Muslims. It is of Nizamshahi period with two domes in characteristic Ahmednagar style. The ruins of this majestic and historic fort are located at a distance of 50 km from the Ranthambhore Nationwide Park. 
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="18.875249607072842"
+			data-lng="77.20285493698564"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/AGXBPt5S6xdes4z76" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				
+
+				<br />
+				<h3></h3>
+				<p>
+					
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

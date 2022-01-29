@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra |Solapur Science centre</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <!-- <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>-->
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/science/s3.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/science/s3.jpg"
+            />
+            <img
+              src="../images/science/s3.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/science/s2.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/science/s2.jpg"
+            />
+            <img
+              src="../images/science/s2.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/science/s11.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/science/s11.jpg"
+            />
+            <img
+              src="../images/science/s11.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>Solapur Science Center</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2>About Us</h2>
+        <p>
+          There are disparate science centres in Maharashtra. But Solapur
+          Science Centre is third largest Science Centre in the whole state.
+          Solapur Science Centre is situated behind Solapur University, Hiraj
+          Road, kengaon, Hiraj in north Solapur. Distance from city Center is
+          about 12 to 15 kms. This museum is best for traversal of the culture,
+          belief and ancient immemorial history of the country.
+        </p>
+        <br />
+        <p>
+          Solapur Science Centre was constructed in 1994. It is an impressive
+          collection of displays and exhibits. Among the exhibits, it even
+          consists some relics from Indus valley civilization, artwork and
+          miniature paintings, magnificent sculpture from the middle ages. A
+          kid-oriented garden is also situated around the museum. This museum is
+          also an accredited member of the association of zoos a nd Aquariums
+          (AZA). Motto of the Centre is to disseminate science to the bulk and
+          It totally fulfill it.
+        </p>
+        <br />
+        <p>
+          Every Year Science fair is organized in this Centre. Costumes
+          re-enactment shows are catalogued several times. Solapur Science
+          Centre's core ideology is to make a difference in people's lives by
+          putting forward intellectual and disciplined principles of science.
+        </p>
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="17.72097" data-lng="75.83932">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/place/Solapur+Science+Centre/@17.720977,75.8371661,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc5ce27aa433671:0x52a10b4b94f9442!8m2!3d17.720977!4d75.8393548"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features"></article>
+    </section>
+
+    <!-- !========== Footer ============== 
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>-->
+  </body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | BibiKa_Maqbara</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+<!-- 2nd image -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/BibiKaMaqbara/BibiKaMaqbara2.jpg"
+
+						/>
+						<img
+							src=" https://media.gettyimages.com/photos/bibi-ka-maqbara-aurangabad-maharashtra-indi-picture-id161504095?k=20&m=161504095&s=612x612&w=0&h=qRVJKxpSkVaYfKZDafmsstYZnA7DoDre45bKXgySyCE="
+							alt="BibiKaMaqbara image"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+<!-- 3rd image  -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/BibiKaMaqbara/BibiKaMaqbara3.jpg"
+						/>
+						<img
+							src="../images/BibiKaMaqbara/BibiKaMaqbara3.jpg"
+							alt="BibiKaMaqbara img"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+<!-- actually first image  -->
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/BibiKaMaqbara/BibiKaMaqbara1.jpg"
+						/>
+						<img
+							src="../images/BibiKaMaqbara/BibiKaMaqbara1.jpg"
+							alt="BibiKaMaqbara img "
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Bibi Ka Maqbara</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>Bibi Ka Maqbara Information</h2> <br>
+				<p>
+				Built in 1668 the Tomb of Rabia Durani or Bibi Ka Maqbara was erected by Azam Shah, the son of Aurangzeb to commemorate his mother Dilras Begum who was titled Rabia Durani post her death.
+				 Being the spitting image of the Taj Mahal, the mausoleum is also called the Taj of the Deccan or the Dakkhani Taj.
+				The north of the country is dotted with the specimens of the Mughal architectural magnificence, Bibi Ka Maqbara stands as a lone soul in the southern part.
+				</p>
+				<br />
+				<p>
+					It was Aurangzeb’s long-standing governorship of Aurangabad that the shrine came to exist in the city and is today one of the most famous historical monuments in Maharashtra.
+				</p>
+				<br>
+				<h2>History</h2> <br>
+				<p>The story of Dilras Banu is nothing short of a fairytale. Born in the Safavid royal family of Iran, princess Dilras was the daughter of Shahnawaz Khan who was the then viceroy of the state of Gujarat. She married Aurangzeb in 1637 thus becoming his first consort and wife. </p>
+				<br>
+				<p>Together they had five children and after delivering her fifth child, Dilras died. Both Aurangzeb and his eldest son, Azam Shah couldn’t bear the loss of the most important woman in their lives. It is said that the father-son duo were grief stricken for months and it took great efforts for them to come out of the state of shock. It was then in 1668 that Azam Shah ordered for a mausoleum to be built for his beloved mother on the lines of Taj Mahal, which was the resting place of Banu’s mother-in-law and Aurangzeb’s mother, Mumtaz Mahal. Both the women died because of complications developed through childbirth.</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.7194051" data-lng="74.2313568">
+			<h2>MAP</h2>
+			<a href="https://www.google.com/maps/place/Bibi+Ka+Maqbara/@19.9012041,75.3180665,17z/data=!3m1!4b1!4m5!3m4!1s0x3bdb981f052f9c79:0x846308f37cdb4f9!8m2!3d19.9014599!4d75.3202216" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Places to see near Bibi Ka Maqbara</h2>
+				<br />
+				<p>
+				Aurangabad is a tourist hub and is dotted with places of historical importance exhibiting architectural excellence. Be it the caves serving as the last remains of the ancientry of the place or its forts, gates, lakes and temples - Auranagabad is full of tourist attractions and you should pre-book monuments in Aurangabad before your visit.
+				</p>
+
+				<br />
+				<p>
+					<h3><strong>Char Bagh Gardens: </strong></h3> <br>
+					<p>These are four gardens designed in the typical Char Bagh style, complete with pathways and 61 fountains.</p> <br>
+					<h3><strong>Water Channels: </strong></h3> <br>
+					<p>While these water channels were constructed to nurture the gardens, they also enhance the beauty of the edifice.</p> <br>
+
+					<h3> <strong> Main Mausoleum: </strong></h3> <br>
+					<p>This is the main building of the Maqbara where you can find the queen’s tomb.</p>
+			<p> 	You should include Ajanta and Ellora Caves, Daulatabad Fort, Tomb of Aurangzeb as some of the must-visits in your itinerary while planning a trip to the city. Some of the must-see places of interest near Bibi Ka Maqbara are Aurangabad Caves (1.3 km), Panchakki (2.1 km) and Jama Masjid (2.4 km). </p>
+				</p>
+
+				<br />
+
+				<h2>Bibi Ka Maqbara Timing</h2>
+				<br>
+				<p>Bibi Ka Maqbara timings are 8 am to 8 pm.</p>
+				<br>
+				<h2>Bibi Ka Maqbara Opening Days</h2>
+				<br>
+				<p> Bibi Ka Maqbara is open all days of the week between <strong>8</strong> in the morning till <strong>8</strong> in the evening which are the visiting
+				hours for the tomb.</p> <br>
+
+				<h2>How to reach Bibi Ka Maqbara</h2>
+				<br>
+				<p>A popular tourist magnet attracting visitors round the year for its various monuments and is easily accessible from Mumbai. It is approximately 333 km from Mumbai and can be reached in a span of about 7 hours from road via NH160 Nagpur-Aurangabad highway. Maharashtra State Road Transport Corporation <strong>(MRCTC)</strong> runs a Parivaran bus daily from Mumbai to Aurangabad.</p>
+				<br>
+				<h2>By Air</h2>
+				<br>
+				<p>If you want to cover the distance by air then a Mumbai to Aurangabad flight will take an average time of around 1 hour and 10 minutes. Currently, Air India and Jet Airways operate on the route</p>
+				<br>
+				<h2>Nearest Railway Station to Bibi Ka Maqbara:</h2>
+				<br>
+				<p>Aurangabad Railway Station is 6 km from Bibi Ka Maqbara. The fastest train from Mumbai is Aurangabad Jan Shatabdi Express.</p>
+
+				<h2>Nearest Airport to Bibi Ka Maqbara:</h2>
+				<br>
+				<p>Aurangabad Airport in Chikkalthana is 11 km from Bibi Ka Maqbara. There are flights available from Delhi, Mumbai and Hyderabad.</p>
+				<br>
+				<h2>Bibi Ka Maqbara Online Ticket</h2>
+				<br>
+				<p>Bibi Ka Maqbara ticket price is Rs 25 for Indian citizens and Rs 300 for foreign tourists. The SAARC and BIMSTEC visitors will have to pay Rs 25 as Bibi Ka Maqbara entry fee. You can either purchase Bibi Ka Maqbara ticket at the ticket counter of the mausoleum or pre-book it online. It will take around an hour to explore the site.</p>
+<br>
+				<h2>Hotels near Bibi Ka Maqbara </h2> <br>
+				<p>There is an array of hotels ranging from budget to star-rated properties, few options are: </p>
+				<strong>
+					<p>Meadows Resort and Spa</p> <br>
+					<p>Hotel Green Olive</p> <br>
+					<p>Vivanta by Taj Aurangabad</p> <br>
+					<p>Ambassador Ajanata</p>
+				</strong>
+
+				<h2>Bibi Ka Maqbara Facts</h2>
+				<br>
+				<p>
+				Rabia-ud-Durani, the title conferred to Dilras Banu Begum was attributed to an Iranian noble lady, Rabia Basra known for her benevolence. The marble for the construction of the mausoleum was sourced from the marble mines in Jaipur. Its cost of construction is estimated to be around Rs 6-7 lakh.It is believed that the marbles for the construction of the structure were carried in ox-pulled carts.
+				</p>
+				<br />
+				<h2>FAQ's</h2> <br>
+
+				<strong>
+					<p>•Why is Bibi ka Maqbara famous?</p>
+				</strong>
+				<p> The Bibi Ka Maqbara (English: "Tomb of the Lady"),  in the memory of his wife Dilras Banu Begum</p> <br>
+
+				<strong>
+					<p>•Places To Visit Near Bibi Ka Maqbara?</p>
+				</strong>
+				<p>•Goga Baba Hill </p>
+				<p>•Panchakki</p> <br>
+
+								<strong>
+									<p>•Best time to visit?</p>
+								</strong>
+								<p>However, Aurangabad enjoys pleasant weather in <strong>winters</strong>, planning a visit between October to March will enhance the traveller’s experience here. </p> <br>
+
+
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

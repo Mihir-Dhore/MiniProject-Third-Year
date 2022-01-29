@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Bibi ka Maqbara</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/bibika_maqbara/bibika-maqbara1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/bibika_maqbara/bibika-maqbara1.jpg"
+						/>
+						<img
+							src="../images/bibika_maqbara/bibika-maqbara1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\bibika_maqbara/bibika-maqbara2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\bibika_maqbara/bibika-maqbara2.jfif"
+						/>
+						<img
+							src="..\images\bibika_maqbara/bibika-maqbara2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\bibika_maqbara/bibika-maqbara3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\bibika_maqbara/bibika-maqbara3.jfif"
+						/>
+						<img
+							src="..\images\bibika_maqbara/bibika-maqbara3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Bibi ka Maqbara</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Dilras Banu Begum was a princess belonging to the Persian Safavid
+                     Dynasty and was married to Mughal emperor Aurangzeb on 8 May 1637.
+                      She went on to become Aurangzeb's chief consort and most beloved 
+                      wife as well. She and Aurangzeb had five children - Zeb-un-Nissa,
+                       Zinat-un-Nissa, Zubdat-un-Nissa, Muhammad Azam Shah and Sultan 
+                       Muhammad Akbar. After the birth of their fifth child, Dilras Banu 
+                       Begum contracted a fever which proved to be fatal and she died on 
+                       8 October 1657.
+				</p> <br>
+                <p>
+                    Aurangzeb was deeply afflicted due to his beloved wife's death and their 
+                    eldest son Azam Shah suffered greatly as well, so much so that he had a 
+                    nervous breakdown. In 1660, three years after the death of Dilras Banu 
+                    Begum, Aurangzeb commissioned the construction of her final resting place. 
+                    Bibi ka Maqbara is said to be built in between 1651 and 1661. According to 
+                    the records, the cost of construction of the mausoleum was about seven lakh 
+                    rupees. The monument was designed and erected by Ata-Ullah, the architect and
+                     Hanspat Rai as the engineer. The marbles used in the construction were brought
+                      from the mines in Jaipur. Here, Dilras was buried under the posthumous title of
+                       'Rabia-ud-Daurani'.
+                </p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/iVBxhXaekirw2PGQ8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Features of Bibi ka Maqbara :</h3>   <br>
+			
+				<br>
+				<h3>significance of Grishneshwar Temple :</h3>    <br>
+                <p>
+                   <b> Gardens-</b> Bibi ka Maqbara has four gardens based on Charbagh design like 
+                    most of the Mughal gardens. The Maqbara is divided into four equal parts 
+                    with the main mausoleum at the centre. Each of the gardens has one building 
+                    and they all are equidistant. On the east is the Jamait khana or Aina khana 
+                    while on the west is a mosque. On the north side is a Baradari and on the 
+                    south is the main entrance which is a huge two-floored building. Throughout 
+                    the garden, water courses are laid which are lined with cypress, pine and palm trees. 
+                    The gardens are lush green lawns with many seasonal flowers and colourful roses planted 
+                    alongside the pathways. At the centre of the pathways leading to four sides are oblong 
+                    reservoirs with a total of 61 fountains. The water passes through marble carved sheets 
+                    connected to internal wells in the buildings.  Besides this, there are several uniquely 
+                    designed cisterns in the garden.  
+                </p> <br>
+				<p>
+                   <b> Main Mausoleum-</b> Designed and erected by Ata-Ullah, the main mausoleum is built on a 
+                    raised platform at an elevation of 19 feet and has the Queen’s tomb inside it. On 
+                    the top of the huge white dome, there is a brass pot finial and four smaller domes 
+                    enclosing the bigger one. The minars are 72 feet high and there is a flight of stairs 
+                    which leads you to the top. Inside the main mausoleum, marble jalis cover all the four 
+                    sides of the upper floor from where you can spot the tomb of Rabia-ud-Durrani. 
+                </p> <br>
+                <p>
+                   <b> Water Channels-</b> The water required to maintain the huge garden was used from several sources. 
+                    It was supplied through underground water channels from Nahar-e-Begumpura, which is in close 
+                    proximity to the Maqbara. Within the premises also, there is a separate tank called the Haathi 
+                    Hauz. Water was also taken from the famous Nahar-e-Ambari, a water distribution system created 
+                    by Malik Amber in 1617. Besides, the garden has many water tanks, cisterns and reservoirs for 
+                    supplying water. However, over time the condition of these devices has deteriorated and due 
+                    to the shortage of water, the fountains have dried up.
+                </p> <br>
+                <p>
+                   <b> Maqbara Complex-</b> Enclosed by high walls, the area of the Maqbara complex is 15000 square feet. 
+                    There is a pavilion on each of the four corners of the wall. The cupolas or rounded domes are 
+                    octagonal with eight pillars and the cupola roofs are supported on brackets and lintels.
+                </p> <br>
+                <p>
+                   <b> Ornamental Elements-</b> Apart from architectural wonders like domes, minarets, gardens and arches, 
+                    Bibi ka Maqbara has stunning decorative elements which are distinctive of the Mughal style and 
+                    add beauty to the complex. In the making of the Maqbara, stucco painting and stucco plaster were 
+                    used instead of rich elements like mosaic, marble screens or peitra dura. The patterns in stucco 
+                    paintings are mostly geometric, floral, inscriptional and conventional. In the Maqbara, the main 
+                    entrance ceiling has an amazing geometric design. Besides this, relief ornamentation can be seen 
+                    in the main mausoleum which has the designs of lotus medallions, rosettes, and mehrab with floral 
+                    and leaf patterns. Jali work or Latticework is also heavily used in which immaculate floral, leaf 
+                    or geometric designs are cut out in marble screens
+                </p>
+				<br>
+				<h3>Best Time To Visit :</h3>   <br>
+				<p>
+					October - March are the best months to visit Bibi ka Maqbara.
+				</p>
+
+				<br />
+				<h3>How To Reach Bibi ka Maqbara :</h3>   <br>
+				<p>
+					Bibi ka Maqbara is situated around 5 km from the heart of Aurangabad city. You can 
+                    opt for a public transport like an autorickshaw or bus or hire a taxi to reach the 
+                    Maqbara. It is advisable to fix the tariff priorly in case you are travelling by autorickshaw.
+					
+				</p> <br>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

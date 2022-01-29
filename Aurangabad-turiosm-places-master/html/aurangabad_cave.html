@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Aurangabad Caves</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/aurangabad cave/aurangabad_cave1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/aurangabad cave/aurangabad_cave1.jpg"
+						/>
+						<img
+							src="../images/aurangabad cave/aurangabad_cave1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\aurangabad cave/aurangabad_cave2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\aurangabad cave/aurangabad_cave2.jfif"
+						/>
+						<img
+							src="..\images\aurangabad cave/aurangabad_cave2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\aurangabad cave/aurangabad_cave3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\aurangabad cave/aurangabad_cave3.jfif"
+						/>
+						<img
+							src="..\images\aurangabad cave/aurangabad_cave3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>     
+				</div>
+				<figcaption class="place--name">
+					<h1>Aurangabad Caves</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Tantric influences are also noticeable in Aurangabad caves. Cave number 6 show
+                    cases women with some exotic hairstyles and ornamentation and one can notice t
+                    hat these sculptures are still undamaged after so many years. A huge Buddha fi
+                    gure and an idol of Ganesh are preserved in this cave. Cave number 7 is regard
+                    ed to be the most interesting as it has the figures of women scantily clad and
+                     ornately bejewelled are indicative of the rise of tantric Buddhism during this
+                      period.
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/m4E7NwDLbWBmzdRm9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Caves Group - Caves I to X :</h3>   <br>
+				<p>
+                   <b> Cave I:</b> This is a vihara or a Buddhist temple with an unfinished interior. 
+                    The hall of this cave intended to have 28 pillars. However, only four par
+                    tially destroyed pillars remain. There is also a verandah supported by eig
+                    ht pillars. The wall of the verandah has two windows and three doors surro
+                    unded by carvings of Nagaraja at the base of the door frame and Yakshis as
+                     consorts of Nagaraja. Three huge sculptures of Buddha are carved in the v
+                     eranda. The pillars of Cave I are very interesting as they have salabhanji
+                     kas or tree goddesses and figures of ganas carved on them on all the four 
+                     sides of the square base. </p>
+                      <br>
+                      <p>
+                   <b> Cave II:</b> This cave has a shrine at the centre of the verandah supported b
+                    y four pillars. The Buddha is seated on a lion throne in pralambapadasana
+                     and his hands are in the dharmachakra mudra. Figures of two attendants, 
+                     Maitreya and Padmapani, are carved outside the shrine on either side. Th
+                     e walls around the shrine are completely covered with figures of Buddha 
+                     depicting Miracle of Saraswati and there is a circumambulation path aroun
+                     d the shrine. </p> <br> 
+                   <p>
+                   <b> Cave III:</b> A vihara with a verandah supported by four pillars, this cave 
+                    has a shrine at the centre of the main hall. The doors are stunning with
+                     floral designs and Naga guardians on the arches. The pillars are also c
+                     arved with flowers, trees and animals, ornamental and geometrical design
+                     s and the enchanting tree goddesses. The idol is seated on a double lotu
+                     s in a teaching posture with figures of devotees worshipping the Buddha
+                      with the utmost respect on both sides. </p>
+                      <br>
+                    <p>
+                  <b> Cave IV:</b> Similar to Cave IX, it is a square chaitya with simple and
+                   octagonal pillars. Unfortunately, the pillars have been destroyed except for
+                    one, giving the idea of the original design. A stupa or a dome-shaped build
+                    ing too has been partially destroyed. The decorative elements of the cave 
+                    include stepped merlons which can be found in Ajanta Caves also. </p>
+                     <br>
+                  <p>
+                  <b> Cave V:</b> Comparatively a bigger cave, it has immature and unrefined 
+                  carvings. The image of the Buddha is seated on a rectangular pedestal in 
+                  padmasana with his hands in dhyana mudra. While the shrine door is plain 
+                  without any decorations, many figures of Sarasvati Miracle are carved on 
+                  the walls.
+                </p>
+				<br>
+                <p>
+                   <b> Cave VI:</b> Resembling the characteristics of Ajanta Caves, Cave VI
+                    has a porch and a verandah supported by four pillars with a square base.
+                     The shrine is carved on a raised platform and is isolated from the back
+                      hall. It is protected by two huge dwarapalas. Seated on a lion throne 
+                      in a western style, the idol is surrounded by the usual figures of ele
+                      phants, vyalas, makaras, etc. Besides these, there are images of male 
+                      and female devotees inside the shrine. There are two other subsidiary
+                       shrines, each housing a Buddha image. </p>
+                       <br>
+                     <p>
+                     <b> Cave VII:</b> The most developed cave among the three groups, it 
+                     has a verandah with four pillars and two pilasters. There are two chapel
+                     s on both sides of the verandah; on the left chapel is the panel of Budd
+                     hist saktis identified as Tara figures while on the right chapel, the fi
+                     gures of Hariti and Pancika are carved. The back wall has windows and a 
+                     door leading to another hall. There are several other figures of Ganesha
+                     , Nandikesvara and Varaha. The shrine is carved at the centre of the main
+                      hall and the doorway is flanked by Tara figures and Naga guardians. On
+                       the back wall, two huge sculptures of Avalokitesvara and Manjusri are 
+                       carved. </p>
+                        <br>
+                     <p>
+                    <b> Cave VIII:</b> Situated adjacent to Cave VII, it can be accessed thro
+                    ugh a staircase on the verandah of Cave VII. It consists of two cells car
+                    ved into the left of the hall and three cells carved into the back wall. T
+                    wo Buddha figures seated in padmasana position are carved on either side. </p>
+                     <br>
+                    <p>
+                   <b> Caves IX and X:</b> These caves initially had a huge hall with separate
+                    compartments and three shrines. However, the entire structure had collapsed. 
+                    Presently, there is an unfinished hall which opens to three separate halls a
+                    t the back, each leading to a shrine. The main hall is supported by four pill
+                    ars while the others are supported by two. There are sculptures of Padmapani
+                     in the form of Avalokitesvara, Tara figures, Manjusri etc and many figures 
+                     of Buddha. <br>
+                </p>
+                <br>
+				<h3>How To Reach Aurangabad Caves  :</h3>  
+                  <br>
+				<p>
+					The Grishneshwar Jyotirlinga decorated with flowers and the holy beads of 
+                    Rudraksha.
+                    The significance of the temple is that the pilgrims believe that by paying a
+                     visit to the Grishneshwar temple, one can reap the benefits of worshiping all
+                     the 12 Jyotirlingas. It is also said that the Grishneshwar temple is a classic
+                      example of the pre-historic style of architecture and has beautiful carvings.
+                     Devotees can see the marriage scene of the Lord and his consort in the temple 
+                     murals and carving. The Grishneshwar temple also houses a well that springs holy water. <br>
+				</p>
+			
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

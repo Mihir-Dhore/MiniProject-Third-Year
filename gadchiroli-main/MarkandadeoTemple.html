@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Vairagad Fort</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ1x600.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ3x600.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050540-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Vairagad Fort</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					This village is supposed to have been established in Dvapara Yuga 
+                    by a king named Vairacan (Son from a moon family). The city was 
+                    ruled by the Mana chiefs, who about the 9th century fell to the 
+                    Gonds. The Gonds ruled it along with Garbori and Rajgad. Vairagad 
+                    once possessed diamond mines and are referred in the Ain-i-Akbari 
+                    of Abul Fazal. On a hill at the foot were supposed to be a mine, 
+                    an old Idgah, and 108 Musalman tombs which appear to be of those
+                    soldiers killed in the battle when Ahmad Shah Bahamani of Bahmani
+                    Sultanate raided Vairagad around 1422. In 1925 the fort was 
+                    declared as protected monument 
+				</p>
+				<br />
+			
+				
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="20.4322808" data-lng="80.0906961">
+			<h2>MAP</h2>
+			<a href="https://www.google.com/maps/vt/data=GC088xgVAE_SAXeipr-8zoFK7S7H3sgHu40_ybfn7l_SpRw49fiVl-7-R4V506lnv3uxEjXhIufjHhL6uEasS_i0aabCjz2BMvBaMy282H8gfhxlczHznfM-nbN8YiMwRY-xvuh60nFrOZR5-A21LeRzvUuPg1jZ1LR56KuJSas9AtQtmFl7Tk71" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Places To Visit</h3>
+				<p>
+					The fortress lies north of the village spread over a 10-acre (4.0 ha) area.
+                     There are three gates at the entrance of the fort. A river moat (Khandak) 
+                     nearly 15 to 20 feet (5 to 6 m) deep runs around the fort. There are many 
+                     wells inside the fort. The step well with two arches, still containing 
+                     water, is in a ruined state. there are two rectangular wells with large 
+                     stone coverings. Presently the Archeology dept artment has taken up work
+                      of reconstruction of the main entrance. Outside the fort proper is the 
+                      tomb of the Gond Prince Durga Sah and a grave of unknown English Girl who
+                       is believed to be the daughter of a British commandant of the garrison 
+                       between 1818 and 1830.[2]
+
+                    About a mile from the fort stands a small temple of Bhandareshwar similar
+                     in style to the Markandeya Temple. 
+
+				</p>
+
+				<br />
+				
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

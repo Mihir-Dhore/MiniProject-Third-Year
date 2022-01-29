@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Daulatabad Fort </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/daulatabad/daulatabad1.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/daulatabad/daulatabad1.jfif"
+						/>
+						<img
+							src="../images/daulatabad/daulatabad1.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\daulatabad/daulatabad2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\daulatabad/daulatabad2.jfif"
+						/>
+						<img
+							src="..\images\daulatabad/daulatabad2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\daulatabad/daulatabad3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\daulatabad/daulatabad3.jfif"
+						/>
+						<img
+							src="..\images\daulatabad/daulatabad3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Daulatabad Fort </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					The town of Daulatabad was once known as 'Devgiri' meaning the 'the hill
+                     of gods'. The entire township was developed by the King of Yadava dynas
+                     ty, Raja Bhillamraj Yadav in 1187. The fort is considered among the bes
+                     t-preserved forts in the country which has survived several years witho
+                     ut any alteration. The prosperous kingdom of Yadava dynasty was taken 
+                     over by the Tughlaq dynasty of Delhi under the leadership of Mohammad B
+                     in Tughlaq who captured the town of Devgiri along with the two forts. </p> <br>
+                     <p>
+                     At the beginning of 1327, when the city of Devgiri was taken over by the
+                      Tughlaq dynasty, the name of the place was forcefully changed from Devg
+                      iri to Daulatabad. In 1328, Daulatabad was completely taken over by the
+                       Sultanate of Delhi and was established as a capital of Tughlaq dynasty
+                        for the coming two years. The huge population was moved to Daulatabad
+                         in order to set up the rule of Tughlaq dynasty in the city. The city
+                          was abandoned by the Delhi rulers due to the lack of water supply 
+                          in the area. Within the span of two years, the capital of the Tughl
+                          aq dynasty was soon shifted back to Delhi leaving Daulatabad in an 
+                          abandoned state.
+				</p>
+				<br>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/yhDifAvdG78kKXLG6" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Architecture of Daulatabad Fort :</h3>   <br>
+			<p>
+                The strategic and powerful construction of the Daulatabad Fort makes
+                 it amongst the most well-preserved forts in the country. It is loca
+                 ted on the top of a conical hill and the lower part is surrounded by
+                  the moat which was filled with crocodiles to protect the entry of en
+                  emies. The whole fort is protected by several bastions. During the pe
+                  riod of Tughlaq dynasty, it was further strengthened by the various c
+                  anons and the strong wall of 5 km was built to protect the mighty edi
+                  fice. There are several mazes and puzzles built at the entrance of th
+                  e grand fort as a strategic measure to prevent the entry of unknowns. 
+                  A 30 metre Chand Minar was also built inside the fort during the rule
+                   of Tughlaq dynasty.
+            </p> <br>
+            <p>
+                The construction of the Devgiri Fort was peculiar in its own right, and
+                 it was meant to be such so that any enemy marching towards it is thrown
+                  off track. The fort had a single doorway which served as both the entr
+                  ance and the exit. This was done so that any enemy troops who try to pe
+                  netrate through the fort looking for an exit get trapped in the premises
+                  . In the olden days, intoxicated elephants were used to break open the g
+                  ates of the forts. To avoid such a situation, the Daulatabad Fort has a s
+                  pecial provision of spikes on the gates which gave an instant death to the
+                   giant beast.
+            </p> <br>
+            <p>
+                Dauatabad had no parallel gates which were meant to confuse the enemy and the
+                 flag mast of the fort was situated on the left-hand side. When the enemy tri
+                 ed to attack the same, they turned left, but the exit gates were on the righ
+                 t, which further trapped them in the labyrinth of the fort. Serpentine arrang
+                 ements of entryways, false doorways, peculiarly curved walls and many such r
+                 uses were used in the wall to confuse the enemy and eventually condemn them t
+                 o defeat. Even the smooth and curved shape of the hill was used to protect the
+                  Daulatabad Fort against mountain lizard climbers, who would miserably fail if
+                   they tried to climb up the mountain.
+            </p>
+				<br>
+				<h3>Trekking to the Top of Daulatabad Fort :</h3>    <br>
+				<p>
+					One of the most challenging parts of a visit to the Daulatabad Fort is 
+                    reaching the top of this mighty edifice, which can only be accessed on 
+                    foot. You will have to walk up 750 stairs which can take anywhere betwe
+                    en 1-3 hours depending on your speed. The difficulty level is easy to m
+                    edium and there are a few dark areas along the way for which you need t
+                    o carry a torch. You will get to experience the peculiarities of Daulat
+                    abad Fort as well, such as the fact that no two entrances are in front 
+                    of each other, which are quite interesting to note and observe as you g
+                    o. All the effort and time is made worth by the view from the summit, wh
+                    ich is a fascinating testimony of the architectural brilliance of the med
+                    ieval times.
+				</p>
+				<br>
+				<h3>How To Reach Daulatabad Fort :</h3>   <br>
+				<p>
+					Daulatabad fort is located 27 km away from Aurangabad and lies a half an 
+                    hour drive away from the same. Buses run from Aurangabad to Daulatabad Fort
+                     quite frequently, or you can hire a private car that is provided by tour o
+                     perators.
+				</p> <br>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Pandav Leni</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a href="/"><h1>Maharashtra</h1></a>
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/pandav-leni.jpg"
+						/>
+						<img
+							src="../images/pandav-leni.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/pandav-leni-2.jpeg"
+						/>
+						<img
+							src="../images/pandav-leni-2.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/pandav-leni-3.jpg"
+						/>
+						<img
+							src="../images/pandav-leni-3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Pandav Leni</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>Layout and content</h2>
+				<p>
+					The group of 24 caves was cut in a long line on the north face of a hill called Trirasmi. The main interest of this group lies not only in its bearing on its walls a number of inscriptions of great historical significance belonging to the reign of Satavahana & Kshaharatas or Kshatrapas. But also in its representing a brilliant phase in the Rock-Cut architecture of the second century CE. There are altogether 24 excavations though many of these are small & less important. Beginning at the east end they may conveniently be numbered westward. They are almost entirely of an early date and were excavated by the Hinayana sect. Mostly, the interior of the caves are starkly plain, in contrast to the heavily ornamented exterior.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" >
+			<h2>Map</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7501.408346952768!2d73.74411282323308!3d19.936867246399288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd94a7ecd01a7f%3A0x8197285ad0de985f!2sPandav%20Leni%20Hill!5e0!3m2!1sen!2sin!4v1638087417771!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<section id=""></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Flora</h3>
+				<p>
+					The veranda has six octagonal columns without bases between highly sculptured pilasters. The capitals of these pillars are distinguished from those in the Nahapana Cave No.10 by the shorter and less elegant form of the bell-shaped portion of them, and by the corners of the frame that encloses the torus having small figures attached; both alike have a series of five thin members, overlapping one another and supporting four animals on each capital, bullocks, elephants, horses, sphinxes, etc..., between the front and back pairs of which runs the architrave, supporting a projecting frieze, with all the details of a wooden framing copied in it.
+				</p>
+				<br />
+				<h3>Jain cave</h3>
+				<p>
+					Cave No.11 is close to Cave No.10, but at a somewhat higher level. In the left end of the veranda is the fragment of a seat; the room inside is 11 feet 7 inches by 7 feet 10 inches, having a cell, 6 feet 8 inches square, at the left end, and another, not quite so large, at the back, with a bench at the side and back. In the front room is carved, on the back wall, in low relief, a sitting figure and attendants on a lion throne, and on the right-end wall a fat figure of Amba on a tiger with attendants, and an Indra on an elephant: all are small, clumsily carved, and evidently of late Jaina workmanship.[11]
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

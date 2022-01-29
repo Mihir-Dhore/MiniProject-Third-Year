@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Dajipur</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ1x600.jpg"
+						/>
+						<img
+							src="../images/DJ/DJ1x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ2x600.jpg"
+						/>
+						<img
+							src="../images/DJ/DJ2x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ3x600.jpg"
+						/>
+						<img
+							src="../images/DJ/DJ3x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Dajipur Wildlife Sanctuary</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>geography</h2>
+				<p>
+					Dajipur is situated on the border of Kolhapur and Sindhudurg
+					districts. Rugged mountains and dense forests surround this hilly
+					area. This quiet little place is completely cut-off from human blare.
+					Dajipur is home to bison, wild deer, chital, gawa and many more
+					spectacular wild animals and birds
+				</p>
+				<br />
+				<p>
+					Situating at 1200 metres above the sea level, it is an exciting and
+					beautiful holiday getaway. An excursion in the vicinity to the
+					Gagangiri Maharaj's Math makes a pleasant outing for the tourists.
+					This scenic resort near the backwaters of the Radhanagari Dam is
+					highly recommended for wildlife lovers and nature enthusiasts.
+				</p>
+				<br />
+				<p>
+					Nearest airport is at Belgaum, nearest railhead is at Kolhapur. It is
+					490 km away from Mumabi, while 80 km from Kolhapur. But it is only 30
+					km from Radhanagari.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.3619421" data-lng="73.873396">
+			<h2>MAP</h2>
+			<a href="https://g.page/dajipurwildlife?share" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Flora</h3>
+				<p>
+					Radhanagari Wildlife Sanctuary contains tropical evergreen forests
+					typical of the northern Western Ghats. 425 species of plants have been
+					recorded in the sanctuary. The main species found over here are
+					Anjani, Jambul, Hirda, Awala, Pisa, Ain, Kinjal, Amba, Kumbha, Bhoma,
+					Chandala, Katak, Nana, Umbar, Jambha, Gela, Bibba and banana. Karvi is
+					found over almost the entire area. Climbing plants such as shikekai
+					and garambi are common. Shrub species and medicinal plants such as
+					karvand, vagati (candy corn plant), ranmiri (orange climber),
+					Tamalpatra Cinnamomum tamala, (toran), dhayati (fire-flame bush),
+					kadipatta (curry tree), narkya, murudsheng (Indian screw-fruit) and a
+					small amount of bamboo are also found. Large numbers of ephemeral
+					bulbs of seasonal plants are also found here. Many sacred groves or
+					devrais have been protected as a result of the efforts of the local
+					communities
+				</p>
+
+				<br />
+				<h3>fauna</h3>
+				<p>
+					Sanctuary contains 47 species of Mammals, 59 species of reptiles, 264
+					species of birds and 66 species of butterflies. Amphibians are most
+					visible in the rainy season. 20 species from 2 orders, 5 families and
+					10 genera are listed in the sanctuary. Indian bison or gaur have a
+					population around 610 in 2004, is the flagship species of the area.
+					Other mammals, living in the sanctuary are Indian leopard (5), sloth
+					bear, wild boar (80), barking deer (140), mouse deer (80), sambar
+					(120), giant squirrel 50) and wild dogs (70). In recent years, 6 to 12
+					tigers were reported in Dajipur forest 2007-08. (anonymous reports-
+					not yet confirmed)
+				</p>
+
+				<br />
+
+				<p>
+					Birds seen here include: vultures, eagles, jungle fowl, quails,
+					plovers, sandpipers, owlets, doves, owls, nightjars, kingfishers,
+					bee-eater, hornbills, woodpeckers, bulbul, flycatchers, warblers,
+					wagtails, sunbirds are commonly seen. This sanctuary is designated as
+					an Important Bird Area by BirdLife International and is home to the
+					rare and globally threatened Nilgiri wood-pigeon (Columba
+					elphinstonii). Other species found here include the Ceylon frogmouth,
+					yellow-browed bulbul, dusky eagle-owl and great pied hornbill and one
+					of India's most admired songbirds, the Malabar whistlingthrush. Two
+					species endemic to the Western Ghats: the small sunbird and the
+					Malabar grey hornbill have been sighted here. This sanctuary is a
+					favorite nesting place for the speckled piculet, Malabar crested lark,
+					and some species of Himalayan birds such as the Indian blue robin
+					during the winter months.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

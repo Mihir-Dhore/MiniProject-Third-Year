@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajastan | Hawa Mahal</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/hawamahal/600px-hawamahal-1.jpeg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/hawamahal/1200px-hawamahal-1.jpeg"
+						/>
+						<img
+							src="../images/hawamahal/2500px-hawamahal-1.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/hawamahal/600px-hawamahal-2.jpeg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/hawamahal/1200px-hawamahal-2.jpeg"
+						/>
+						<img
+							src="../images/hawamahal/2500px-hawamahal-2.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/hawamahal/600px-hawamahal-3.jpeg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/hawamahal/1200px-hawamahal-3.jpeg"
+						/>
+						<img
+							src="../images/hawamahal/2500px-hawamahal-3.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Hawa Mahal</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2></h2>
+				<p>
+					If you had any preconceived notions about how the buildings in Jaipur look, they probably came from Hawa Mahal (Palace of Breeze).
+					 It has all of the distinctive architectural features that appear in postcards of the city, from the salmon-pink, honeycombed facade,
+					  built to resemble the crown of Hindu god Krishna, to the geometric accents and rows of tiny windows.
+					  The landmark was built in 1799 to allow royal ladies to watch festivals on the street without being seen by the public.
+					  Its 953 windows allow plenty of breeze to pass through, making it an ideal summer palace
+				</p>
+				<br />
+				<p>
+					Tourists can learn about the history of the sandstone structure at the palace's small museum—the ceremonial armor collection is particularly interesting.
+					 You can also wander the narrow hallways that run throughout the palace. Don't miss the colorful glasswork in windows and doorways,
+					  which cast an otherworldly glow on chambers throughout Hawal Mahal.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/hGzycJncfs5cqsTa8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Architecture</h3>
+				<p>
+					Hawa Mahal, designed as a beehive castle with small windows, has a height of 50 feet from its base. This structure, 
+					erected on a thin shield or podium approximately fifty feet high,
+					 has walls less than a foot thick. Constructed of red and pink sandstones by Lal Chand Ustad, 
+					Hawa Mahal is famous for its windows or 'Jharokhas' which enable free circulation of air within the structure.
+					 Its entrance is a door which leads to a spacious courtyard surrounded by two-storey buildings on three sides. 
+					 Of the five storeys of the Mahal, the top three storeys have the thickness of a single room while the bottom storeys have courtyards. 
+				</p>
+
+				<br />
+				<h3>History</h3>
+				<p>
+					It was in 1799 that the Kachhwaha Rajput ruler, Sawai Pratap Singh, grandson of Maharaja Sawai Jai Singh who built Jaipur, 
+					constructed Hawa Mahal as a continuation of the Royal City Palace. 
+					Sawai Pratap Singh's devotion to Lord Krishna is evident in the palace's construction as it resembles the lord's crown. 
+					Though many reasons are cited behind the construction of the fort, Purdah system followed by the Rajputs is said to be one of the main causes.
+				</p>
+
+				<br />
+
+				<p>
+				
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

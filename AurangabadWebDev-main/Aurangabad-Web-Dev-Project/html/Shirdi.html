@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Shirdi</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shirdi/Shirdi1.jpeg"
+						/>
+						<img
+							src="../images/Shirdi/Shirdi1.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shirdi/Shirdi2.jpg"
+						/>
+						<img
+							src="../images/Shirdi/Shirdi2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shirdi/Shirdi3.jpg"
+						/>
+						<img
+							src="../images/Shirdi/Shirdi3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Shirdi</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					Gaganbawada used to be called Bawada Mahal and comprise the current
+					Gaganbawada tehsil of Kolhapur district and the current entire
+					Vaibhavwadi taluka of Sindhudurg district. In 1981, Sindhudurg became
+					the independent district. The entire Vaibhavwadi area which used to be
+					a part of Gaganbawada Tehsil was at the foothills of Sahyadri and it
+					was very tedious for people living at the foothills to come to
+					Gaganbawaba for their daily needs.
+				</p>
+				<br />
+				<p>
+					So the portion of Sahyadri foothills was separated from Gaganbawada
+					tehsil of Kolhapur District and joined to the Sindhudurg District. At
+					that time the villages called Vaibhavwadi, Karul, Bhuibawada, Umbarde,
+					Tithavali, Achirne, etc. became a part of Sindhudurg district and
+					Vaibhavwadi became the tehsil headquarters.During the rule of the
+					Marathas and British raj, the Bavda estate was 243 sq.mi in extent
+				</p>
+				<br />
+				<p>
+					The Gagangiri Ashram and fort is only 1 km from Gaganbawada of
+					Kolhapur district above Sahyadri range but geographically it is a part
+					of Vaibhavwadi Tehsil of Sindhudurg district which is at the foothills
+					of Sahyadri range.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.54579" data-lng="73.83113">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/EPF4hXvK5MszpiLRA" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+
+			<h2>Transport</h2>
+			<br>
+			<p> •<strong>By Train: </strong>The Sainagar Shirdi Railway station became operational in March 2009.
+				As of 2011, there are trains from Chennai, Mumbai, Visakhapatnam, Kakinada, Hyderabad, Mysore and other cities/states that have Shirdi railway station as their terminal stop.
+			</p>
+
+			<br>
+
+			<p> •<strong>By Air:   </strong>      There are major destinations from Shirdi airport, viz. the airports of Delhi, Hyderabad, Chennai and Mumbai.
+				 The airport is located at Kakdi, 14 km south-west of Shirdi.
+				 The nearest major airports are at Aurangabad and Pune.
+			</p>
+
+			<br>
+
+			<p> •<strong>By car:   </strong>Shirdi is accessible via the Ahmednagar-Manmad State Highway No.10, approximately 83 km (52 mi) from Ahmednagar and 15 km (9.3 mi) from Kopargaon.
+				 It is approximately 240 km (150 mi) from Mumbai on the Eastern Express Highway.
+			</p>
+
+
+			<br>
+				<h2>Best Places to stay in Shirdi</h2>
+				<br />
+				<p>
+
+The Shirdi Trust complex Dwarawati Bhaktiniwas is at a walking distance from the bus stand.
+It offers accommodation for small groups or families in dormitories and AC as well as non-AC rooms at fairly reasonable prices.
+There are several hotels outside the temple complex. Some bus operators have tie-ups with the hotels and it may work out cheaper and save time during the peak season.
+ Some of the hotels are:
+<br>
+				</p>
+				<br> <strong>
+				<p>•Sharan Hotels</p>
+				<p>•Hotel Silver Oaks Holiday Homes</p>
+				<p>•Hotel Sai Baba International</p>
+				<p>•Maxtrix Inn
+				</strong>
+			</p>
+
+				<h2>FEATURES</h2>
+				<br />
+				<h3>Karul Ghat & Bhuibawada Ghat</h3>
+				<p>
+					These two ghats are one of the most scenic routes which originate from
+					Gaganbawada and connect the Deccan Plateau to coastal region, Konkan,
+					of Maharashtra.Both The ghats have scenic views of valleys and hills.
+					At the start of both the ghats near Gaganbawada there are view points
+					from where one can enjoy the sun set.
+				</p>
+
+				<br>
+
+				<h3>Shirdi Sai Baba temple timing</h3>
+				<br>
+
+				<strong>
+				<p>
+					•	Kakad Aarti (Morning Aarti) at 4:30 am </p> <br>
+				<p>
+					•	Madhyan Aarti (Afternoon Aarti) at 12:00 pm</p> <br>
+				<p>•	Dhup Aarti (Evening Aarti) 6:30 pm</p> <br>
+				<p>•	Shej Aarti (Night Aarti) at 10:30 pm</p>
+			</strong>
+				<br />
+
+				<h3>Morjai Temple and Plateau</h3>
+				<p>
+					For a hiking enthusiasts Morjai Plateau near Gaganbawada is Must
+					visit. 8 km from the town at height of 980 MSL this laterite plateau
+					is perfect example of "Sada Ecosystem". One can drive down till the
+					base of plateau and then hike up. Morjai is known as the goddess of
+					peace and people come here to solve their disputes in front of her. A
+					local pujari Mr Gurav 72 yrs of age does the hike twice a day to lit a
+					lamp and clean the temple.
+				</p>
+				<br />
+
+				<h3>Pandav Caves</h3>
+				<p>
+					Pandav Caves, commonly known as Ramling are 8 km from Gagagnbawada.
+					These caves are located near small village called Palsambe. Situated
+					in a small gorge created by stream these caves are believed to be
+					carved by Bhima in one night. There are three monolithic structures,
+					"Sadhana Ghar", which were used as places of meditation during ancient
+					days. the references of these caves are even found in the literature
+					dating back to 5th century.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

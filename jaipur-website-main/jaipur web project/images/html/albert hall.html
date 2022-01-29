@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajstan | Albert hall museum</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt1x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt1x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt2x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt2x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/rt/rt3x600.jpg"
+						/>
+						<img
+							src="../images/rt/rt3x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Albert Hall Museum </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					When English writer Rudyard Kipling visited the Albert Hall Museum in Jaipur, he wrote that it was a "rebuke to all other museums in India from Calcutta downwards." 
+					That's high praise coming from the son of a curator, and fitting for this renowned institution.
+				</p>
+				<br />
+				<p>
+					The oldest museum in Rajasthan, the Albert Hall Museum boasts an extensive collection of art and historically significant artifacts.
+					 Come for the Egyptian mummy, stay to see antique coins from different periods in India's history, charming permanent exhibits of miniature paintings,
+					  18th-century costumes worn by members of different castes,
+					 and a peculiar collection of 19th-century clay figures demonstrating all the yoga poses.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.1393454" data-lng="74.2065992">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/gC3RXyVbphqZH34P9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>features</h2>
+				<br />
+				<p>
+					The oldest museum in Rajasthan, the Albert Hall Museum boasts an extensive collection of art and historically significant artifacts.
+					 Come for the Egyptian mummy, stay to see antique coins from different periods in India's history, charming permanent exhibits of miniature paintings,
+					  18th-century costumes worn by members of different castes, 
+					and a peculiar collection of 19th-century clay figures demonstrating all the yoga poses.
+				</p>
+
+				<br />
+				
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

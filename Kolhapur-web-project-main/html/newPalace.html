@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Shri Chatrapati Shahu Museum</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/NP/NP1x600.jpg"
+						/>
+						<img
+							src="../images/NP/NP1x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/NP/NP2x600.jpg"
+						/>
+						<img
+							src="../images/NP/NP2x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/NP/NP3x600.jpg"
+						/>
+						<img
+							src="../images/NP/NP3x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Shri Chatrapati Shahu Museum</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					The Chhatrapati Shahu museum in Kolhapur was constructed during the
+					period 1877 - 1884. It was designed by British architect 'Charles
+					Mant' and was built according to an architectural style that had a
+					fusion of Jain and Hindu influences from Gujarat and Rajasthan, along
+					with a touch of the local Rajwada style.
+				</p>
+				<br />
+				<p>
+					The structure is made from black, polished stone and is certainly an
+					architectural masterpiece. The ground floor of the New Palace
+					accommodates the Shahaji Chhatrapati Musuem
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.7194051" data-lng="74.2313568">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/rRMivq5bX5dtYbJD7" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<p>
+					The museum displays a variety of paintings, photographs, statues, and
+					ornate pieces of furniture belonging to the Kolhapur rulers. The Shahu
+					Gallery, devoted to the personal belongings of Rajarshi Shahu,
+					exhibits letter exchanges with viceroys and British generals,
+					photographs relating his life and contributions to the cultural and
+					social betterment of the city. His promotion of wrestling, hunting,
+					and progressive strategies are reflected through the items displayed
+					in the gallery. Intricate embroidery and beadwork created by the
+					queens are also displayed.
+				</p>
+
+				<br />
+				<p>
+					The arms gallery includes an elaborate collection of weapons and
+					ammunition. This section also focuses on the tools that were made by
+					royal demand to control elephants during combat or training. Elephant
+					saddles and howdahs made of silver as well as the royal palanquin and
+					crib are exhibited. The Photo Gallery has many interesting pictures of
+					royalty including the eye-catching photograph of Shahaji II with the
+					hundredth hunted tiger
+				</p>
+
+				<br />
+
+				<p>
+					The gallery of stuffed animals hunted by the royal family is also
+					popular. Stuffed Tigers, Tiger heads, Wild Dog, Sloth Bear, Wild
+					Buffalo, Lion, Black Panther, Wild Boar, Black Buck, several other
+					Deer varieties, and a Himalayan Black Bear can be seen here.
+				</p>
+				<br />
+				<p>
+					The Darbar Hall occupies a double-height space in the middle of the
+					palace, and a raised throne is placed at one end. Apart from the
+					intricate carvings on the walls, the arches of the hall are covered
+					with stained glass paintings depicting scenes from the life of
+					Chhatrapati Shivaji.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

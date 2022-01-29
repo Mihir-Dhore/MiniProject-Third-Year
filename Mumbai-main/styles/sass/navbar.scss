@@ -1,0 +1,61 @@
+// !========== Navbar Styles ====================
+
+@use "./global.scss";
+
+#navbar {
+	align-items: center;
+	background: hsl(var(--bg-clr-1));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem;
+	width: 100%;
+	z-index: 10;
+
+	&.fixed {
+		background: hsla(var(--bg-clr-1), 0.75);
+		position: fixed;
+		top: 0;
+	}
+
+	> ul {
+		background: hsl(var(--bg-clr-2));
+		border-radius: var(--border-radius);
+		display: flex;
+		list-style: none;
+		padding: 0;
+		width: max-content;
+
+		> li {
+			background: hsl(var(--bg-clr-2));
+			border-radius: var(--border-radius);
+			padding: var(--default-padding-1);
+			text-align: center;
+			transition: var(--transition);
+			width: 100%;
+
+			&:hover,
+			&:focus,
+			&:focus-within {
+				box-shadow: unquote(
+					$string: global.box-shadow(var(--shadow-for-bg1), 2)
+				);
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+// !========== media queries =============
+
+@media screen and (max-width: 600px) {
+	#navbar {
+		justify-content: center;
+		text-align: center;
+
+		> ul {
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+}

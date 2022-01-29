@@ -1,0 +1,132 @@
+@use "sass:string";
+
+// !========= font imports ============
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+// !===========Functions and mixins===========
+
+@function box-shadow($hsl, $layers) {
+	$shadow: "";
+	$opacity: 0.7;
+	@if $layers == 1 {
+		$shadow: $shadow + "0.5px 1px 1px hsl(" + $hsl + "/ " + $opacity + " )";
+	} @else if $layers == 2 {
+		$opacity: 0.33;
+		$shadow: "3px 6px 6px hsl(" + $hsl + "/ " + $opacity + ")";
+	} @else if $layers == 3 {
+		$opacity: 0.25;
+		$shadow: ("4px 8px 8px hsl(" + $hsl + "/ " + $opacity + "), ")+
+			("8px 16px 16px hsl(" + $hsl + "/ " + $opacity + "), ")+
+			("16px 32px 32px hsl(" + $hsl + "/ " + $opacity + ") ");
+	}
+
+	@if $layers > 1 {
+		$shadow: ("1px 2px 2px hsl(" + $hsl + "/ " + $opacity + "), ")+
+			("2px 4px 4px hsl(" + $hsl + "/ " + $opacity + "), ") +
+			$shadow;
+	}
+	@return $shadow;
+}
+
+// ============ function debuggers ===============
+// @debug box-shadow("220deg 100% 80%", 3);
+
+// !========== Global Variables ===========
+:root {
+	--bg-clr-1: 140, 71%, 44%;
+	--bg-clr-2: 220deg 100% 80%;
+	--bg-clr-3: 240deg 100% 96%;
+	--bg-clr-4: 338deg 13% 38%;
+	--text-clr-1: #0b4f6c;
+	--text-clr-2: #5c2d0e;
+	--text-clr-3: #f2d489;
+	--text-clr-4: #8af2c3;
+	--transition: all 500ms linear;
+	--border-radius: 5px;
+	--shadow-for-bg1: 140deg 61% 34%;
+	--shadow-for-bg2: 220deg 90% 70%;
+	--shadow-for-bg3: 240deg 90% 86%;
+	--default-padding-1: 0.25rem 1rem;
+	--default-padding-2: 1rem 1rem;
+	--default-padding-3: 0.5rem 1rem 0.25rem 1rem;
+	--default-minimilistic-border-1: 2px solid black;
+	--monospace-font: "Roboto Mono", monospace;
+	--bold-font: "Josefin Sans", sans-serif;
+}
+
+// !========== Global Styles ===========
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: hsl(var(--bg-clr-2));
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+}
+
+a {
+	font-weight: bold;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+p {
+	letter-spacing: 3px;
+	text-align: justify;
+}
+
+h1 {
+	font-size: 1.75rem;
+	letter-spacing: 3px;
+}
+h1,
+h2,
+h3,
+a {
+	color: var(--text-clr-1);
+	text-transform: capitalize;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+p {
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--bold-font);
+}
+
+p,
+a {
+	font-family: var(--monospace-font);
+}
+
+.btn {
+	background: var(--bg-clr-1);
+	border-radius: var(--border-radius);
+	display: block;
+	padding: var(--default-padding-2);
+	text-transform: capitalize;
+	transition: var(--transition);
+	width: max-content;
+
+	&:hover,
+	&:focus,
+	&:focus-within {
+		transform: scale(1.05);
+	}
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Lok Biradari Prakalp </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ1x600.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050430-olw95zrrzkcmu79at254bmpixxy4sb7qy3qz67zc0a.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050425-olw95zrrzkcmu79at254bmpixxy4sb7qy3qz67zc0a.jpg"
+						/>
+						<img
+							src="https://cdn.s3waas.gov.in/s35e388103a391daabe3de1d76a6739ccd/uploads/bfi_thumb/2018050539-olw962lak2ght157cld013zwq3k8feixyhpfm1v5hm.png"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/DJ/DJ3x600.jpg"
+						/>
+						<img
+							src="data:image/jpeg;base64,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"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Lok Biradari Prakalp</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>About</h2>
+				<p>
+                    It is in village Hemalkasa of Bhamragad taluka in Gadchiroli District of
+                    Maharashtra state.The LBP project is located at a distance 160 k.m. from 
+                    Gadchiroli district headquarter and 60 k.m. away from Allapalli.
+                    
+                    Dr. Prakash Amte and his wife Dr. Mandakini Amte, who serve as the 
+                    Medical Director and Medical Officer at the project respectively, 
+                    were awarded the 2008 Ramon Magsaysay Award for Community Leadership.
+				</p>
+				
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="19.424344" data-lng="80.563062">
+			<h2>MAP</h2>
+			<a href="http://www.lokbiradariprakalp.org/assets/img/home/map.jpg" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Activities </h3>
+				<p>
+					Hospitals
+                    Schools And Hostels
+                    Community Health Program 
+                    Village Development Program 
+                    Extensions Park
+
+				</p>
+
+				<br />
+				<h3>Awards</h3>
+				<p>
+					20 Dec 2016 - Doctor of Literature - MUHS, Nashik, Maharashtra 2016
+                                2009 - Godfrey Philips Lifetime Achievement Award
+                                2008 - Ma. Ta. Nayak (Maharashtra Times, Mumbai)
+                                2008 - Pariwartan Puraskar, Dr.Shivram Mali Trust, Kolhapur
+                                2008 - Krutartha Sanman, Pulotsav Pune
+                                2008 - Ananya Sanman, Zee24Tas Channel
+                                2008 - Ramon Magsaysay Award for Community Leadership 2008
+                                2008 - Social Service Award, Dr. Nirmalkumar Phadkule Foundation, 
+                                    Solapur, M.S. India
+                                2008 - Humanitarian Family of the Century, Lion's Club, Mumbai, India
+                                2007 - Nag-Bhushan Award, Nag Bhushan Award Foundation, Nagpur, India
+                                2006 - Mastek Award, India
+                                2006 - Sahyadri NavRatna Award, Sewa-Ratna, DoorDarshan India
+
+
+				</p>
+
+				<br />
+
+				
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

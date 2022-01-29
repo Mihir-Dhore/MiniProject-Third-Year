@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Salim Ali Lake </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/salim ali lake/ali-lake1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/salim ali lake/ali-lake1.jpg"
+						/>
+						<img
+							src="../images/salim ali lake/ali-lake1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\salim ali lake/ali-lake2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\salim ali lake/ali-lake2.jfif"
+						/>
+						<img
+							src="..\images\salim ali lake/ali-lake2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\salim ali lake/ali-lake3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\salim ali lake/ali-lake3.jfif"
+						/>
+						<img
+							src="..\images\salim ali lake/ali-lake3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Grishneshwar Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					The history of Salim Ali Lake dates back to the Mughal era. During the rule
+                     of Aurangzeb, the area sprawling from the present day Salim Ali Lake to Beg
+                     umpura was nothing but a large marshy tank. Due to excessive dampness, Auran
+                     gzeb had a large section of land reclaimed. The portion in front of his pala
+                     ce was converted to fields and the reclaimed portion of land made into the Mu
+                     ghal Garden, now known as Himayat Bagh. The rest of the land is the lake that 
+                     we know today. </p> <br>
+                     <p>
+                     The site was officially revamped and developed into a public and recreational 
+                     place in 2014 and named after Dr Salim Ali, the ‘Birdman of India’ who apart 
+                     from being a legendary ornithologist contributed tonnes for the Indian ecology
+                      and made people aware of what bird-watching is. It is because of him that bird 
+                      watching today is one of the most sought after hobbies. He contributed a lot 
+                      towards wildlife conservation and performed extensive bird surveys.
+				</p>                                                                        
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/W8Cio9Wz1xWU5TkF9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Things to Do at Salim Ali Lake :</h3>   <br>
+				<p>
+                    Bird watching - It is an excellent spot for bird watching, filled with the
+                     flutter of colourful resident and migratory birds. <br>
+                    Boating - One can go boating in the shifting calm waters of the lake and 
+                    admire the lush greenery all around. Boating facilities can be availed when 
+                    the lake is full, that is during rainy and winter seasons. <br>
+                    Picnic - One can go for a small picnic on the lakeside and admire the lush 
+                    foliage site, in the lap of nature. <br>
+                   Viewpoint and Photography - The watchtower is a perfect point to view the lake
+                    and the garden and take some excellent pictures in the natural backdrop. 
+                </p>
+				<br>
+				<h3>Biodiversity  :</h3>    <br>
+				<p>
+					Salim Ali Lake is a biodiversity hotspot with rich surroundings hosting 
+                    about 16 species of trees, 11 different kinds of shrubs, as much as 8 
+                    climbers, 32 terrestrial herbaceous plants, 10 varieties of algae, 12 
+                    of aquatic herbs, 16 of aquatic insects, 102 of other insects, molluscs
+                     and crustaceans, 9 of fishes, 15 of reptiles, 7 types of rodents and 
+                     mammals. <br>
+
+                    The garden adorning the lake is marked by trees, climbers and shrubs 
+                    and the water body abound in marine life. There are varieties of ducks,
+                     doves, coots, moorhens, waterhens and ergates in the area. The activis
+                     ts have protested to shut down the lake for the public for conservation
+                      and declare it as a biodiversity hotspot. Efforts are being taken by 
+                      the government regarding the same. 
+				</p>
+				<br>
+				<h3>How To Reach Salim Ali Lake :</h3>   <br>
+				<p>
+					Since it is located in the middle of city suburbs, one can commute via
+                     buses, autos and taxis. Another good option is the special tourism 
+                     buses that takes one exploring around the city.
+				</p>
+
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

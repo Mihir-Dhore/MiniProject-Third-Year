@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Sahastrakund WaterfallS</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<img
+							src="../images/Sahastrakund Waterfall.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<img
+							src="../images/Sahastrakund Waterfall.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Sahastrakund Waterfall.jfif"
+						/>
+						<img
+							src="../images/Sahastrakund Waterfall.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Sahastrakund Waterfall</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>About</h2>
+				<p>
+					Sahastrakund waterfall is situated on the boundary of Marathwada and Vidarbha region. One part of waterfall area is covered under Umarkhed Tahsil of District where as other part comes under Kinwat Tahsil of Nanded (Marathwada Region) district. This waterfall is 70 K.M. away from Umarkhed where as 181 K.M. away from district head quarter. Large number of people visits this waterfall in rainy season. Tourists enjoy the water falling from 30-40 feet, small drops spread over entire tourists and sound of water give immense happiness to the visitors.
+					There is a beautiful garden on the bank of waterfall. Various types of butterflies attracts visitors toward them. Large number of Tourists from adjacent Adilabad district in Telangana state visits regularly. Panchmukhi Mahadeo temple is also there to attract pilgrims.
+					Two days holidays in rainy season are sufficient to enjoy this area with various types of birds and wild animals.
+
+				</p>
+				<br />
+				<p>
+					
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="19.4551588637767"
+			data-lng="77.99612514071012"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/cJHxYwq7CR4PhXzEA" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Gaganbawada</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/GB/GB1x600.jpg"
+						/>
+						<img
+							src="../images/GB/GB1x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/GB/GB2x600.jpg"
+						/>
+						<img
+							src="../images/GB/GB2x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/GB/GB3x600.jpg"
+						/>
+						<img
+							src="../images/GB/GB3x1200.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Gaganbawada</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					Gaganbawada used to be called Bawada Mahal and comprise the current
+					Gaganbawada tehsil of Kolhapur district and the current entire
+					Vaibhavwadi taluka of Sindhudurg district. In 1981, Sindhudurg became
+					the independent district. The entire Vaibhavwadi area which used to be
+					a part of Gaganbawada Tehsil was at the foothills of Sahyadri and it
+					was very tedious for people living at the foothills to come to
+					Gaganbawaba for their daily needs.
+				</p>
+				<br />
+				<p>
+					So the portion of Sahyadri foothills was separated from Gaganbawada
+					tehsil of Kolhapur District and joined to the Sindhudurg District. At
+					that time the villages called Vaibhavwadi, Karul, Bhuibawada, Umbarde,
+					Tithavali, Achirne, etc. became a part of Sindhudurg district and
+					Vaibhavwadi became the tehsil headquarters.During the rule of the
+					Marathas and British raj, the Bavda estate was 243 sq.mi in extent
+				</p>
+				<br />
+				<p>
+					The Gagangiri Ashram and fort is only 1 km from Gaganbawada of
+					Kolhapur district above Sahyadri range but geographically it is a part
+					of Vaibhavwadi Tehsil of Sindhudurg district which is at the foothills
+					of Sahyadri range.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.54579" data-lng="73.83113">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/FnnkNLGzZAsgM5Bd8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>GEOGRAPHY</h2>
+				<br />
+				<p>
+					Gaganbawada is situated on the Sahyadri range or the Western ghats
+					also has a very famous fort Gagangad near it. Gaganbawada, though only
+					55 km from Kolhapur, is non developed and hilly area of the district.
+					Gaganbawada gets the maximum rainfall during rainy season. Gaganbawada
+					is on threshold of famous Karul Ghat & Bhuibawada Ghat.
+				</p>
+
+				<h2>FEATURES</h2>
+				<br />
+				<h3>Karul Ghat & Bhuibawada Ghat</h3>
+				<p>
+					These two ghats are one of the most scenic routes which originate from
+					Gaganbawada and connect the Deccan Plateau to coastal region, Konkan,
+					of Maharashtra.Both The ghats have scenic views of valleys and hills.
+					At the start of both the ghats near Gaganbawada there are view points
+					from where one can enjoy the sun set.
+				</p>
+
+				<br />
+
+				<h3>Gagangad Fort and Gagangiri Ashram</h3>
+				<p>
+					1 km from Gaganbawada town lay ruins of Gagangad Fort. During British
+					rule it was the headquarters of Gaganbawada tehsil, comprising around
+					243 square miles now known as Sidhudurg District. There are a small
+					mosque and Bhavani temple in the fort. The guarding walls of the fort
+					can be seen at some places. During his early penance days Shri
+					Gagangiri Maharaj settled in a cave known as Garbhagiri near the fort
+					and perfected his tantrik techniques. Now there is a
+				</p>
+				<br />
+
+				<h3>Morjai Temple and Plateau</h3>
+				<p>
+					For a hiking enthusiasts Morjai Plateau near Gaganbawada is Must
+					visit. 8 km from the town at height of 980 MSL this laterite plateau
+					is perfect example of "Sada Ecosystem". One can drive down till the
+					base of plateau and then hike up. Morjai is known as the goddess of
+					peace and people come here to solve their disputes in front of her. A
+					local pujari Mr Gurav 72 yrs of age does the hike twice a day to lit a
+					lamp and clean the temple.
+				</p>
+				<br />
+
+				<h3>Pandav Caves</h3>
+				<p>
+					Pandav Caves, commonly known as Ramling are 8 km from Gagagnbawada.
+					These caves are located near small village called Palsambe. Situated
+					in a small gorge created by stream these caves are believed to be
+					carved by Bhima in one night. There are three monolithic structures,
+					"Sadhana Ghar", which were used as places of meditation during ancient
+					days. the references of these caves are even found in the literature
+					dating back to 5th century.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

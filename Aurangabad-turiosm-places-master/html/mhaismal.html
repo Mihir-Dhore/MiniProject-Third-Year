@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Mhaismal </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/mhaismal/mhaismal.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/mhaismal/mhaismal.jpg"
+						/>
+						<img
+							src="../images/mhaismal/mhaismal.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\mhaismal/mhaismal1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\mhaismal/mhaismal1.jpg"
+						/>
+						<img
+							src="..\images\mhaismal/mhaismal1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\mhaismal/mhaismal3.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\mhaismal/mhaismal3.jpg"
+						/>
+						<img
+							src="..\images\mhaismal/mhaismal3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Grishneshwar Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					About 37 kilometres away from the city of Aurangabad in Maharashtra,
+                     Mhaismal is a beautiful, unexplored hill station tucked amidst the
+                      Sahyadri Ranges at an altitude of over 106 metres above the sea level.
+                       Also titled as the 'Mahabaleshwar of Marathwada', Mhaismal is a perfe
+                       ct blend of the undefiled nature and the breathtaking terrains. It s 
+                       famous for its temples, gardens, valleys, caves and forts all adding
+                        to its inherent natural charm. The pristine ambience of the place is a
+                         treat for the tired urban eyes looking for a quiet weekend getaway from
+                          Mumbai, Aurangabad or Pune. </p> <br> 
+                      <p>
+                  The hill station has a plateau with lush greenery, hills and forest cover 
+                  which is a natural paradise that photographers and nature lovers seek. It
+                   is also famous as a Botanical Workshop for the wide variety of flora and
+                    fauna it has in store. Mhaismal, although offbeat, is slowly getting po
+                    pularity because of the greenery that is it adorned with during the mon
+                    soons, the wide range of flora it has in store, the bamboo brown forests
+                     and the queer village.
+				</p>
+				<br />
+				
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/iC5ntnXHyLkYxsxq9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Places to Visit In Mhaismal  :</h3>   <br>
+				<p>
+                    Apart from the natural beauty of the hill station, there are several attraction
+                    s one must visit to complete their trip to Mhaismal.
+
+                   1. Ranjangaon Ganpati temple which is one of the Ashtavinayaka and is reputed
+                    for maintaining cleanliness.
+                   2. Bhadra Maruti is a pilgrim hotspot because of the Lord Hanuman's sleeping
+                    idol.
+                   3. Old Jain Temple is a must-visit for its amazing display of art.
+                   4. The historical Fort of Devagiri is another significant attraction.
+                   5. The Mughal style garden of Bani Begum Bagh is known for its rejuvenating beauty.
+                   6. Pitalkhora Fort, nestled in the green valleys has a beautiful setting and some 
+                   mystic caves and sculptures as well.
+                </p>
+				<br>
+				<h3>Best Time to Visit :</h3>    <br>
+				<p>
+					The best time to visit Mhaismal is during the rainy season, although it has 
+                    moderate temperature all year round. During the monsoon, that is from the mo
+                    nth of June to September, the hill station looks enhanced with greenery and 
+                    the landscape views of the neighbouring valleys and hills become even more 
+                    incredible.
+				</p>
+				<br>
+				<h3>How To Reach Mhaismal :</h3>   <br>
+				<p>
+					It is well connected by roads and one can find regular buses leaving 
+                    for Mhaismal from Aurangabad as well as Pune.
+				</p>
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

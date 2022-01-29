@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Harihar Fort</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a href="/"><h1>Maharashtra</h1></a>
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<a href="#">Places</a>
+					</li>
+					<li>
+						<a href="#">Placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/harihar-fort-1.jpg"
+						/>
+						<img
+							src="../images/harihar-fort-1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/harihar-fort-2.jpg"
+						/>
+						<img
+							src="../images/harihar-fort-2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/harihar-fort.jpg"
+						/>
+						<img
+							src="../images/harihar-fort.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Harihar Fort</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					The Chhatrapati Shahu museum in Kolhapur was constructed during the
+					period 1877 - 1884. It was designed by British architect 'Charles
+					Mant' and was built according to an architectural style that had a
+					fusion of Jain and Hindu influences from Gujarat and Rajasthan, along
+					with a touch of the local Rajwada style.
+				</p>
+				<br />
+				<p>
+					The structure is made from black, polished stone and is certainly an
+					architectural masterpiece. The ground floor of the New Palace
+					accommodates the Shahaji Chhatrapati Musuem
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent">
+			<h2>MAP</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15005.820047327426!2d73.46340432313623!3d19.905221735880144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd8aa3cbdc02b5%3A0x16fa7d9ad92945af!2sHarihar%20Fort!5e0!3m2!1sen!2sin!4v1638087664435!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>			
+			
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Access</h2>
+				<br />
+				<p>
+					There are two base villages of the fort, Harshewadi and Nirgudpada. The Harshewadi is 13 km from Trymbakeshwar. The other base village of the fort is Nirgudpada/Kotamvadi which is 40 km from Ghoti which itself is 48 km from Nashik and 121 km from Mumbai. One can travel from Ghoti to Trimbakeshwar by bus or by private vehicle.
+				</p>
+				<p>
+					One should take care of returning from the fort the last bus from Trimbakeshwar is 5:30pm to Ghoti and enough trains are available from Nashik to Mumbai till late night. The climb from Harshewadi is easier than from the Nirgudpada. A wide, safe trekking path starts from the hil lock north of the Nirgudpada.
+				</p>
+				<p>
+					It passes through scrub forest till it reaches an open ridge which is connected to the fort. It takes about an hour to reach the scarp of the hill on which the fort is situated. The ascent through the 60 m rock-cut steps is wonderful. It is like a stone ladder placed at 60 degrees along the scarp. The steps are worn out in many places yet the holes on either side of the steps are conveniently cut for holding onto.
+				</p>
+				<br />
+				<p>
+					After reaching the main entrance, the path takes a left traverse and again helical rock cut steps are to be climbed, which are more steep than the earlier. The steps finally end with a narrow entrance. At many places the steps are so narrow that, only a single per
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

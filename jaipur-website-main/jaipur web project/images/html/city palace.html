@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Dajipur</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/citypalace/citypalace1x600.jpeg"
+						/>
+						<img
+							src="../images/citypalace/citypalace1x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/cityplace/citypalce2x600.jpeg"
+						/>
+						<img
+							src="../images/citypalace/citypalce2x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/citypalace/citypalce3x600.jpeg"
+						/>
+						<img
+							src="../images/citypalace/citypalce3x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>City Palace</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>History</h2>
+				<p>
+					City Palace has stood at the heart of the Old City of Jaipur for nearly three centuries, 
+					shortly after Maharaja Sawai Jai Singh II decided to relocate his court from the city of Amber. 
+					Protected by huge guard walls, the fairy-tale-like structure is still the home of Jaipur's modern-day royal family,
+					 and is more extravagant and enchanting than you might imagine
+				</p>
+				<br />
+				<p>
+					City Palace is more than a sand-colored regal abode—it's a sprawling complex of buildings built around
+					 a series of landscaped garden courtyards overlooking Jaipur and Lake Palace. 
+					The entire property is a stunning display of Rajasthani and Mughal architecture.
+
+				</p>
+				<br />
+				<p>
+					The current occupants reside in the most eye-catching building, the Chandra Mahal, an elegant structure with curved eaves and domed rooftops.
+					 Each of its seven stories features an entirely different style. 
+					 The ground floor is included in the price of admission, but you'll need to book a private tour to go upstairs.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.3619421" data-lng="73.873396">
+			<h2>MAP</h2>
+			<a href="https://g.page/dajipurwildlife?share" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>Architecture</h3>
+				<p>
+					The series of palaces in the city palace complex, behind an exquisite facade of 244 metres (801 ft) length and 30.4 metres (100 ft) height,
+					 were built on a ridge on the east of lake Pichola. The complex is located in Udaipur city at 24.576°N 73.68°E, 
+					 which is set with an average elevation of 598 metres (1,962 ft).[13] They were built over a long period, from 1559 onwards,
+					  by 22 generations of Sisodia Rajputs. Several Maharanas starting with Udai Singh II, have contributed to this edifice,
+					   which comprises an agglomeration of structures, including 11 small separate palaces.
+					    The unique aspect of this conglomeration is that the architectural design is distinctly homogeneous. The palace complex has been built entirely in granite and marble.
+						 The interiors of the palace complex with its balconies, towers and cupolas exhibit delicate mirror-work, marble-work, murals, wall paintings,
+						  silver-work, inlay-work and leftover of colored glass. 
+				</p>		  
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

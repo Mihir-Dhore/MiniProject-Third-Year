@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Ram Teerth</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a href="/"><h1>Maharashtra</h1></a>
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/anjeneri-hills.jpg"
+						/>
+						<img
+							src="../images/anjeneri-hills.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/anjeneri-hills-1.jpg"
+						/>
+						<img
+							src="../images/anjeneri-hills-1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/anjeneri-hills-2.svg"
+						/>
+						<img
+							src="../images/anjeneri-hills-2.svg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Anjeneri Hills</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>More about Anjeneri Hill</h2>
+				<p>
+					Anjaneri, one of the forts in the mountain range of Nasik-Trimbakeshwar, is considered to be the birthplace of god Hanuman. Anjaneri is located 20 km away from Nasik by Trimbak Road. It has become a famous trekking spot for local Nashikites, specially in the rainy season.
+				</p>
+				<br />
+				<p>
+					Formed over River Hiranyakeshi, Ramtirth Waterfall is a natural
+					waterfall popular for its unmatched serenity and beautiful locales.
+					The spot is mostly used for day picnics and to unmind from the
+					hustle-bustle of the city.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" >
+			<h2>MAP</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15004.418117699643!2d73.56124522314062!3d19.919999485747653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd8ca520c03921%3A0xa082f094e810ff95!2sAnjaneri!5e0!3m2!1sen!2sin!4v1638087789987!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>History</h2>
+				<br />
+				<p>
+					Anjaneri is an attraction of Nasik city, which is also an important fort in the Trimbakeshwar region. Situated at 4,264 feet (1,300 m) above sea level, it lies between Nasik and Trimbakeshwar.
+
+Anjaneri is the birthplace of Hanuman, and is named after Hanuman's mother, Anjani.[2]
+
+108 Jain caves are found here belonging to 11th-12th century.[3] The area around Anjaneri was once ruled for a brief period by Veersen Ahir (also spelled Abhir), who made it his capital.[4] This place was used by Raghunathrao Peshva alias Raghobadada as summer retreat when he as in exile. During British Raj, the christian missionaries of Saharanpur and Malegaon regularly visited Anjaneri during summer and held the service of the Church of England.[5]
+				</p>
+
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

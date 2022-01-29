@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Panhala Fort</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h1>Maharashtra</h1>
+            <ul>
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#">places</a>
+                </li>
+                <li>
+                    <a href="#">placeholder</a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="place--fig">
+            <div class="place--imgs" style="width: 100%; display: flex">
+                <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+                <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar wada - 2.jpg" />
+                    <img src="../images/Cafe Paassh/Cafe Paassh1.jpg" alt="fort" class="place--img" data-index="0" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shanivar-Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shanivar-Wada - 2.jpg" />
+                    <img src="../images/Cafe Paassh/Cafe Paassh.jpg" alt="fort" class="place--img" data-index="1" />
+                </picture>
+
+                <picture>
+                    <source media="(max-width: 500px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 1.jpg" />
+                    <source media="(max-width: 2000px)" srcset="../images/Panhala-fort/Shaniwar--Wada - 2.jpg" />
+                    <img src="../images/Cafe Paassh/Cafe Paassh2.jpg" alt="fort" class="place--img" data-index="2" />
+                </picture>
+            </div>
+            <figcaption class="place--name">
+                <h1>CAFE PAAASHH</h1>
+            </figcaption>
+        </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+        <article class="place--history">
+            <!-- <h2>history</h2> -->
+            <br><br>
+            <p>
+                How would you feel if a cafe gets blend with all the luxury you ever need? Interestingly, Paash is one such wonder near to your own door in the calm city of Pune. This organic cafe has the beauty of sustainable architecture along with a store of plush
+                clothes, decorated artifacts, home-wares and gifts that you can take back for your family and friends. <br><br> Dive in the beauty of white clad walls covered with picture frames, royal chandeliers, and make sure you do
+                not miss out the events they love to host at this amazing visiting place in Pune. <br><br>
+
+                <b>Location:</b> Kalyani Nagar, Pune<br><br>
+
+                <b> Timings:</b> 11.00 AM to 11.00 PM<br><br> If you are planning your next vacation in Pune here is the list of best resorts near Pune for a perfect weekend gateway.
+
+            </p>
+            <br /> <br>
+
+
+            <p>
+                <b>Paashh</b> <br> Nestled in the quaint by lanes of Pune, we began our dream with the store 22N Au Luxe.In the last 9 years, we have changed & so has our idea of living! <br><br> "Paashh is a bond with nature It is the journey of our
+                love with handcrafted In a world where sustainability and organic combine To take us back to our roots" <br><br> With an aim to make sustainability a part of every living, Paashh is more than just a brand;it is a belief and a driving force
+                for all our creations. <br><br>
+
+
+
+                <b>Sustainable fashion</b> <br> Clothing for women & kids that is simple, stylish & made with love! Our fashion line takes us back to our roots with collections in Cotton, Kapas Khadi, Linen & Pure Silk. Designed keeping in mind comfort
+                & grace, every piece from Paashh aims to make fashion more sustainable & conscious of the environment.
+                <br><br>
+                <b>Organic Cafe</b> <br> The paashh cafe is an organic cafe serving an array of dishes that are delicious, organic and healthy. <br><br>
+
+                <b>Eco friendly lifestyle</b> <br> Our love for the environment has taken us on a journey to create environment friendly home & lifestyle products.The Paashh homeware will be out soon!
+            </p>
+        </article>
+        <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+        <h2>MAP</h2> <br>
+        <a href="https://goo.gl/maps/GaRQWCNL4mumLeNP9" class="btn">Goto GMaps</a>
+        <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+        <!-- <article class="place--features">
+            <h2>Major Features</h2>
+            <br />
+            <h3>Things to See in the Shaniwar Wada!</h3> <br>
+            <p>
+
+                <h3> The ruined complex of Shaniwar Wada has many attractions to keep visitors enthralled, including the following:</h3> <br>
+                <p> 1.Dilli Darwaza or Dilli Gate, the main gate of the fortified palace Mastani Darwaja aka Mastani Gate or Aliibahadur Darwaja, the gateway used by Mastani, the second wife of Baji Rao I, when traveling out of the palace complex. <br><br>2.
+                    Khidki Darwaja or Window Gate, named after the armored window contained there. <br> <br>3.Ganesh Darwaja or Ganesh Gate, near which existed the Ganesh Rang Maha <br> <br>4. Jambhul Darwaja or Narayan Darwaja aka Narayan’s Gate, used
+                    by concubines to access and leave the fortified premises Nine bastion towers. <br><br>5.Garden complex <br><br> 6.Hazari Karanje, the sixteen-petal lotus-shaped fountain A few surviving cannons <br> <br>7.The majestic statue of Baji
+                    Rao I that stands at the entrance of the palace
+                </p>
+
+
+            </p>
+        </article> -->
+    </section>
+
+    <!-- !========== Footer ============== -->
+
+    <footer>
+        <h1>
+            <span class="highlight">&#169; 2021</span> All the content on this page is copyrighted to <span class="highlight">placeholder</span>
+        </h1>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Ellora Caves</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Ellora cave/ellora1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Ellora cave/ellora1.jpg"
+						/>
+						<img
+							src="../images/Ellora cave/ellora1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Ellora cave/ellora2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Ellora cave/ellora2.jfif"
+						/>
+						<img
+							src="..\images\Ellora cave/ellora2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\Ellora cave/ellora3.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\Ellora cave/ellora3.jfif"
+						/>
+						<img
+							src="..\images\Ellora cave/ellora3.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Ellora Caves </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Built during 600 to 1000 CE, Ellora Caves lie in the Sahyadri hills in 
+                    Aurangabad and is a 2-hour drive from the Ajanta Caves. The Ellora Cav
+                    es comprise Hindu, Buddhist and Jain temples and over a 100 caves with
+                     only 34 open to the public excavated from the basalt cliffs in the Ch
+                     aranandari hills. Ellora Caves served as lodgings to the travelling B
+                     uddhist and Jain monks besides being a site for the trade route. Ther
+                     e are 17 Hindu caves, 12 Buddhist and five Jain caves with deities, c
+                     arvings and even monasteries depicting the mythology of each religion.
+                      These caves constructed near each other stand for the harmony and so
+                      lidarity among all faiths and beliefs. <br>
+                     A part of the Hindu and Buddhist Caves were built during the Rashtrak
+                     uta dynasty, and the Jain Caves were built by the Yadav dynasty. It i
+                     s not yet established as to which caves were built first - the Hindu 
+                     or the Buddhist. Based on the archaeological evidence found at various
+                      sites it was deduced that there were essentially three major construc
+                      tion periods for the Ellora caves: early Hindu period from 550 to 600
+                       CE, Buddhist period from 600 to 730 CE, and the final phase, the Jain
+                        and Hindu period lasting from 730 to 950 CE.
+				</p>
+				<br />
+				
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/1m3qT2DHwqaL5VEt8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Ellora Caves Architecture :</h3>   <br>
+               <p> Although the deities and idols in the caves have been damaged, the paintings,
+                 carvings remain as it is. The inscriptions on the walls of the Ellora Caves
+                  date back to the 6th century and a famous one is the Rashtrakuta Dantidurga
+                   on the mandapa of Cave 15 inscribed during 753 to 757 AD. Out of all the 
+                   excavations done, Cave 16 or Kailasha temple - a monument dedicated to Shi
+                   va is the largest single monolithic rock excavated in the world. It was bu
+                   ilt during 757-783 AD by Krishna I who was the uncle of Dantidurga.
+               </p>  <br>
+               <p>
+               <b> Hindu Monuments : </b> <br>
+                Built during the 6th to 8th century in the Kalachuris period, the Hindu Caves 
+                were built in two phases. Caves 14, 15 , 16 were built in the Rashtrakuta per
+                iod. The early Hindu caves were dedicated to Shiva with inscriptions depicting
+                 the mythology related to other gods as well. A typical attribute of these tem
+                 ples was the lingam-yoni placed in the centre of the shrine.
+               </p> <br>
+               <p>
+                 <b> Buddhist Monuments : </b> <br>
+                Situated in the south of the precinct, these caves are estimated to have been 
+                built during 600 to 730 CE. It was first believed that the Buddhist Caves wer
+                e built before the Hindu Caves but this theory was debunked and with enough e
+                vidence to substantiate, it was established that the Hindu caves were constru
+                cted before the Buddhist came into being. The earliest Buddhist cave to be bu
+                ilt was Cave 6, with Cave 11 and 12 being the last. These caves feature monas
+                teries, shrines which include bodhisattvas, and carvings of Buddha.
+               </p> <br>
+               <p>
+               <b> Jain Monuments : </b>
+                The five caves lying to the north of the Ellora Caves belonging to the Digam
+                bara sect were excavated in the 9th to 10th century. Smaller than the Hindu 
+                and Buddhist Caves, these have the architectural attributes such as mandapa 
+                and a pillared verandah. The Jain temples have the carvings of the yaksa an
+                d yaksi, gods and goddesses, and devotees all depicting the Jain mythologica
+                l sensibilities of that time.
+               </p> <br>
+				<h3>Ellora Caves Timings :</h3>    <br>
+				<p>
+					Ellora Caves opening hours are sunrise to sunset. The timings for Ellora 
+                    Caves are 8 in the morning till 5.30 in the evening.
+				</p>
+				<br>
+				<h3>How to Reach Ellora Caves :</h3>   <br>
+				<p>
+					Situated almost 27 km from Aurangabad city, Ellora Caves can be reached 
+                    easily via buses and taxis. There are private taxi stands in Aurangabad
+                     which offer a trip to the caves and back starting at Rs 1,000 depending
+                      on the car type. The drive will take you around an hour to reach the c
+                      aves. The Maharashtra State Road Transport Corporation (MSRTC) operate
+                      s bus tours to Ellora Caves in AC Volvo coaches. The guided tour buses
+                       depart the Central Bus Stand in Aurangabad in the morning and cover o
+                       ther attractions on the route. Alternatively, you can go for the regu
+                       lar state-run buses.
+
+				</p> <br>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

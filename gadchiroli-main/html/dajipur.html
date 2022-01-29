@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Glorry Of Allapali</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+                            srcset="data:image/jpeg;base64,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"
+                        />
+						<img
+							src="https://lh3.googleusercontent.com/proxy/Lyc85Y2QMrGG-jlRkKrE8DeBh-1lsAZ4cEYntDpUuay40mDoYCoP0CzCuw-7HYL2d4jP6DE-jSRUF0nJTcZ_IcN9HtI5XE4pR5M7eHJPKVtC2rdoLESBt9FEMtdMn0WimkkkdMK2o-E"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="http://3.bp.blogspot.com/-HrzSsOz6Wjs/VLTqk0Pqz3I/AAAAAAAAC9s/rMG1sioHpzw/s1600/DSC_0004.JPG"
+						/>
+						<img
+							src="../images/KP/Kp final 2 x1280.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/KP/Kp final 3 x600.jpg"
+						/>
+						<img
+							src="../images/KP/kp final 3x1280.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Allapalli</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>Alapalli Village</h2>
+				<p>
+					Alapalli is a Village in Aheri Taluka in Gadchiroli District 
+                    of Maharashtra State, India. It belongs to Vidarbh region . 
+                    It belongs to Nagpur Division . It is located 99 KM towards 
+                    South from District head quarters Gadchiroli. 6 KM from Aheri. 
+                    887 KM from State capital Mumbai
+
+                    Alapalli Pin code is 442703 and postal head office is Allapalli .
+
+                    Khamancheru ( 7 KM ) , Aheri ( 7 KM ) , Chinchagundi ( 9 KM ) , 
+                    Mahagaon (bk.) ( 11 KM ) , Rajpur Patch ( 16 KM ) are the nearby
+                     Villages to Alapalli. Alapalli is surrounded by Mulchera Taluka 
+                     towards North , Bejjur Taluka towards west , Etapalli Taluka 
+                     towards East , Kouthala Taluka towards west . 
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="19.4316288" data-lng="80.0485754">
+			<h2>MAP</h2>
+			<a href="https://www.google.com/maps/vt/data=EC_nPgBeJvoRGyqb3mRtUIgArG1TEKBzMsz6tCCs0VgY3UCDo2NoiEoQ2vEU6ovp5yya3PdgRVBkhqNujAf2Sw7gcvhHswMj5_cHV-uVU9qNXerm8VU2QPQkrdaGc4ejEd7o316w_qhqQzqVGGZ15WWP-eM7WWD5PR-5g-h8asl7kMEVZ3qOH_HZxR80KCkd7596Vn0UNhxKHNobtHtSUXZhq6OSdtTiWcTP1Wvf-sIyIW7FafgFYahlMQhr72AUsjk" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>FORESTS</h2>
+				<br />
+				<p>
+					Allapalli is very famous for the forest. The Allapalli forests are 
+                    the source of the world-famous teak wood (tectona grandis). The 
+                    'Glory of Allapalli' which represents the surviving patch of the 
+                    original forests before they were brought under scientific management 
+                    more than a 100 years ago, is famous as a living museum of the forest 
+                    ecology. It is located 7 km. from Allapalli on the Permili-Bhamaragadh 
+                    road. 2 divisional offices of the Forest Department are placed in 
+                    Allapalli. 
+				</p>
+
+				
+				<h3>Economy</h3>
+				<p>
+					Allapalli's revenue generate in different forms like it has a good 
+                    market line, people are employees in many offices.
+
+                    Allapalli comes alive on Sunday, the traditional market day also 
+                    known as Allapalli Sunday Market. People from surrounding villages
+                     and towns come to Allapalli to sell their wares. This fairs has a 
+                     lot of local flavour and specialises in agricultural produce, 
+                     vegetables, locally-grown fruit, spices, clothes and even plants.
+                     dental services are also available in alapalli 
+				</p>
+
+				<br />
+
+				<p>
+                    Nagdevata: it is located around 4 km away from Allapalli on Sironcha road,
+                     many people go there to seek blessings of god.
+                    Patanil: it is located around 10 km from Allapalli, this place is in the 
+                    dense jungle part of Allapalli, a very nice idol of god Ganesha is there,
+                     it is said that the idol has evolved from the surface of earth naturally.
+                    Venkatapuram: it is around 35 km from Allapalli on the way to aheri, you
+                     will find a temple in venkatapuram. the special part of this place is 
+                     water scarcity does not come anytime during the 12-month course in a year. 
+                     It has water ponds from where water comes 24*7, 365 days.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

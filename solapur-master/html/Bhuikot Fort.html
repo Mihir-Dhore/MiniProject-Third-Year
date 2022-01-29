@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Bhuikot Fort</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Bhuikot Fort/640px-Panhala_fort-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Bhuikot Fort/2180px-Panhala_fort-1.jpg"
+            />
+            <img
+              src="../images/Bhuikot Fort/1280px-Panhala_fort-1.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Bhuikot Fort/600px-panhala-fort-2.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Bhuikot Fort/2500px-panhala-fort-2.jpg"
+            />
+            <img
+              src="../images/Bhuikot Fort/2180px-Panhala_fort-11.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Bhuikot Fort/600px-Fort_Panhala-3.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Bhuikot Fort/2500px-Fort_Panhala-3.jpg"
+            />
+            <img
+              src="../images/Bhuikot Fort/1200px-Fort_Panhala-3.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>Bhuikot Fort</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2>history</h2>
+        <p>
+          The fort is located near the Siddheshwar Temple of Lingayats and a
+          lake passes by which also doubles up as a picnic spot. Right outside
+          the premises of the fort is where history meets the 21st century.
+          There is a nice lush green lawn, fountain and even a walking track
+          that tourists can spend time after visiting the fort.
+          <br />
+        </p>
+
+        <p>
+          In 1659, after the death of the Bijapur general Afzal Khan, in the
+          ensuing confusion Shivaji took Panhala from Bijapur. In May 1660, to
+          win back the fort from Shivaji, Adil Shah II (1656–1672) of Bijapur
+          sent his army under the command of Siddi Johar to lay siege to
+          Panhala. Shivaji fought back and they could not take the fort. The
+          siege continued for 5 months, at the end of which all provisions in
+          the fort were exhausted and Shivaji was on the verge of being
+          captured.
+        </p>
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="17.67403" data-lng="75.90213">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/place/Solapur+Bhuikot+Fort/@17.6740295,75.8999341,17z/data=!3m1!4b1!4m5!3m4!1s0x3bc5da7faa29aadb:0xde47f785fec4cfb9!8m2!3d17.6740295!4d75.9021228"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features">
+        <h2>Major Features</h2>
+        <br />
+        <h3>History</h3>
+        <p>
+          Solapur has a fort known as Bhuikot fort ( bhui means land and kot
+          means fort - as this fort was built on land as against the other forts
+          in Maharashtra built on hills !!). by Adil Shah. The fort later came
+          under Maratha control.
+        </p>
+        <br />
+        <h3>Things to see</h3>
+        <p>
+          1] The grounds, known to host wrestling matches. <br />
+          2] The Iconic Shiva temple. <br />
+          3] A small animal park housing several rabbits, ducks, peacocks and
+          other animals.
+        </p>
+        <br />
+        <!--<h3>Kalavanticha Mahal</h3>
+        <p>
+          Kalvanticha Mahal (The courtesan's palace) The name of this building,
+          which is also called Nayakini Sajja, literally means "Courtesans'
+          Terrace room". It stands on the east side of the fort close to the
+          rampart. By 1886, it had become a complete wreck with only traces of
+          ornamental work on the ceiling. This was used during the occupation of
+          the fort by the Bahmani Sultanate as a Rang Mahal(residences for the
+          ladies of the court)
+        </p>
+
+        <br />
+        <h3>Ambarkhana</h3>
+        <p>
+          The Amberkhana, situated in the center of the fort, were three
+          granaries built in the Bijapuri style of architecture. They enabled
+          Shivaji to withstand a 5-month siege by Siddhi Johar. It consists of
+          three buildings called the Ganga, Yamuna and Saraswati Kothis.
+        </p>-->
+      </article>
+    </section>
+
+    <!-- !========== Footer ============== 
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>-->
+  </body>
+</html>

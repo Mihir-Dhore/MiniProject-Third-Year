@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | Pandharpur</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <!-- <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>-->
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/pandharpur/640px-Pan_fort-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/pandharpur/2180px-Pan_fort-1.jpg"
+            />
+            <img
+              src="../images/pandharpur/1280px-Pan_fort-1.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Panhala-fort/600px-panhala-fort-2.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/pandharpur/pa.jpg"
+            />
+            <img
+              src="../images/Panhala-fort/1200px-panhala-fort-2.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/Panhala-fort/600px-Fort_Panhala-3.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/Panhala-fort/2500px-Fort_Panhala-3.jpg"
+            />
+            <img
+              src="../images/Panhala-fort/1200px-Fort_Panhala-3.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>Pandharpur</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2>history</h2>
+        <p>
+          The main entrance of Lord Vittala's Temple is facing towards the
+          Chandrabhaga or Bhima river. Samadhi of Namadev and Chokamela is at
+          the entrance. Pilgrims will first pray to the Devotees and then enter
+          the temple. A small Ganesh Shrine is present inside the temple as
+          first Shrine. Then, a small hall where bhajans are performed. A small
+          Shrine for Garuda and Hanuman. Then, after climbing a few steps, we
+          can see the face of Lord Vittala. We can have this Mukha Darshan any
+          time without standing in Queue. For, Padha Darshan (To touch the Lotus
+          Feet of Lord), there is an entrance which leads to the queue complex
+          outside the temple. It will lead to many small shrines of Bhaktas,
+          then towards the Lord Panduranga. We can touch the feet of Lord. We
+          feel best when we touch the Lord's Lotus feet. There are Shrines for
+          Rukmini Devi, Sathyabhama Devi, Radhika Devi, Lord Narasimha, Lord
+          Venkateshwara, Goddess Mahalakshmi, Nagaraj, Ganesha, Annapoorna Devi.
+          There is another mandap where all devotees play like Krishna had
+          played with Gopikas. It is a great experience.
+        </p>
+        <br />
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="17.67682" data-lng="75.33637">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/place/Shri+Vitthal+Rukmini+Temple/@17.6749569,75.3055208,14z/data=!4m9!1m2!2m1!1spandharpur+temple!3m5!1s0x3bc2c124826ed009:0xec10c34488793d23!8m2!3d17.6774439!4d75.3360291!15sChFwYW5kaGFycHVyIHRlbXBsZVoTIhFwYW5kaGFycHVyIHRlbXBsZZIBDGhpbmR1X3RlbXBsZQ"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features">
+        <h2>Popular Places in Pandharpur</h2>
+        <br />
+        <h3>Dindi Yatra</h3>
+        <p>
+          Ashadi Ekadasi is a religious procession and is celebrated during the
+          months of June- July (Aashaadh Shukla paksha). It consists of a
+          beautifully decorated Palkhi having the “padukas” of the lord and the
+          Palkhi procession consists of people collectively walking, singing and
+          dancing the glory of the Lord in what are called as ‘Dindis’. This is
+          said to be the World's largest and oldest people movement where people
+          gather on a specific day every year and perform a walk of a distance
+          of around 250 km. Pandharpur Ashadi Ekadashi Wari journey has been
+          honoured by World Book of Records, London under the title 'One of the
+          Most visited places in a day
+        </p>
+
+        <br />
+        <h3>Chandrabhaga River</h3>
+        <p>
+          The Bhima River (also known as Chandrabhaga River) is a major river in
+          Western India and South India. It flows southeast for 861 kilometres
+          (535 mi) through Maharashtra, Karnataka, and Telangana states, before
+          entering the Krishna River. After the first sixty-five kilometers in a
+          narrow valley through rugged terrain,[1] the banks open up and form a
+          fertile agricultural area which is densely populated
+        </p>
+
+        <br />
+        <h3>Legend of Pundalik</h3>
+        <p>
+          Krishna was extremely impressed and the ever-loving God waited for his
+          devotee. When Pundalik came out, he begged for pardon but far from
+          being displeased, Krishna was taken over by Pundalik's love for his
+          parents and granted a boon. Pundalik requested Krishna to stay back on
+          Earth and bless all his true devotees. He agreed to take the form of
+          Vithoba, or God who stood upon a brick, and a temple came up there.
+          Along with Vithoba, Rukmini (Mother Rukmini, the consort of Krishna)
+          is also worshipped here
+        </p>
+
+        <br />
+        <h3>Sant Namdeva Maharaj Payari</h3>
+        <p>
+          An interesting tale is that of the temple's first step called “Sant
+          Namdev Maharaj Payari” (step of Sant Namdev Maharaj). The child and
+          future saint, Namdev was an ardent devotee of Vithoba. One day his
+          mother asks him to complete the ritual of “naivedya” (any food made in
+          the house is first offered to God, the ritual comprises placing the
+          offering plate before the deity and sprinkling water around the plate
+          and with a prayer to God). Namdev faithfully does “naivedya” and waits
+          for God to appear and take the offering. But he is disheartened. He
+          keeps praying and requests God to come in person and accept the
+          offering. With no answer, the child starts banging his head at the
+          feet of God. Seeing this utmost devotion and innocence of a child, God
+          appears, eats the offering and blesses Namdev. Namdev asks for being
+          present in the "first step" at His temple, so that he could
+          innumerable devotees will touch him before having the “darshan”
+          (view). So, this first step is called “Sant Namdev Maharaj Payari”.
+        </p>
+      </article>
+    </section>
+
+    !========== Footer ============== 
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>
+  </body>
+</html>

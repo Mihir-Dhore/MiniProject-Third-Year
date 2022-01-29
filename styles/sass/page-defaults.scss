@@ -1,0 +1,62 @@
+@use "sass:string";
+@use "./card-styles.scss";
+@use "./global.scss";
+@use "./navbar.scss";
+
+// !========== Header Section ==============
+header {
+	color: var(--text-clr-1);
+	width: 100%;
+}
+.place {
+	&--fig {
+		position: relative;
+	}
+
+	&--img {
+		height: 50vh;
+	}
+
+	&--name {
+		background: hsl(var(--bg-clr-3));
+		border-radius: var(--border-radius);
+		position: absolute;
+		padding: var(--default-padding-3);
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 50%);
+		width: 90%;
+	}
+
+	&--description {
+		margin: 3rem 0 1rem 0;
+		padding: var(--default-padding-1);
+	}
+}
+
+// !============== main styles ===========
+
+main {
+	margin: 3rem 0;
+	padding: var(--default-padding-1);
+
+	h1 {
+		color: var(--text-clr-2);
+		text-align: left;
+		padding-bottom: 1.5rem;
+	}
+}
+
+// !=============== Footer Styles ==================
+footer {
+	background: hsl(var(--bg-clr-4));
+	padding: 2rem;
+
+	> h1 {
+		color: var(--text-clr-3);
+	}
+}
+
+.highlight {
+	color: var(--text-clr-4);
+}

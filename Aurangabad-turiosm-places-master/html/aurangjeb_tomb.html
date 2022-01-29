@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Tomb of Aurangzeb </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/tomb of aurangzeb/aurangzeb-tomb1.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/tomb of aurangzeb/aurangzeb-tomb1.jpg"
+						/>
+						<img
+							src="../images/tomb of aurangzeb/aurangzeb-tomb1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\tomb of aurangzeb/aurangzeb-tomb2.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\tomb of aurangzeb/aurangzeb-tomb2.jfif"
+						/>
+						<img
+							src="..\images\tomb of aurangzeb/aurangzeb-tomb2.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\tomb of aurangzeb/aurangzeb-tomb3.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\tomb of aurangzeb/aurangzeb-tomb3.jpg"
+						/>
+						<img
+							src="..\images\tomb of aurangzeb/aurangzeb-tomb3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Grishneshwar Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					In the late 1600s, after the Mughal Empire expanded its reign to South
+                     India till Golconda, a downfall had begun due to continuous wars and 
+                     battles that lead to the loss of hundreds of thousands of human lives
+                      and an insane amount of money. The expenses, that also included wasteful
+                       indulgences, drove the Mughal Empire to bankruptcy. At the end of his 
+                       life, the emperor went through a period of introspection and guilt, and
+                        as per his instructions, a simple funeral and his burial were carried 
+                        out at Khuldabad where he has purchased the burial ground. It is said 
+                        that the entire expense did not cross INR 15/- at that time. </p>  <br>
+
+                    After the funeral, Aurangzeb was given the title of Khuld-Makan which means
+                     the one whose abode is an eternity. A wooden porch with Persian inscriptions
+                      was erected all around the tomb over a platform. But, because of its simplicity,
+                       the tomb was sort of left unmarked. Around the mid-1700s, a British Statesman,
+                        Lord Curzon, discovered the tomb and built a white marble encasing and flooring
+                         around it. The simple yet elegant structure that we get to see today, is an open-air
+                          tomb with a domed portico, open ceiling and screens of marble with Jali work. A 
+                          large piece of marble with inscriptions that contain Aurangzeb’s complete name with
+                           his title can also be seen in one corner around the tomb.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/KcnTGvNH4qKW95QP7" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>Structure of Aurangzeb’s Tomb :</h3>   <br>
+                <p>
+                    The tomb of Aurangzeb is simpler than one would expect from a Mughal Emperor.
+                     Aurangzeb asked for a modest, open-air grave which showed his deep devotion
+                      to his Islamic beliefs. The translated Persian epitaph on his tomb reads:
+                       "The rich may well construct domes of gold and silver on their graves! 
+                       For the poor folks like me, the sky is enough (of a dome to shelter my grave)!"
+
+                The platform over the tomb is made of red sandstone, which is less than 3 yards
+                 in length. The tomb has been covered with soil on which herbs grow. After Aurangzeb’s
+                  burial, he was given the posthumous title of Khuld-makan, which means he whose abode
+                   is in eternity. In 1911, a marble structure was erected around the grave under the 
+                   orders of Lord Curzon. The tomb is remarkably plain and the perforated marble screens
+                    on three sides are the only elements of decoration.
+
+                 The dargah also houses the tomb of Aurangzeb’s son, Azam Shah and his wife; along-with
+                  the tomb of Asaf Jah I, who was the founder of the Hyderabad dynasty.
+                </p>
+				
+			
+				<br>
+				<h3>Location of the Tomb of Aurangzeb :</h3>   <br>
+				<p>
+					The tomb of Aurangzeb is located in the village of Kuldabad in the district
+                     of Aurangabad in the state of Maharashtra. It is located in the south-east
+                     ern corner of the complex of the dargah of the Sufi saints Sheikh Burhan-u’d-din
+                      Gharib and Sheikh Zainuddin, who were his spiritual gurus.
+				</p>
+
+				<br />
+				<h3>How to reach Aurangzeb’s Tomb :</h3>   <br>
+				<p>
+
+					The nearest airport is at Aurangabad. Jalgaon is the closest railway station
+                     which is connected to other parts of Maharashtra. However, Bhusaval, about 30 km
+                      from Jalgaon is well connected to all parts of India.
+				</p>
+
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

@@ -1,2 +1,2 @@
-# MaharashtraTourism MiniProject
+# Home-Page-Maha-tourism
  

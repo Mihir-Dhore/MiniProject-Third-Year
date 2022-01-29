@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Gaganbawada</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a href="/"><h1>Maharashtra</h1></a>
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kalaram-temple.jpg"
+						/>
+						<img
+							src="../images/kalaram-temple.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kalaram-temple-1.jpg"
+						/>
+						<img
+							src="../images/kalaram-temple-1.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/kalaram-temple-2.jpg"
+						/>
+						<img
+							src="../images/kalaram-temple-2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Kalaram Temple</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					The Kalaram Temple is an old Hindu shrine dedicated to Rama in the Panchavati area of Nashik city in Maharashtra, India. It is probably the most important Hindu shrine in the city.
+				</p>
+				<br />
+				<p>
+					The temple derives its name from a black statue of Lord Rama. The literal translation of kalaram is "black Rama". The sanctum sanctorum also houses the statues of the goddess Sita and the god Lakshmana. Thousands of devotees visit it every day
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.54579" data-lng="73.83113">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/FnnkNLGzZAsgM5Bd8" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>History</h2>
+				<br />
+				<p>
+					The original temple of Lord Rama was very old, estimated to be of the Rashtrakuta Period from 7th to 11th centuries. However, antiquity of the Rama idol threw light on the fact that it was more than 2000 years old. The original temple was destroyed by Muslim rulers and it remained in demolished condition. However, during the first Islamic attack on the Temple, the idol of Lord was thrown in the Godavari River by the Temple Brahmins in order to save it.
+				</p>
+
+				<h2>Temple complex</h2>
+				<br />
+				<h3>Karul Ghat & Bhuibawada Ghat</h3>
+				<p>
+					1) The main entrance has a Lord Hanuman deity which is black. There is also a very old tree that has Lord Dattatreya's footprint impressions marked on a stone. Pilgrims visit the Kapaleshwar Mahadev temple near the Kalaram Temple.
+<br>
+					2) Lord Hanuman's temple is designed in such a way that, Lord Ram's idol can be visible from Lord Hanuman's idol.
+<br>
+					3) Main temple of Ram has 14 steps, which represents 14 years of Ram's exile.
+<br>
+					4) Also, the temple has 84 pillars, which represents cycle of 84 lakh species one has to go in order to get Human birth.
+				</p>
+
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rajastan  |Jantar Mantar</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Rajastan</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/jantarmantar/jantarmantar1x600.jpeg"
+						/>
+						<img
+							src="../images/jantarmantar/jantarmantar1x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/janatarmantar/jnatarmantar2x600.jpeg"
+						/>
+						<img
+							src="../images/jantarmantar/jantarmantar2x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/jantarmantar/jantarmantar3x600.jpeg"
+						/>
+						<img
+							src="../images/jantarmantar/jantarmantar3x1200.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Jantar Mantar</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history</h2>
+				<p>
+					Jantar Mantar may look to be nothing more than a bunch of larger-than-life abstract sculptures.
+					 But this is not an art gallery—it's a special collection of astronomical tools started
+					  by Rajput ruler Jai Singh II to measure the heavens nearly 300 years ago.Each of the 20 or
+					  so structures at the UNESCO World Heritage Site serves a distinctive purpose.
+					  The observatory's massive sun dial, known as Samrat Yantra, is particularly striking. At 27 meters tall,
+					   it casts a huge shadow that accurately measures time down to two seconds.
+				</p>
+				<br />
+				<p>
+					The elaborate Jai Prakash also tracks the passing of time,
+					 using the shadow of a metal plate suspended above a sunken bowl-like structure.
+					  Other tools at the observatory can track stars and even predict eclipses.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article id="map--parent" data-lat="16.7194051" data-lng="74.2313568">
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/rRMivq5bX5dtYbJD7" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<p>
+					Jantar Mantar is located in the modern city of New Delhi. “Jantar Mantar” literally means “instruments for measuring the harmony of the heavens”.
+					[1] It consists of 13 architectural astronomy instruments.
+					 The site is one of five built by Maharaja Jai Singh II of Jaipur, from 1723 onwards, revising the calendar and astronomical tables.
+					  Jai Singh, born in 1688 into a royal Rajput family that ruled the regional kingdom,
+					  was born into an era of education that maintained a keen interest in astronomy. 
+					There is a plaque fixed on one of the structures in the Jantar Mantar observatory in New Delhi that was placed there in 1910 mistakenly dating the construction of the complex to the year 1710. 
+					Later research, though, suggests 1724 as the actual year of construction. Its height is 723 feet (220 m)
+				</p>
+
+				<br />
+				<p>
+					Completed in 1724, the Delhi Jantar Mantar had decayed considerably by 1857 uprising. The Ram Yantra, the Samrat Yantra, 
+					the Jai Prakash Yantra and the Misra Yantra are the distinct instruments of Jantar Mantar. The most famous of these structure, the Jaipur, 
+					had also deteriorated by the end of the nineteenth century until in 1901 Maharaja Ram Singh set out to restore the instrument.
+				</p>
+
+				<br />
+
+				<p>
+					The most important issue concerning the Jantar Mantar is the loss of the fine, calibrated markings on the instruments,
+					 which are eroding. These precision machines needed to be completely restored in order to protect the historic function of these extraordinary instruments. 
+					In 2008, advocacy groups formed in an effort to encourage the Rajasthan government to restore the Jantar Mantar
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

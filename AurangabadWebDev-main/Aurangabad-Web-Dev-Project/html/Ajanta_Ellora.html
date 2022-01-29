@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Maharashtra | Ajanta Ellora Caves</title>
+
+	<!-- !====== CSS ========== -->
+	<link rel="stylesheet" href="../styles/css/children-pages.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+	<!-- !========= Scripts =============== -->
+	<script src="../scripts/navbar.js" defer></script>
+	<script src="../scripts/img-scroll.js" defer></script>
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+	<script src="../scripts/maps.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<h1>Maharashtra</h1>
+			<ul>
+				<li>
+					<a href="#">home</a>
+				</li>
+				<li>
+					<a href="#">places</a>
+				</li>
+				<li>
+					<a href="#">placeholder</a>
+				</li>
+			</ul>
+		</nav>
+		<figure class="place--fig">
+			<div class="place--imgs" style="width: 100%; display: flex">
+				<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+				<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/Ajanta_Ellora/AjantaEllora1.jpg" />
+					<source media="(max-width: 2000px)" srcset="../images/Ajanta_Ellora/AjantaEllora1.jpg" />
+					<img src="../images/Ajanta_Ellora/AjantaEllora1.jpg" alt="fort" class="place--img" data-index="0" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/Ajanta_Ellora/AjantaEllora2.jpg" />
+					<source media="(max-width: 2000px)" srcset="../images/Ajanta_Ellora/AjantaEllora2.jpg" />
+					<img srcset="../images/Ajanta_Ellora/AjantaEllora2.jpg" alt="fort" class="place--img" data-index="1" />
+				</picture>
+
+				<picture>
+					<source media="(max-width: 500px)" srcset="../images/Ajanta_Ellora3.png" />
+					<source media="(max-width: 2000px)" srcset="../images/Ajanta_Ellora/AjantaEllora3.png" />
+					<img src="../images/Ajanta_Ellora/AjantaEllora3.png" alt="fort" class="place--img" data-index="2" />
+				</picture>
+			</div>
+			<figcaption class="place--name">
+				<h1>Ajanta Ellora Caves</h1>
+			</figcaption>
+		</figure>
+	</header>
+
+	<!-- !===== Place Description ======= -->
+	<section class="place--description">
+		<article class="place--history">
+			<h2>history</h2>
+			<p>
+				Ajanta & Ellora caves have some of India's most sophisticated ancient paintings, the Ellora caves are renowned for their <strong>extraordinary architecture</strong>. Both the caves have sculptures.
+				Ajanta and Ellora caves, considered to be one of the finest examples of ancient rock-cut caves, are located near Aurangabad in Maharashtra, India. Ajanta and Ellora caves complex is adorned with beautiful sculptures, paintings, and frescoes
+				and include Buddhist monasteries, Hindu and Jain temples. The Ajanta caves are 29 in number and were built between the 2nd century BC and 6th century AD, whereas the Ellora Caves are more spread out and 34 in number and dates to the period
+				between 6th and 11th Century AD.
+			</p>
+			<br />
+			<p>
+				Ajanta and Ellora caves are designated as <strong>UNESCO World Heritage Sites</strong> and are quite popular among travelers worldwide. Ajanta Caves, located around 99km north of Aurangabad, are mostly Buddhist sites and were used as a
+				retreat by Buddhist Monks.
+				captured.
+			</p>
+		</article>
+		<br />
+	</section>
+
+	<!-- !============ Map Element ============== -->
+	<article id="map--parent" data-lat="16.81151438461097" data-lng="74.10192883650777">
+		<h2>MAP</h2>
+		<a href="https://goo.gl/maps/aqsecmhuoktzhtEe6" class="btn">Goto GMaps</a>
+		<section id="map"></section>
+	</article>
+
+	<!-- !============ Major Features ============== -->
+	<section class="place--description">
+		<article class="place--features">
+			<h2>Major Features</h2>
+			<br />
+			<h3>Buddhist Caves</h3>
+			<p>
+				Cave no.1 to Cave no.12 is the Buddhist group of caves in Ellora. These are mostly Viharas and Chaityas. Cave no. 10 is the most important Chaitya hall and it houses a huge sculpture of Buddha. Chaitya is basically a Buddhist Prayer Hall.
+
+			</p>
+
+			<br />
+			<h3>Hindu Caves</h3>
+
+			<p>
+				The Hindu caves in Ellora are from 13 to 29 which is situated in the middle of the complex. Cave 15 depicts that transition from a closed cave to an open cave in phases of cave architecture. Cave 15 has the Dashavatara sculptures which show
+				ten incarnations of Vishnu.
+			</p>
+			<br>
+			<p>Cave 16 is the most impressive and the significant amongst all the caves in Ellora. The Kailasa Temple was built to depict Shiva’s abode during the reign of Krishna I of Rashtrakuta dynasty.</p>
+			<br>
+			<p>Cave 21 is known as the Ramesvara Cave and features the interpretations of Shaivite scenes.</p>
+			<br />
+			<h3>Jain Caves</h3>
+			<p>
+				Cave no.30 to cave no.34 are predominantly the Jain caves. Cave 32 (Indra Sabha) deserves a noteworthy mention as it is also referred to as Chota Kailasa. It has a depiction of Jain Tirthankaras Parashvanatha, Mahavira, and Gomateshwara.
+				There are few paintings on walls that have survived the test of time. It serves as a proof for large-scale worship by the Jain community
+			</p>
+
+			<br />
+			<h3>Ambarkhana</h3>
+			<p>
+				The Amberkhana, situated in the center of the fort, were three
+				granaries built in the Bijapuri style of architecture. They enabled
+				Shivaji to withstand a 5-month siege by Siddhi Johar. It consists of
+				three buildings called the Ganga, Yamuna and Saraswati Kothis.
+			</p>
+
+			<h3>How to reach Ajanta & Ellora Caves</h3>
+			<p> <strong>•By Flight: </strong> Aurangabad, which is about 99 km from Ajanta and 30 km from Ellora, can be reached directly from Delhi, Mumbai, Jaipur and Udaipur airports. All types of cabs and buses are available from there.</p>
+			<p><strong>Nearest Airport: </strong> Aurangabad Airport (IXU) </p> <br>
+
+			<p> <strong>•By road: </strong>Ajanta Caves are connected to a network of excellent roadways with Mumbai, Pune, Ahmednagar, Jalgaon, Shirdi, Nasik, Dhule, Ahmedabad, Hyderabad, Indore, Bijapur, and Aurangabad. Numerous bus services are running
+				to Ellora from Aurangabad Central Bus Station, but the Maharashtra State Tourism Corporation (MTDC) Bus Service is most reliable. There is a luxury bus tour departing daily (except Tuesdays) at 9:30 AM from the MTDC office. In addition to
+				Ellora, the tour also includes several famous sites in Aurangabad. </p> <br>
+
+			<p><strong>•By train: </strong>junctions are very well-connected via major trains from all across India. The train ride is very convenient, comfortable and pocket friendy. You will have to book the tickets well in advance via IRCTC or Travel
+				Agent. Taxis can be easily hired from these destinations.</p> <br>
+
+			<p><strong>•By Local Transport: </strong>In Aurangabad, an easy way to travel is by auto-rickshaw, but cars on hire and local taxis are also available to travel within the city and to its surrounding areas. To Ajanta and Ellora, there are
+				several MTDC as well as local buses. Tours regularly run between Aurangabad and the Ajanta/Ellora Caves. </p>
+			<br>
+			<h2>FAQ's</h2> <br>
+			<strong>
+				<p>•What should I wear to Ajanta Ellora?</p>
+			</strong>
+			<p><strong> No clothing restriction</strong>, a however in India it is always advisable not to wear anything skimpy. Comfortable footwear. At Ajanta you need to remove footwear at most caves, so sandals might be preferable.
+			</p> <br>
+			<strong>
+				<p>•How long does it take to see Ellora caves?</p>
+			</strong>
+			<p>One can spend <strong>around 4/5 hours</strong> to see all caves . On your return trip you can visit Dauladabad Fort which will take 2 hours to see. Both together can be a day tour( 8hrs).</p> <br>
+
+			<strong>
+				<p>•Why is Ajanta Ellora caves famous?</p>
+			</strong>
+			<p>Ajanta caves comprise 29 rock-cut Buddhist cave monuments. The caves portray the Buddhist culture and stories expressed in the form of numerous sculptures and paintings.</p> <br>
+
+			<strong>
+				<p>•Who damaged Ellora Caves?</p>
+			</strong>
+			<p> <strong>Mughal King Aurangzeb</strong> who destroyed thousands of Hindu temple, also tried to destroy Kailasa temple. It is said that 1000 people were sent to destroy the temple in the year 1682.</p> <br>
+
+			<strong> <p>•Which Colour used in Ajanta caves?</p></strong>
+			<p>The main colours used were, <strong> red ochre, yellow ochre, brown ochre, lamp black, white and lapis lazuli (blue)</strong>. This last pigment was imported from Northern India, central Asia and Persia.</p>
+
+
+		</article>
+	</section>
+
+	<!-- !========== Footer ============== -->
+
+	<footer>
+		<h1>
+			<span class="highlight">&#169; 2021</span> All the content on this page
+			is copyrighted to <span class="highlight">placeholder</span>
+		</h1>
+	</footer>
+</body>
+
+</html>

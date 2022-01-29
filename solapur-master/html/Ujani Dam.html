@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maharashtra | UJANI DAM</title>
+
+    <!-- !====== CSS ========== -->
+    <link rel="stylesheet" href="../styles/css/children-pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- !========= Scripts =============== -->
+    <script src="../scripts/navbar.js" defer></script>
+    <script src="../scripts/img-scroll.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="../scripts/maps.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Maharashtra</h1>
+        <!-- <ul>
+          <li>
+            <a href="#">home</a>
+          </li>
+          <li>
+            <a href="#">places</a>
+          </li>
+          <li>
+            <a href="#">placeholder</a>
+          </li>
+        </ul>-->
+      </nav>
+      <figure class="place--fig">
+        <div class="place--imgs" style="width: 100%; display: flex">
+          <button id="left-btn" class="btn arrow-btn">&#8592;</button>
+          <button id="right-btn" class="btn arrow-btn">&#8594;</button>
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dam/640px-Panhala_fort-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dam/2180px-Panhala_fort-1.jpg"
+            />
+            <img
+              src="../images/DAM/2180px-Panhala_fort-1.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="0"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dam/640px-DAM-1.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dam/2180px-DAM-2.jpg"
+            />
+            <img
+              src="../images/dam/2180px-Panhala_fort-11.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="1"
+            />
+          </picture>
+
+          <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="../images/dam/600px-Fort_Panhala-3.jpg"
+            />
+            <source
+              media="(max-width: 2000px)"
+              srcset="../images/dam/2500px-Fort_Panhala-3.jpg"
+            />
+            <img
+              src="../images/dam/1200px-Fort_Panhala-3.jpg"
+              alt="fort"
+              class="place--img"
+              data-index="2"
+            />
+          </picture>
+        </div>
+        <figcaption class="place--name">
+          <h1>UJANI DAM</h1>
+        </figcaption>
+      </figure>
+    </header>
+
+    <!-- !===== Place Description ======= -->
+    <section class="place--description">
+      <article class="place--history">
+        <h2></h2>
+        <p>
+          Ujjani Dam, also known as Bhima Dam or Bhima Irrigation Project, on
+          the Bhima River, a tributary of the Krishna River, is an earthfill cum
+          Masonry gravity dam located near Ujjani village of Madha Taluk in
+          Solapur district of the state of Maharashtra in India. The Bhima
+          River, which originates in Bhimashankar of the Western Ghats, and
+          forms the Bhima Valley with its tributary rivers and streams, has
+          twenty-two dams built on it of which the Ujjani Dam is the terminal
+          dam on the river and is the largest in the valley that intercepts a
+          catchment area of 14,858 km2 . The construction of the dam project
+          including the canal system on both banks was started in 1969 at an
+          initial estimated cost of Rs 400 million and when completed in June
+          1980 the cost incurred was of the order of Rs 3295.85 million.
+        </p>
+        <br />
+      </article>
+      <br />
+    </section>
+
+    <!-- !============ Map Element ============== -->
+    <article id="map--parent" data-lat="18.13799" data-lng=" 75.09708">
+      <h2>MAP</h2>
+      <a
+        href="https://www.google.com/maps/search/ujjani+dam+solapur/@18.2106308,74.8372563,11z/data=!3m1!4b1"
+        class="btn"
+        >Goto GMaps</a
+      >
+      <section id="map"></section>
+    </article>
+
+    <!-- !============ Major Features ============== -->
+    <section class="place--description">
+      <article class="place--features">
+        <h2>Major Features</h2>
+        <br />
+        <h3>Hydropower</h3>
+        <p>
+          A pumped storage type powerhouse has been built at the toe of the dam
+          with an installed capacity of 12 MW (one unit of vertical
+          Francis-reversible pump turbine) on the left bank of the dam, 65 m
+          (213 ft) downstream from the axis of the dam.[15] It operates under 20
+          percent load factor under a range of maximum head of 36.77 m (120.6
+          ft) and minimum head of 25.6 m (84 ft).[1][16] The hydropower
+          component involved construction of a 13.42 m (44.0 ft) high weir, 915
+          m (3,002 ft) below the Ujjani Dam to control the lower pond for
+          operation during the pumping mode.
+        </p>
+
+        <br />
+
+        <h3>Water Quality</h3>
+        <p>
+          Ujjani dam has a very bad quality of water. Ujjani dam contains
+          hazardous pollutants from Pune and many other small cities located on
+          the banks of bhima river or its tributaries. According to recent
+          surveys the water from ujjani dam is not potable and should not be
+          used for agriculture also. Dissolved oxygen is also below standard of
+          8 ppm. Resident of Indapur taluka in pune district have been suffering
+          from various ailments for the last four or five years the reason was
+          unearthed during recent survey and testing of water at ujjani dam
+          which residents dependent on the survey found high level of nitrates,
+          chemical oxygen demand (COD) and biochemical oxygen demand (BOD) in
+          the water which makes it unfit for consumption .
+        </p>
+
+        <br />
+      </article>
+    </section>
+
+    <!-- !========== Footer ============== -->
+
+    <footer>
+      <h1>
+        <span class="highlight">&#169; 2021</span> All the content on this page
+        is copyrighted to <span class="highlight">placeholder</span>
+      </h1>
+    </footer>
+  </body>
+</html>

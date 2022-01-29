@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Saptashrungi</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a href="/"><h1>Maharashtra</h1></a>
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/saptashrungi.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/saptashrungi.jpg"
+						/>
+						<img
+							src="../images/saptashrungi.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/vani-saptashrungi.jpeg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/vani-saptashrungi.jpeg"
+						/>
+						<img
+							src="../images/vani-saptashrungi.jpeg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/sapdakshayani.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/sapdakshayani.jpg"
+						/>
+						<img
+							src="../images/sapdakshayani.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Saptashrungi</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>More About Saptashrungi</h2>
+				<p>
+					Saptashrungi or Saptashringi (Marathi: सप्तश्रृंगी, Saptaśrr̥ṇgī) is a site of Hindu pilgrimage situated 60 kilometres (37 mi) from Nashik in Indian state of Maharashtra. According to Hindu traditions, the goddess Saptashrungi Nivasini dwells within the seven mountain peaks. (Sapta means seven and shrung means peaks.) It is located in Nanduri, Kalwan taluka, a small village near Nashik in India. The Marathas and some Bhil tribes worship the goddess from a long time and some worship as their kuldaivat. There are 510 steps to climb the gad. Devotees visit this place in large numbers every day.[1] The temple is also known popularly as one of the "three and half Shakti Peethas" of Maharashtra. The temple is also one among the 51 Shakti Peethas located on the Indian subcontinent and is a location where one of Sati's (wife of Lord Shiva) limbs, her right arm is reported to have fallen. Its half shaktipeeth among three and half shaktipeeth of Maharashtra.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article  id="map--parent" >
+			<h2>MAP</h2>
+			<section id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29916.84016317314!2d73.88462030349692!3d20.399169125921627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bde7444a00f9d55%3A0x60b9e55c02d00d8b!2sSaptashurngi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1638087337903!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h3>A portico like structure</h3>
+				<p>
+					A portico like structure, an addition made to the main shrine of the goddess are attributed to the Satara Commander-in-Chief and the plain structure at the beginning of the last century. Subsequent additions were made by the Chief of Vinchur.
+				</p>
+
+				<br />
+				<h3>Devi Mahatmya</h3>
+				<p>
+					It is believed that the Devi Mahatmya, a sacred book which extols the greatness of Devi and her exploits, was composed at this place by the sage Markandeya. He performed rigorous penance on a hill opposite the one where the Devi resides; it is now named after him
+				</p>
+
+				<br />
+				<h3>One Flag</h3>
+				<p>
+					It is said that there is one flag which is said to be hoisted at the top of the mountain where Saptashrungi Devi's temple is situated. It is said that the headman of the village of Burigaon climbs up the hill on Full Moon day in the month of April. On that day, at sunrise in the morning he hoists a flag. The path which he used to climb up and down is kept a secret. It is also said that any person who tries to know this route will lose his eyesight.
+				</p>
+
+				<br />
+				<h3>Ambarkhana</h3>
+				<p>
+					The Amberkhana, situated in the center of the fort, were three
+					granaries built in the Bijapuri style of architecture. They enabled
+					Shivaji to withstand a 5-month siege by Siddhi Johar. It consists of
+					three buildings called the Ganga, Yamuna and Saraswati Kothis.
+				</p>
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

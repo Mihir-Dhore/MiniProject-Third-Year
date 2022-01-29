@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | Shree Chintamani Fair</title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<img
+							src="../images/Shree Chintamani Fair.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<img
+							src="../images/Shree Chintamani Fair.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/Shree Chintamani Fair.jfif"
+						/>
+						<img
+							src="../images/Shree Chintamani Fair.jfif"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>Shree Chintamani Fair</h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>About</h2>
+				<p>
+					Kalamb is a town in Yavatmal district of Maharashtra state in India. It is famous today for its temple devoted to the Hindu god Ganesha and muslim scholar baba basuri wale. The temple is known as Shree Chintamani Temple, based on another name for Ganesh that emphasizes the belief that praying to him can remove worries ('Chinta' means worry in Sanskrit and in local Marathi language). It belongs to Vidarbha Ashtavinayak, one of the eight Ganapati kshetras in Vidarbha. It is one of the 21 Kshetras of Ganesh throughout India. An annual fair of Shree Chintamani is held here. it is also famous for mosque jama masjid so beautiful in vidharb twin = The Chakravati River flows through Kalamb city. It has an average elevation of 283 metres.
+					
+
+				</p>
+				<br />
+				<p>
+					It is not widely known that this otherwise unimportant village today was surprisingly an important revenue assessment center under the Mughal Empire in early seventeenth century as the capital of a Sarkar (sub-unit of a Mughal Subah) of the same name, earlier spelled as 'Kalam'.[1]
+					Today, Kalamb is administrative center of a Taluka (sub-district) also called Kalamb. The Taluka has a population of about 96 thousand (2001 Census) and has over 140 villages. It is part of Vidarbha region. Vidarbha, was called Berar by the British and by the Mughals earlier. It was part of Central Provinces and Berar in British India between 1903 and 1947, and was part of Nizam of Hyderabad's territory until 1903.
+				</p>
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="20.443282439435386"
+			data-lng="78.32710016855204"
+		>
+			<h2>MAP</h2>
+			<a href="https://goo.gl/maps/A447NuziT8znvFdW9" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<h2>Major Features</h2>
+				<br />
+				<h2>Transport</h2>
+				<p>
+					<h3>By Bus</h3>
+					<p>
+					Kalamb is on Yavatmal-Nagpur highway. You will find plenty of buses throughout the day and late night from Nagpur & Yavatmal. There are also buses plying from Amravati, Akola, Nanded.
+					</p>
+					<h3>By Rail</h3>
+					<p>
+					The nearest railway station is Dhamangaon and Wardha which is on Mumbai-Nagpur route.but under construction as part of railway line from Wardha to Nanded. (Wardha - Yavatmal - Nanded)
+                    </p>
+
+				</p>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>

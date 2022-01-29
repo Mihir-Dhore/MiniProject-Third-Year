@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Maharashtra | H20 Water Park </title>
+
+		<!-- !====== CSS ========== -->
+		<link rel="stylesheet" href="../styles/css/children-pages.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+        
+
+		<!-- !========= Scripts =============== -->
+		<script src="../scripts/navbar.js" defer></script>
+		<script src="../scripts/img-scroll.js" defer></script>
+		<script
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+			defer
+		></script>
+		<script src="../scripts/maps.js" defer></script>
+		<style>
+			table, th, td {
+               border:1px solid black;
+			   text-align: center;
+                   }
+		 th, td {
+			 padding: 10px 20px;
+			 text-align: center;
+		 }		   
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<h1>Maharashtra</h1>
+				<ul>
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">places</a>
+					</li>
+					<li>
+						<a href="#">placeholder</a>
+					</li>
+				</ul>
+			</nav>
+			<figure class="place--fig">
+				<div class="place--imgs" style="width: 100%; display: flex">
+					<button id="left-btn" class="btn arrow-btn">&#8592;</button>
+					<button id="right-btn" class="btn arrow-btn">&#8594;</button>
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="../images/Grishneshwar temple/grineshwar_temple.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="../images/h20 water park/h2o-waterpark.png"
+						/>
+						<img
+							src="../images/h20 water park/h2o-waterpark.png"
+							alt="fort"
+							class="place--img"
+							data-index="0"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\h20 water park/h20-water2.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\h20 water park/h20-water2.jpg"
+						/>
+						<img
+							src="..\images\h20 water park/h20-water2.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="1"
+						/>
+					</picture>
+
+					<picture>
+						<source
+							media="(max-width: 500px)"
+							srcset="..\images\h20 water park/h20-water3.jpg"
+						/>
+						<source
+							media="(max-width: 2000px)"
+							srcset="..\images\h20 water park/h20-water3.jpg"
+						/>
+						<img
+							src="..\images\h20 water park/h20-water3.jpg"
+							alt="fort"
+							class="place--img"
+							data-index="2"
+						/>
+					</picture>
+				</div>
+				<figcaption class="place--name">
+					<h1>H20 Water Park </h1>
+				</figcaption>
+			</figure>
+		</header>
+
+		<!-- !===== Place Description ======= -->
+		<section class="place--description">
+			<article class="place--history">
+				<h2>history :</h2>  <br>
+				<p>
+					Situated on the National Highway Daulatabad - Ellora Road in Aurangabad, H2O 
+                    Water Park is a power-packed amusement water park in the city. With a pletho
+                    ra of slides and rides designed for both adults and kids, the park also has s
+                    eparate swimming pools depending on the height of the guests. You can also ta
+                    p your feet to amazing Bollywood music played by some of the best DJs in the area.
+                     It also has several food stalls and counters serving delicious snacks and beverages. 
+				</p>
+				<br />
+			</article>
+			<br />
+		</section>
+
+		<!-- !============ Map Element ============== -->
+		<article
+			id="map--parent"
+			data-lat="16.81151438461097"
+			data-lng="74.10192883650777"
+		>
+			<h2>MAP</h2>
+			<a href="https://g.page/h2owaterpark?share" class="btn">Goto GMaps</a>
+			<section id="map"></section>
+		</article>
+
+		<!-- !============ Major Features ============== -->
+		<section class="place--description">
+			<article class="place--features">
+				<br />
+				<h3>H2O Water Park Rides :</h3>   <br>
+	            <p>
+                    The park has many exciting rides for children and adults including-  <br>
+                    1) Tube rides   <br> 
+                    2) 40 feet drop slides   <br>
+                    3) Cyclone rides             <br>
+                    4) Frog and crocodile slides for children    <br>
+                    5) Two rain dance floors with a separate section for families.  <br>
+                    6) The food corner which serves lip-smacking food including drinks and cocktails. 
+                </p>
+				<br>
+				<h3>Dress Code  :</h3>    <br>
+				<p>
+					1. Appropriate swimwear must be worn when using the park’s attractions and if wearing
+                     inappropriate attire, you might be asked to change or leave the premises. Swimwear and
+                      casual clothes are available on rent.
+                    2. Clothing should not indecently expose parts of the body, be transparent or 
+                    display obscene or offensive pictures and slogans.
+                    3. Regular diapers are not permitted in any pool or attraction.
+                    4. Inappropriate swimwear includes underwear, transparent bathing suits, sarees, 
+                    jewellery, swimsuits with buckles, chains or with metal. 
+				</p>
+				<br>
+				<h3>Do's and Dont's  :</h3>   <br>
+				<p> <ul>
+				<b>	Do’s : </b>
+                   <li> Follow the directions of staff and lifeguards at all times. </li>
+                  <li>  Make sure you are medically fit for any slides or attractions.  </li>
+                   <li> Wearing sunglasses and prescription lenses are not allowed when riding.  </li>
+                  <li>  Outside food and beverages are allowed only around Canteen Area.    </li>
+                   <li> Read the signs indicating height restrictions before entering any slides or attractions. </li> </ul>
+                   <ul>
+                   <b> Dont’s : </b>
+                  <li>  Dangerous articles including sharp objects, explosives, fireworks or chemicals are not allowed. </li>
+                   <li> Alcoholic beverages and drugs are prohibited. Smoking is allowed in designated areas only. </li>
+                   <li> Regular diapers for children not allowed during swimming.  </li>
+                   <li> Do not run, dive, stand, kneel, rotate or stop in the slides. </li>
+                   <li> Pregnant women or people with heart conditions or back trouble should avoid riding the slides. </li> </ul>
+                </p>
+				<br />
+			</article>
+		</section>
+
+		<!-- !========== Footer ============== -->
+
+		<footer>
+			<h1>
+				<span class="highlight">&#169; 2021</span> All the content on this page
+				is copyrighted to <span class="highlight">placeholder</span>
+			</h1>
+		</footer>
+	</body>
+</html>
